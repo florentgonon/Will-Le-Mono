@@ -1,0 +1,8 @@
+<%= simple_form_for [:admin, @article] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :url_yt %>
+  <%= f.input :url_learnybox %>
+  <%= f.input :date, as: :date  %>
+  <%= f.button :submit %>
+<% end %>

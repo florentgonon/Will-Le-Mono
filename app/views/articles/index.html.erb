@@ -1,0 +1,4 @@
+<% @articles.each do |article| %>
+<h1><%= article.title %></h1>
+<button><%= link_to "Details", article_path(article) %></button>
+<% end %>

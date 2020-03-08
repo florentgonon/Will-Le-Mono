@@ -1,0 +1,99 @@
+#section-about {
+  padding: 100px 0;
+  background-color: black;
+
+  .container-about {
+    display: flex;
+    max-width: 85vw;
+    margin: 0 auto;
+
+    .left-side {
+      width: 60%;
+
+      .trapezoids {
+        .trapezoid-blue {
+          width: 0;
+          height: 50px;
+          border-top: 18px solid transparent;
+          border-right: 240px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -41px;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+
+        .trapezoid-orange {
+          position: relative;
+          top: -20px;
+          left: 70px;
+          width: 0;
+          height: 35px;
+          border-top: 14px solid transparent;
+          border-right: 147px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -42px;
+            left: 8px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .about-img {
+        width: 90%;
+      }
+    }
+
+    .right-side {
+      width: 40%;
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+
+        span.blue {
+          color: #54BCB6;
+        }
+      }
+
+      p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      .trapezoid-orange {
+        position: relative;
+        top: 8px;
+        float: right;
+        width: 0;
+        height: 21px;
+        border-top: 8px solid transparent;
+        border-right: 106px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        a.more-about {
+          position: relative;
+          left: 14px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
