@@ -1,0 +1,56 @@
+footer {
+  padding: 50px 0;
+  background-color: black;
+  border-top: 3px solid white;
+
+  #container-footer {
+    max-width: 85vw;
+    margin: 0 auto;
+
+    .trapezoid-blue-title {
+      width: 0;
+      height: 58px;
+      border-top: 18px solid transparent;
+      border-right: 33vw solid #54BCB6;
+      border-left: 0px solid transparent;
+      border-bottom: 0px solid transparent;
+
+      h1 {
+        position: relative;
+        top: -3px;
+        left: 27px;
+        white-space: nowrap;
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+
+    .instagram-follow {
+      text-align: center;
+
+      .img-will {
+        width: 100%;
+        padding-top: 5vh;
+      }
+
+      .trapezoid-btn-follow {
+        margin-top: 30px;
+        text-align: right;
+        height: 30px;
+        border-top: 8px solid transparent;
+        border-right: 106px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        a.more-about {
+          position: relative;
+          left: 93px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
