@@ -11,7 +11,7 @@ footer {
       width: 0;
       height: 58px;
       border-top: 18px solid transparent;
-      border-right: 33vw solid #54BCB6;
+      border-right: 27vw solid #54BCB6;
       border-left: 0px solid transparent;
       border-bottom: 0px solid transparent;
 
@@ -26,31 +26,98 @@ footer {
     }
 
     .instagram-follow {
-      text-align: center;
+      .img-footer {
+        margin: 0 auto;
+        width: 70vh;
 
-      .img-will {
-        width: 100%;
-        padding-top: 5vh;
-      }
+        img.img-will {
+          width: 100%;
+          padding-top: 5vh;
+        }
 
-      .trapezoid-btn-follow {
-        margin-top: 30px;
-        text-align: right;
-        height: 30px;
-        border-top: 8px solid transparent;
-        border-right: 106px solid #EC6B1B;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+        .trapezoid-btn-follow {
+          margin-top: 30px;
+          text-align: right;
+          height: 30px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        a.more-about {
-          position: relative;
-          left: 93px;
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          white-space: nowrap;
+          a.more-about {
+            position: relative;
+            left: 93px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+          }
         }
       }
+    }
+
+    .social-list {
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-top: 30px;
+        padding-inline-start: 0;
+        margin-bottom: 0;
+
+        li {
+          display: inline;
+
+          img.social-icon {
+            width: 7%;
+          }
+        }
+      }
+    }
+
+    .logo-footer {
+      text-align: center;
+      padding-top: 30px;
+
+      img.logo {
+        width: 10%;
+      }
+    }
+
+    .footer-tab {
+      width: 50vh;
+      margin: 0 auto;
+
+      .list-footer {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-top: 30px;
+        text-align: center;
+        padding-inline-start: 0;
+        margin-bottom: 0;
+
+        li {
+          a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font-size: 20px;
+            font-weight: 400;
+            transition: font-weight 0.4s ease 0s;
+
+            &:hover {
+              font-weight: 900;
+              transition: font-weight 0.4s ease 0s;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 12px;
     }
   }
 }

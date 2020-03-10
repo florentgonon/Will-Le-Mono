@@ -6,10 +6,32 @@
     <div class="instagram-follow">
       <div class="img-footer">
         <%= image_tag 'footer.png', class: "img-will"%>
+        <div class="trapezoid-btn-follow">
+          <%= link_to "ME SUIVRE", "https://www.instagram.com/will_le_mono/", target: "_blank", class: "more-about" %>
+        </div>
       </div>
-      <div class="trapezoid-btn-follow">
-        <%= link_to "ME SUIVRE", formations_path, class: "more-about" %>
-      </div>
+    </div>
+    <div class="social-list">
+      <ul>
+        <li><a href="https://www.youtube.com/redirect?event=channel_description&redir_token=0lga5G2pkkJjtIhCN-DRs3eqBQB8MTU4Mzk0NjI4N0AxNTgzODU5ODg3&q=https%3A%2F%2Fwww.facebook.com%2FWkerautret%2F%3Fref%3Dsettings" target="_blank"><%= image_tag 'icone-facebook.png', class: "social-icon"%></a></li>
+        <li><a href="https://www.youtube.com/channel/UC2c_l9vLefW82NbaUeqy6dA/featured" target="_blank"><%= image_tag 'icone-youtube.png', class: "social-icon"%></a></li>
+        <li><a href="https://www.instagram.com/will_le_mono/" target="_blank"><%= image_tag 'icone-instagram.png', class: "social-icon"%></a></li>
+      </ul>
+    </div>
+    <div class="logo-footer">
+      <%= link_to root_path, class: "footer-brand" do %>
+        <%= image_tag 'logo.png', class: "logo"%>
+      <% end %>
+    </div>
+    <div class="footer-tab">
+      <ul class="list-footer">
+        <li><%= link_to "Formations", formations_path, class: "footer-brand"%></li>
+        <li><%= link_to "À propos", root_path, class: "footer-brand"%></li>
+        <li><%= link_to "Contact", root_path, class: "footer-brand"%></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2020 Will Le Mono. Tous droits réservés.</p>
     </div>
   </div>
 </footer>
