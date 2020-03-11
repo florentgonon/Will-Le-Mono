@@ -1,0 +1,19 @@
+#section-formations {
+  padding: 100px 0;
+  // background-color: black;
+
+  h2 {
+    color: black;
+  }
+
+  $primary-color: #4f5d94;
+
+  .carousel-nav-icon {
+     height: 48px;
+     width: 48px;
+     svg {
+        fill: $primary-color;
+     }
+  }
+}
+
