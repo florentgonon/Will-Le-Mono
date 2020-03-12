@@ -1,175 +1,88 @@
 <section id="section-formations">
-  <% @formations.each do |formation| %>
-  <h2><%= formation.title %></h2>
-  <% end %>
-  <!-- <section class="my-5">
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col text-center mb-4">
-            <h1>Articles</h1>
-         </div>
-      </div>
-      <div class="row d-flex d-md-none">
-         <div class="col">
-            <div>
-               <div class="card-deck mx-auto">
-                  <div class="card">
-                     <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                     <div class="card-body">
-                        <h5 class="card-title">
-                           <small class="mb-2" style="display: block;">Category</small>
-                           Card title
-                        </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                     </div>
-                     <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                        <small class="text-muted">Read the full article</small>
-                        <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                     </a>
-                  </div>
-                  <div class="card">
-                     <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                     <div class="card-body">
-                        <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                     </div>
-                     <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                        <small class="text-muted">Read the full article</small>
-                        <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                     </a>
-                  </div>
-                  <div class="card">
-                     <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                     <div class="card-body">
-                        <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                     </div>
-                     <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                        <small class="text-muted">Read the full article</small>
-                        <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                     </a>
-                  </div>
-               </div>
+  <div class="container-formations">
+    <div class="row mx-auto my-auto">
+      <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= image_tag 'formation-3.png', class: "formation-img"%>
+                </div>
+                <div class="description-formation">
+                  <h2>TITRE</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-         </div>
-      </div>
-      <div class="row d-none d-md-flex">
-         <div class="col-1 d-flex align-items-center justify-content-center">
-            <a href="#carouselExampleControls" role="button" data-slide="prev">
-               <div class="carousel-nav-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
-                  </svg>
-               </div>
-            </a>
-         </div>
-         <div class="col-10">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="false" data-wrap="false">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="card-deck mx-auto">
+          </div>
 
-
-                        <div class="card">
-                          <div class="img-formation">
-                            <%= image_tag 'logo.png', class: "about-img"%>
-                          </div>
-                          <div class="description-formation">
-                            <% @formations.each do |formation| %>
-                              <h2>formation.title</h2>
-                            <% end %>
-                          </div>
-                        </div>
-
-
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="card-deck mx-auto">
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="card-deck mx-auto">
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/flexfun02.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">                                 <small class="mb-2" style="display: block;">Category</small>                                 Card title                               </h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                           </div>
-                           <a href="#" class="card-footer d-flex align-items-center justify-content-center">
-                              <small class="text-muted">Read the full article</small>
-                              <small class="text-muted ml-auto"><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></small>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= image_tag 'formation-4.png', class: "formation-img"%>
+                </div>
+                <div class="description-formation">
+                  <h2>TITRE</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-         </div>
-         <div class="col-1 d-flex align-items-center justify-content-center"><a  href="#carouselExampleControls" data-slide="next">
-            <div class="carousel-nav-icon">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
-               </svg>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= image_tag 'formation-5.png', class: "formation-img"%>
+                </div>
+                <div class="description-formation">
+                  <h2>TITRE</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
-            </a>
-         </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= image_tag 'formation-1.png', class: "formation-img"%>
+                </div>
+                <div class="description-formation">
+                  <h2>TITRE</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= image_tag 'formation-2.png', class: "formation-img"%>
+                </div>
+                <div class="description-formation">
+                  <h2>TITRE</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev w-auto" href="#myCarousel" role="button" data-slide="prev">
+          <%= image_tag 'fleche_gauche.png', class: "carousel-control"%>
+        </a>
+        <a class="carousel-control-next w-auto" href="#myCarousel" role="button" data-slide="next">
+          <%= image_tag 'fleche_droite.png', class: "carousel-control"%>
+        </a>
       </div>
-   </div>
-</section> -->
+    </div>
+  </div>
 </section>
