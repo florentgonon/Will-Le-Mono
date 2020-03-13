@@ -1,0 +1,33 @@
+#section-citation {
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.2)), image_url('citation.png');
+  background-position: center;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .container-citation {
+    max-width: 85vw;
+    margin: 0 auto;
+
+    .citation {
+      text-align: center;
+
+      p {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 0;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 60px;
+      }
+
+      img.guillemets {
+        width: 7%;
+      }
+    }
+  }
+}
