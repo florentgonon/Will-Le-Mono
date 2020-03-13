@@ -1,25 +1,71 @@
 #section-formations {
-  background-color : black;
+  background-color : #0A0E12;
   padding: 100px 0;
 
   .container-formations {
     max-width: 85vw;
     margin: 0 auto;
 
+    .trapezoids-title {
+      padding-bottom: 50px;
+
+      .trapezoid-blue {
+        margin: 0 auto;
+        width: 0;
+        height: 70px;
+        border-top: 18px solid transparent;
+        border-right: 304px solid #54BCB6;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        h1 {
+          position: relative;
+          left: 27px;
+          white-space: nowrap;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .trapezoids-link {
+      padding-top: 50px;
+
+      .trapezoid-orange {
+        margin: 0 auto;
+        width: 0;
+        height: 40px;
+        border-top: 8px solid transparent;
+        border-right: 331px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        a.formation-path {
+          position: relative;
+          top: 4px;
+          left: 13px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+
     .card {
       background-color: transparent;
-      // opacity: 1;
+      text-align: center;
 
       .img-formation {
         img.formation-img {
-          width: 100%;
+          width: 70%;
         }
       }
 
       .description-formation {
-        padding-top: 15px;
-        width: 80%;
         margin: 0 auto;
+        padding-top: 15px;
+        width: 60%;
 
         h2 {
           color: white;
@@ -36,7 +82,13 @@
     }
 
     .carousel-control-next, .carousel-control-prev {
+      background-color: #0A0E12;
       opacity: 1;
+      width: 5vw;
+
+      img.carousel-control {
+        width: 90%;
+      }
     }
 
     @media (min-width: 768px) {

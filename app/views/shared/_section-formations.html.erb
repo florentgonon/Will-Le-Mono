@@ -1,5 +1,11 @@
 <section id="section-formations">
   <div class="container-formations">
+    <div class="trapezoids-title">
+      <div class="trapezoid-blue">
+        <h1>FORMATIONS</h1>
+      </div>
+    </div>
+
     <div class="row mx-auto my-auto">
       <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
         <div class="carousel-inner w-100" role="listbox">
@@ -76,13 +82,20 @@
 
         </div>
 
-        <a class="carousel-control-prev w-auto" href="#myCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <%= image_tag 'fleche_gauche.png', class: "carousel-control"%>
         </a>
-        <a class="carousel-control-next w-auto" href="#myCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
           <%= image_tag 'fleche_droite.png', class: "carousel-control"%>
         </a>
       </div>
     </div>
+
+    <div class="trapezoids-link">
+      <div class="trapezoid-orange">
+        <%= link_to "JE DÉCOUVRE TOUTES LES FORMATIONS", formations_path, class: "formation-path" %>
+      </div>
+    </div>
+
   </div>
 </section>
