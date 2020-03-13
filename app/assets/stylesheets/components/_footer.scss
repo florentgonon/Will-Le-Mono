@@ -1,6 +1,6 @@
 footer {
   padding: 50px 0;
-  background-color: black;
+  background-color: #0A0E12;
   border-top: 3px solid white;
 
   #container-footer {
@@ -9,15 +9,14 @@ footer {
 
     .trapezoid-blue-title {
       width: 0;
-      height: 58px;
+      height: 70px;
       border-top: 18px solid transparent;
-      border-right: 27vw solid #54BCB6;
+      border-right: 450px solid #54BCB6;
       border-left: 0px solid transparent;
       border-bottom: 0px solid transparent;
 
       h1 {
         position: relative;
-        top: -3px;
         left: 27px;
         white-space: nowrap;
         font-size: 40px;
