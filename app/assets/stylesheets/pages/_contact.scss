@@ -1,0 +1,103 @@
+#contact {
+  background-image: linear-gradient(rgba(0,0,0,0.7)), image_url('header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  padding-top: 300px;
+
+  .container-contact {
+    max-width: 85vw;
+    margin: 0 auto;
+
+    .trapezoids-title {
+      display: inline;
+
+      .trapezoid-blue {
+        margin: 0 auto;
+        width: 0;
+        height: 70px;
+        border-top: 18px solid transparent;
+        border-right: 238px solid #54BCB6;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        h1 {
+          position: relative;
+          left: 27px;
+          white-space: nowrap;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+
+      img.arrow {
+        width: 60px;
+        opacity: 1;
+        transform: rotate(-120deg);
+        position: relative;
+        left: 240px;
+        top: -40px;
+      }
+    }
+
+
+
+    h2 {
+      padding-top: 30px;
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+
+    form {
+      .form-control {
+        font-weight: 900;
+
+        &::placeholder {
+          color: rgba(189, 190, 191, 0.9);
+        }
+      }
+
+      .information {
+        height: 44px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      .message {
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #BDBEBF;
+      }
+
+      button {
+        background: transparent;
+        border: transparent;
+
+        .trapezoid-orange {
+          width: 0;
+          height: 36px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.more-about {
+            position: relative;
+            top: 3px;
+            left: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

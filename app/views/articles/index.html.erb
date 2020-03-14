@@ -1,4 +1,12 @@
-<% @articles.each do |article| %>
-<h1><%= article.title %></h1>
-<button><%= link_to "Details", article_path(article) %></button>
-<% end %>
+<%# @articles.each do |article| %>
+<!-- <h1><%#= article.title %></h1> -->
+<!-- <button><%#= link_to "Details", article_path(article) %></button> -->
+<!-- <%# end %> -->
+
+<%= render 'shared/navbar' %>
+<section id="articles">
+  <div class="container-articles">
+    <h1>ARTICLES</h1>
+  </div>
+  <%= render 'shared/footer' %>
+</section>
