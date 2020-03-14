@@ -1,0 +1,14 @@
+<nav class="navbar" role="navigation">
+  <div class="navbar-logo">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'logo.png', class: "nav-logo"%>
+    <% end %>
+  </div>
+  <div class="navbar-tab">
+    <ul class="list-nav">
+      <li><%= link_to "Formations", formations_path, class: "navbar-brand"%></li>
+      <li><%= link_to "À propos", pages_about_path, class: "navbar-brand"%></li>
+      <li><%= link_to "Contact", pages_contact_path, class: "navbar-brand"%></li>
+    </ul>
+  </div>
+</nav>

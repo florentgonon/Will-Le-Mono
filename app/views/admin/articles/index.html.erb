@@ -1,7 +1,15 @@
-<% @articles.each do |article| %>
-<h1><%= article.title %></h1>
-<button><%= link_to "Details", admin_article_path(article) %></button>
+<%# @articles.each do |article| %>
+  <!-- <h1><%#= article.title %></h1> -->
+  <!-- <button><%#= link_to "Details", admin_article_path(article) %></button> -->
+<%# end %>
 
-<% end %>
+<!-- <button><%#= link_to "Créer", new_admin_article_path %></button> -->
 
-<button><%= link_to "Créer", new_admin_article_path %></button>
+
+<%= render 'shared/navbar' %>
+<section id="articles">
+  <div class="container-articles">
+    <h1>ARTICLES</h1>
+  </div>
+  <%= render 'shared/footer' %>
+</section>
