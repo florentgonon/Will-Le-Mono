@@ -1,25 +1,36 @@
 <section id="contact">
   <div class="container-contact">
+    <div class="trapezoids-title">
+      <div class="trapezoid-blue">
+        <h1>CONTACT</h1>
+      </div>
+    </div>
+    <h2 class="title-question">Tu souhaites te faire coacher ? Tu veux plus d’informations ?</h2>
     <div class="row">
         <div class="col-lg-12">
           <form name="sentMessage" id="my-form" novalidate="" action="https://formspree.io/mqkledvv" method="POST">
             <div class="row">
               <div class="col-md-6">
-
                 <div class="form-group">
-                  <input type="text" name="Lastame" class="form-control" placeholder="Mon Nom *" id="name" required="" data-validation-required-message="Veuillez entrer votre NOM s'il vous plaît">
+                  <input type="text" name="NOM" class="form-control information" placeholder="Mon Nom *" id="name" required="" data-validation-required-message="Veuillez entrer votre NOM s'il vous plaît">
                   <p class="help-block text-danger"></p>
                 </div>
+              </div>
+              <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" name="Firstname" class="form-control" placeholder="Mon Prénom *" id="firstname" required="" data-validation-required-message="Veuillez entrer votre PRÉNOM s'il vous plaît">
+                  <input type="text" name="Prénom" class="form-control information" placeholder="Mon Prénom *" id="firstname" required="" data-validation-required-message="Veuillez entrer votre PRÉNOM s'il vous plaît">
                   <p class="help-block text-danger"></p>
                 </div>
+              </div>
+              <div class="col-md-6">
                 <div class="form-group">
-                  <input type="email" name="Email" class="form-control" placeholder="Mon Email *" id="email" required="" data-validation-required-message="Veuillez entrer votre EMAIL s'il vous plaît">
+                  <input type="email" name="Email" class="form-control information" placeholder="Mon email *" id="email" required="" data-validation-required-message="Veuillez entrer votre EMAIL s'il vous plaît">
                   <p class="help-block text-danger"></p>
                 </div>
+              </div>
+              <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" name="Subject" class="form-control" placeholder="Objet *" id="object" required="" data-validation-required-message="Veuillez entrer un sujet s'il vous plaît"/>
+                  <input type="text" name="Objet" class="form-control information" placeholder="Objet *" id="object" required="" data-validation-required-message="Veuillez entrer un sujet s'il vous plaît"/>
                   <p class="help-block text-danger"></p>
                 </div>
                 <!-- <div class="form-group">
@@ -28,16 +39,20 @@
                 </div> -->
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <textarea type="text" name="Message" class="form-control" placeholder="Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                  <textarea type="text" name="Message" class="form-control message" placeholder="Mon message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="col-lg-12 text-center" style="height: 147px";>
+              <div class="col-lg-12 text-center " style="height: 100px";>
                 <div id="success"></div>
-                <button id="my-form-button" class="mail-btn" type="submit">Envoyer</button>
+                <button id="my-form-button" class="mail-btn" type="submit">
+                  <div class="trapezoid-orange">
+                    <%= link_to "ENVOYER", formations_path, class: "more-about" %>
+                  </div>
+                </button>
                 <p id="my-form-status"></p>
               </div>
             </div>
