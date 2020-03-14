@@ -10,7 +10,7 @@
     margin: 0 auto;
 
     .trapezoids-title {
-      padding-bottom: 50px;
+      display: inline;
 
       .trapezoid-blue {
         margin: 0 auto;
@@ -29,6 +29,24 @@
           font-weight: bold;
         }
       }
+
+      img.arrow {
+        width: 60px;
+        opacity: 1;
+        transform: rotate(-120deg);
+        position: relative;
+        left: 240px;
+        top: -40px;
+      }
+    }
+
+
+
+    h2 {
+      padding-top: 30px;
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 20px;
     }
 
     form {
