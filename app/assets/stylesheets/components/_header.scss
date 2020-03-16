@@ -4,4 +4,16 @@ header {
   background-position: center;
   background-repeat: none;
   height: 90vh;
+
+  .img-will {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    img.img-will-header {
+      width: 70%;
+      position: relative;
+      top: 19vh;
+    }
+  }
 }

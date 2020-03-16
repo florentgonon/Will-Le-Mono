@@ -3,10 +3,99 @@
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  padding-top: 300px;
+  padding-top: 210px;
 
   .container-formations {
     max-width: 85vw;
     margin: 0 auto;
+
+    .trapezoids-title {
+      display: inline;
+
+      .trapezoid-blue {
+        margin: 0 auto;
+        width: 0;
+        height: 70px;
+        border-top: 18px solid transparent;
+        border-right: 304px solid #54BCB6;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        h1 {
+          position: relative;
+          left: 27px;
+          white-space: nowrap;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+
+      img.arrow {
+        width: 60px;
+        opacity: 1;
+        transform: rotate(-120deg);
+        position: relative;
+        left: 305px;
+        top: -51px;
+      }
+    }
+
+    h2.title-question {
+      padding-top: 35px;
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: transparent;
+      text-align: center;
+      padding-bottom: 40px;
+
+      .img-formation {
+        img.formation-img {
+          width: 70%;
+        }
+      }
+
+      .description-formation {
+        margin: 0 auto;
+        padding-top: 15px;
+        width: 60%;
+
+        h2 {
+          color: white;
+          text-align: left;
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        p {
+          color: white;
+          text-align: left;
+        }
+
+        .trapezoid-btn-coaching {
+          margin-top: 30px;
+          margin: 0 auto;
+          height: 34px;
+          border-top: 8px solid transparent;
+          border-right: 220px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.url_learnybox {
+            position: relative;
+            left: 13px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
   }
 }

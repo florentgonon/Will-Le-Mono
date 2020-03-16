@@ -1,7 +1,31 @@
 <%= render 'shared/navbar' %>
 <section id="formations">
   <div class="container-formations">
-    <h1>FORMATIONS</h1>
+    <div class="trapezoids-title">
+      <div class="trapezoid-blue">
+        <h1>FORMATIONS</h1>
+        <%= image_tag 'fleche_gauche.png', class: "arrow"%>
+      </div>
+    </div>
+    <h2 class="title-question">Je souhaites me faire coacher sur...</h2>
+    <div class="row">
+      <% @formations.each do |formation| %>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="img-formation">
+              <%= image_tag(formation.image, class: "formation-img") %>
+            </div>
+            <div class="description-formation">
+              <h2><%= formation.title %></h2>
+              <p><%= formation.description.first(70) %>...</p>
+              <div class="trapezoid-btn-coaching">
+                <%= link_to "JE VEUX ÊTRE COACHE", formation.url_learnybox, target: "_blank", class: "url_learnybox" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
   <%= render 'shared/footer' %>
 </section>
