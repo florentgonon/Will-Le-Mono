@@ -29,16 +29,35 @@ puts "Finished"
 
 puts "Creating formations..."
  a = Formation.create!(
-    title:            'Être au top le jour du permis',
+    title:            'ÊTRE AU TOP LE JOUR DU PERMIS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'https://images.unsplash.com/photo-1516579486067-6d7ef4d67c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80')
+    image:            'formation-2.png')
  b = Formation.create!(
-    title:            'Etre au top du top dans les ronds-points',
+    title:            'ÊTRE AU TOP DU TOP DANS LES RONDS POINTS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'https://images.unsplash.com/photo-1516579486067-6d7ef4d67c1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80')
+    image:            'formation-4.png')
+ c = Formation.create!(
+    title:            'AVOIR SON PERMIS',
+    description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
+    url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
+    url_learnybox:    'https://wkerautret.learnybox.com/',
+    image:            'formation-1.png')
+ d = Formation.create!(
+    title:            'GERER SON STRESS LE JOUR DU PERMIS',
+    description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
+    url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
+    url_learnybox:    'https://wkerautret.learnybox.com/',
+    image:            'formation-3.png')
+ e = Formation.create!(
+    title:            'NE PAS PANIQUER AU VOLANT',
+    description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
+    url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
+    url_learnybox:    'https://wkerautret.learnybox.com/',
+    image:            'formation-5.png')
+
 
 puts "Finished"

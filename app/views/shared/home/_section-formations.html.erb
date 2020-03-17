@@ -9,16 +9,15 @@
     <div class="row mx-auto my-auto">
       <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
         <div class="carousel-inner w-100" role="listbox">
-
           <div class="carousel-item active">
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= image_tag 'formation-3.png', class: "formation-img"%>
+                  <%= image_tag(@formations[0].image, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2>TITRE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h2><%= @formations[0].title %></h2>
+                  <p><%= @formations[0].description.first(70) %></p>
                 </div>
               </div>
             </div>
@@ -28,11 +27,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= image_tag 'formation-4.png', class: "formation-img"%>
+                  <%= image_tag(@formations[1].image, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2>TITRE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h2><%= @formations[1].title %></h2>
+                  <p><%= @formations[1].description.first(70) %></p>
                 </div>
               </div>
             </div>
@@ -42,11 +41,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= image_tag 'formation-5.png', class: "formation-img"%>
+                  <%= image_tag(@formations[2].image, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2>TITRE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h2><%= @formations[2].title %></h2>
+                  <p><%= @formations[2].description.first(70) %></p>
                 </div>
               </div>
             </div>
@@ -56,11 +55,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= image_tag 'formation-1.png', class: "formation-img"%>
+                  <%= image_tag(@formations[3].image, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2>TITRE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h2><%= @formations[3].title %></h2>
+                  <p><%= @formations[3].description.first(70) %></p>
                 </div>
               </div>
             </div>
@@ -70,11 +69,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= image_tag 'formation-2.png', class: "formation-img"%>
+                  <%= image_tag(@formations[4].image, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2>TITRE</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h2><%= @formations[4].title %></h2>
+                  <p><%= @formations[4].description.first(70) %></p>
                 </div>
               </div>
             </div>
