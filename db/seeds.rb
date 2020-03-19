@@ -33,27 +33,27 @@ puts "Creating formations..."
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-2.png')
+    image:            'formation-1.png')
  b = Formation.create!(
-    title:            'ÊTRE AU TOP DU TOP DANS LES RONDS POINTS',
+    title:            'ÊTRE LE MAÎTRE DES RONDS POINTS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-4.png')
  c = Formation.create!(
-    title:            'AVOIR SON PERMIS',
+    title:            'APPRENDRE A CONDUIRE DE A à Z ET OBTENIR SON PERMIS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-1.png')
+    image:            'formation-2.png')
  d = Formation.create!(
-    title:            'GERER SON STRESS LE JOUR DU PERMIS',
+    title:            'SAVOIR MIEUX MAITRISER SON STRESS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-3.png')
  e = Formation.create!(
-    title:            'NE PAS PANIQUER AU VOLANT',
+    title:            'SAVOIR ANALYSER SON ENVIRONNEMENT ET CONDUIRE DANS DES SITUATIONS NORMALES ET DIFFICILES',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'https://www.youtube.com/watch?v=7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',

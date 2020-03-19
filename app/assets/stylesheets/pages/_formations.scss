@@ -57,6 +57,16 @@
         img.formation-img {
           width: 70%;
         }
+
+        .play-img {
+          // height: 0px;
+
+          img.formation-play {
+            width: 25%;
+            position: relative;
+            top: -20vh;
+          }
+        }
       }
 
       .description-formation {
@@ -78,17 +88,16 @@
         }
 
         .trapezoid-btn-coaching {
-          margin-top: 30px;
           margin: 0 auto;
           height: 34px;
           border-top: 8px solid transparent;
-          border-right: 220px solid #EC6B1B;
+          border-right: 272px solid #EC6B1B;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
           a.url_learnybox {
             position: relative;
-            left: 13px;
+            left: 1.6vw;
             color: white;
             text-decoration: none;
             font-weight: bold;
