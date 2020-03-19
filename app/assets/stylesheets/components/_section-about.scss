@@ -10,46 +10,87 @@
     .left-side {
       width: 60%;
 
-      .trapezoids {
-        .trapezoid-blue {
-          width: 0;
-          height: 70px;
-          border-top: 18px solid transparent;
-          border-right: 240px solid #54BCB6;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
+      .titles {
+        .title-blue {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: image_url('bandeau_title_blue.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: none;
+          width: 210px;
+          height: 8vh;
 
           h1 {
-            position: relative;
-            top: -8px;
-            left: 27px;
             white-space: nowrap;
             font-size: 40px;
             font-weight: bold;
           }
         }
 
-        .trapezoid-orange {
-          position: relative;
-          top: -20px;
-          left: 70px;
-          width: 0;
-          height: 49px;
-          border-top: 14px solid transparent;
-          border-right: 147px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
+        .title-orange {
+          margin-left: 20px;
+          margin-top: -30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: image_url('bandeau_title_orange.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: none;
+          width: 150px;
+          height: 6vh;
 
           h1 {
-            position: relative;
-            top: -9px;
-            left: 8px;
+            padding-top: 10px;
             white-space: nowrap;
             font-size: 40px;
             font-weight: bold;
           }
         }
       }
+
+      // .trapezoids {
+      //   .trapezoid-blue {
+      //     width: 0;
+      //     height: 70px;
+      //     border-top: 18px solid transparent;
+      //     border-right: 240px solid #54BCB6;
+      //     border-left: 0px solid transparent;
+      //     border-bottom: 0px solid transparent;
+
+      //     h1 {
+      //       position: relative;
+      //       top: -8px;
+      //       left: 27px;
+      //       white-space: nowrap;
+      //       font-size: 40px;
+      //       font-weight: bold;
+      //     }
+      //   }
+
+      //   .trapezoid-orange {
+      //     position: relative;
+      //     top: -20px;
+      //     left: 70px;
+      //     width: 0;
+      //     height: 49px;
+      //     border-top: 14px solid transparent;
+      //     border-right: 147px solid #EC6B1B;
+      //     border-left: 0px solid transparent;
+      //     border-bottom: 0px solid transparent;
+
+      //     h1 {
+      //       position: relative;
+      //       top: -9px;
+      //       left: 8px;
+      //       white-space: nowrap;
+      //       font-size: 40px;
+      //       font-weight: bold;
+      //     }
+      //   }
+      // }
 
       .about-img {
         width: 90%;
