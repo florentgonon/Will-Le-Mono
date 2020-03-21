@@ -80,7 +80,7 @@ puts "Creating formations..."
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
   g = Formation.create!(
-    title:            "COMPRENDRE ET CONNAITRE LE CODE DE LA ROUTE POUR ETRE AU TOP EN VOITURE",
+    title:            "APPRENDRE LE CODE DE LA ROUTE DE A à Z",
     description:      "# Tous les thèmes du Code de la route expliqués en détails
                       # Un gros paquet d'exemples simples
                       # Des trucs et astuces pour gagner du temps en conduite",

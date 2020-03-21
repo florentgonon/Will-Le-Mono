@@ -1,4 +1,29 @@
 #section-citation {
+
+  @media (min-width: 960px) {
+    img.guillemets {
+      width: 120px;
+    }
+  }
+
+  @media (min-width: 740px) {
+    img.guillemets {
+      width: 70px;
+    }
+  }
+
+  @media (min-width: 540px) {
+    img.guillemets {
+      width: 45px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    img.guillemets {
+      width: 60px;
+    }
+  }
+
   padding: 100px 0;
   background-image: linear-gradient(rgba(0,0,0,0.2)), image_url('citation.png');
   background-position: center;
@@ -16,17 +41,13 @@
       p {
         font-size: 40px;
         font-weight: 300;
-        line-height: 0;
+        // line-height: 0;
       }
 
       h2 {
         font-size: 30px;
         font-weight: bold;
         margin-top: 60px;
-      }
-
-      img.guillemets {
-        width: 7%;
       }
     }
   }
