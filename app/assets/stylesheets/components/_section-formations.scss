@@ -86,13 +86,94 @@
       }
     }
 
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next {
       background-color: #0A0E12;
       opacity: 1;
       width: 5vw;
+      margin-right: -1px;
+    }
 
-      img.carousel-control {
-        width: 90%;
+    .carousel-control-prev {
+      background-color: #0A0E12;
+      opacity: 1;
+      width: 5vw;
+      margin-left: -1px;
+    }
+
+    @media (min-width: 320px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 12vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 12vw;
+        margin-left: -1px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 8vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 8vw;
+        margin-left: -1px;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 4vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 4vw;
+        margin-left: -1px;
+      }
+    }
+
+    img.carousel-control {
+      width: 90%;
+    }
+
+
+    @media (min-width: 320px) {
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next {
+          transform: translateX(90%);
+      }
+
+      .carousel-inner .carousel-item-left.active,
+      .carousel-inner .carousel-item-prev {
+          transform: translateX(-90%);
+      }
+    }
+
+    @media (min-width: 540px) {
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next {
+          transform: translateX(80%);
+      }
+
+      .carousel-inner .carousel-item-left.active,
+      .carousel-inner .carousel-item-prev {
+          transform: translateX(-80%);
       }
     }
 
@@ -109,7 +190,7 @@
     }
 
     /* large - display 3 */
-    @media (min-width: 992px) {
+    @media (min-width: 960px) {
       .carousel-inner .carousel-item-right.active,
       .carousel-inner .carousel-item-next {
           transform: translateX(33%);
@@ -121,7 +202,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 740px) {
       .carousel-inner .carousel-item>div {
           display: none;
       }
