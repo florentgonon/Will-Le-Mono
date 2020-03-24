@@ -19,10 +19,17 @@
             <div class="description-formation">
               <h2><%= formation.title %></h2>
               <p><%= simple_format(formation.description) %></p>
-              <div class="trapezoid-btn-coaching">
-                <%= link_to "JE VEUX ÊTRE COACHE", formation.url_learnybox, target: "_blank", class: "url_learnybox" %>
-              </div>
             </div>
+            <div class="trapezoid-btn-coaching">
+              <%= link_to "JE VEUX ÊTRE COACHE", formation.url_learnybox, target: "_blank", class: "url_learnybox" %>
+            </div>
+
+
+<%#= link_to "#", class: "yt-link-button" do %>
+  <%#= image_tag 'play.png', class: "formation-play"%>
+<%# end %>
+
+
           </div>
         </div>
       <% end %>
