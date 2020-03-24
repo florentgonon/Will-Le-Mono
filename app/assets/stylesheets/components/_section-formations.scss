@@ -9,21 +9,43 @@
     .trapezoids-title {
       padding-bottom: 50px;
 
-      .trapezoid-blue {
-        margin: 0 auto;
-        width: 0;
-        height: 70px;
-        border-top: 18px solid transparent;
-        border-right: 304px solid #54BCB6;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+      @media (max-width: 321px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 271px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        h1 {
-          position: relative;
-          left: 27px;
-          white-space: nowrap;
-          font-size: 40px;
-          font-weight: bold;
+          h1 {
+            position: relative;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (min-width: 322px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 304px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -35,23 +57,49 @@
     .trapezoids-link {
       padding-top: 50px;
 
-      .trapezoid-orange {
-        margin: 0 auto;
-        width: 0;
-        height: 40px;
-        border-top: 8px solid transparent;
-        border-right: 331px solid #EC6B1B;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+      @media (max-width: 321px) {
+        .trapezoid-orange {
+          margin: 0 auto;
+          width: 0;
+          height: 40px;
+          border-top: 8px solid transparent;
+          border-right: 271px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        a.formation-path {
-          position: relative;
-          top: 4px;
-          left: 13px;
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          white-space: nowrap;
+          a.formation-path {
+            position: relative;
+            top: 4px;
+            left: 13px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            font-size: 13px;
+          }
+        }
+      }
+
+      @media (min-width: 322px) {
+        .trapezoid-orange {
+          margin: 0 auto;
+          width: 0;
+          height: 40px;
+          border-top: 8px solid transparent;
+          border-right: 304px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.formation-path {
+            position: relative;
+            top: 4px;
+            left: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -59,6 +107,7 @@
     .card {
       background-color: transparent;
       text-align: center;
+      border: transparent;
 
       .img-formation {
         img.formation-img {
@@ -86,13 +135,94 @@
       }
     }
 
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next {
       background-color: #0A0E12;
       opacity: 1;
       width: 5vw;
+      margin-right: -1px;
+    }
 
-      img.carousel-control {
-        width: 90%;
+    .carousel-control-prev {
+      background-color: #0A0E12;
+      opacity: 1;
+      width: 5vw;
+      margin-left: -1px;
+    }
+
+    @media (min-width: 320px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 12vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 12vw;
+        margin-left: -1px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 8vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 8vw;
+        margin-left: -1px;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .carousel-control-next {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 4vw;
+        margin-right: -1px;
+      }
+
+        .carousel-control-prev {
+        background-color: #0A0E12;
+        opacity: 1;
+        width: 4vw;
+        margin-left: -1px;
+      }
+    }
+
+    img.carousel-control {
+      width: 90%;
+    }
+
+
+    @media (min-width: 320px) {
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next {
+          transform: translateX(90%);
+      }
+
+      .carousel-inner .carousel-item-left.active,
+      .carousel-inner .carousel-item-prev {
+          transform: translateX(-90%);
+      }
+    }
+
+    @media (min-width: 540px) {
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next {
+          transform: translateX(80%);
+      }
+
+      .carousel-inner .carousel-item-left.active,
+      .carousel-inner .carousel-item-prev {
+          transform: translateX(-80%);
       }
     }
 
@@ -109,7 +239,7 @@
     }
 
     /* large - display 3 */
-    @media (min-width: 992px) {
+    @media (min-width: 960px) {
       .carousel-inner .carousel-item-right.active,
       .carousel-inner .carousel-item-next {
           transform: translateX(33%);
@@ -121,7 +251,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 740px) {
       .carousel-inner .carousel-item>div {
           display: none;
       }

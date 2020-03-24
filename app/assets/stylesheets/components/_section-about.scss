@@ -8,42 +8,90 @@
 
     .left-side {
       .trapezoids {
-        .trapezoid-blue {
-          width: 0;
-          height: 70px;
-          border-top: 18px solid transparent;
-          border-right: 240px solid #54BCB6;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
 
-          h1 {
-            position: relative;
-            top: -8px;
-            left: 27px;
-            white-space: nowrap;
-            font-size: 40px;
-            font-weight: bold;
+        @media (max-width: 321px) {
+          .trapezoid-blue {
+            width: 0;
+            height: 59px;
+            border-top: 18px solid transparent;
+            border-right: 215px solid #54BCB6;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+
+            h1 {
+              position: relative;
+              top: -8px;
+              left: 26px;
+              white-space: nowrap;
+              font-size: 34px;
+              font-weight: bold;
+            }
           }
         }
 
-        .trapezoid-orange {
-          position: relative;
-          top: -20px;
-          left: 70px;
-          width: 0;
-          height: 49px;
-          border-top: 14px solid transparent;
-          border-right: 147px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
+        @media (min-width: 322px) {
+          .trapezoid-blue {
+            width: 0;
+            height: 70px;
+            border-top: 18px solid transparent;
+            border-right: 249px solid #54BCB6;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
 
-          h1 {
+            h1 {
+              position: relative;
+              top: -8px;
+              left: 26px;
+              white-space: nowrap;
+              font-size: 40px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        @media (max-width: 321px) {
+          .trapezoid-orange {
             position: relative;
-            top: -9px;
-            left: 8px;
-            white-space: nowrap;
-            font-size: 40px;
-            font-weight: bold;
+            top: -20px;
+            left: 70px;
+            width: 0;
+            height: 48px;
+            border-top: 14px solid transparent;
+            border-right: 128px solid #EC6B1B;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+
+            h1 {
+              position: relative;
+              top: -9px;
+              left: 8px;
+              white-space: nowrap;
+              font-size: 34px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        @media (min-width: 322px) {
+          .trapezoid-orange {
+            position: relative;
+            top: -20px;
+            left: 70px;
+            width: 0;
+            height: 49px;
+            border-top: 14px solid transparent;
+            border-right: 147px solid #EC6B1B;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+
+            h1 {
+              position: relative;
+              top: -9px;
+              left: 8px;
+              white-space: nowrap;
+              font-size: 40px;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -93,6 +141,28 @@
           white-space: nowrap;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .left-side {
+    .trapezoids {
+    padding-bottom: 30px;
+
+      .trapezoid-blue {
+        margin: 0 auto;
+      }
+
+      .trapezoid-orange {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .right-side {
+    h2 {
+      padding-top: 70px;
     }
   }
 }
