@@ -9,21 +9,43 @@
     .trapezoids-title {
       padding-bottom: 50px;
 
-      .trapezoid-blue {
-        margin: 0 auto;
-        width: 0;
-        height: 70px;
-        border-top: 18px solid transparent;
-        border-right: 304px solid #54BCB6;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+      @media (max-width: 321px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 271px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        h1 {
-          position: relative;
-          left: 27px;
-          white-space: nowrap;
-          font-size: 40px;
-          font-weight: bold;
+          h1 {
+            position: relative;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (min-width: 322px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 304px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -35,23 +57,49 @@
     .trapezoids-link {
       padding-top: 50px;
 
-      .trapezoid-orange {
-        margin: 0 auto;
-        width: 0;
-        height: 40px;
-        border-top: 8px solid transparent;
-        border-right: 331px solid #EC6B1B;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+      @media (max-width: 321px) {
+        .trapezoid-orange {
+          margin: 0 auto;
+          width: 0;
+          height: 40px;
+          border-top: 8px solid transparent;
+          border-right: 271px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        a.formation-path {
-          position: relative;
-          top: 4px;
-          left: 13px;
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          white-space: nowrap;
+          a.formation-path {
+            position: relative;
+            top: 4px;
+            left: 13px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            font-size: 13px;
+          }
+        }
+      }
+
+      @media (min-width: 322px) {
+        .trapezoid-orange {
+          margin: 0 auto;
+          width: 0;
+          height: 40px;
+          border-top: 8px solid transparent;
+          border-right: 304px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.formation-path {
+            position: relative;
+            top: 4px;
+            left: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -59,6 +107,7 @@
     .card {
       background-color: transparent;
       text-align: center;
+      border: transparent;
 
       .img-formation {
         img.formation-img {
