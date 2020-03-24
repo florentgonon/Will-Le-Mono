@@ -12,31 +12,66 @@
     .trapezoids-title {
       display: inline;
 
-      .trapezoid-blue {
-        margin: 0 auto;
-        width: 0;
-        height: 70px;
-        border-top: 18px solid transparent;
-        border-right: 238px solid #54BCB6;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+      @media (max-width: 321px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 59px;
+          border-top: 18px solid transparent;
+          border-right: 202px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
 
-        h1 {
-          position: relative;
-          left: 27px;
-          white-space: nowrap;
-          font-size: 40px;
-          font-weight: bold;
+          h1 {
+            position: relative;
+            left: 22px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
         }
       }
 
-      img.arrow {
-        width: 60px;
-        opacity: 1;
-        transform: rotate(-120deg);
-        position: relative;
-        left: 240px;
-        top: -51px;
+      @media (min-width: 322px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 238px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            left: 27px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (max-width: 321px) {
+        img.arrow {
+          width: 60px;
+          opacity: 1;
+          transform: rotate(-120deg);
+          position: relative;
+          left: 192px;
+          top: -51px;
+        }
+      }
+
+      @media (min-width: 322px) {
+        img.arrow {
+          width: 60px;
+          opacity: 1;
+          transform: rotate(-120deg);
+          position: relative;
+          left: 240px;
+          top: -51px;
+        }
       }
     }
 
@@ -80,6 +115,7 @@
       button {
         background: transparent;
         border: transparent;
+        padding-bottom: 100px;
 
         .trapezoid-orange {
           width: 0;
