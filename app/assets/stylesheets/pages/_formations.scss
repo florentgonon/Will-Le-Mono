@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  padding-top: 210px;
+  padding-top: 245px;
 
   .container-formations {
     max-width: 85vw;
@@ -105,20 +105,18 @@
       background-color: transparent;
       text-align: center;
       padding-bottom: 40px;
+      border: transparent;
 
       .img-formation {
         img.formation-img {
           width: 70%;
         }
 
-        .play-img {
-          // height: 0px;
-
-          img.formation-play {
-            width: 25%;
-            position: relative;
-            top: -20vh;
-          }
+        img.formation-play {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 25%;
         }
       }
 
