@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  padding-top: 210px;
+  padding-top: 245px;
 
   .container-formations {
     max-width: 85vw;
@@ -104,28 +104,27 @@
     .card {
       background-color: transparent;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: 100px;
+      border: transparent;
+      // height: 600px;
 
       .img-formation {
         img.formation-img {
-          width: 70%;
+          width: 80%;
         }
 
-        .play-img {
-          // height: 0px;
-
-          img.formation-play {
-            width: 25%;
-            position: relative;
-            top: -20vh;
-          }
+        img.formation-play {
+          position: absolute;
+          top: 0;
+          left: 46px;
+          width: 76%;
         }
       }
 
       .description-formation {
         margin: 0 auto;
         padding-top: 15px;
-        width: 60%;
+        width: 70%;
 
         h2 {
           color: white;
@@ -139,25 +138,27 @@
           color: white;
           text-align: left;
         }
-
-        .trapezoid-btn-coaching {
+      }
+      .trapezoid-btn-coaching {
           margin: 0 auto;
-          height: 34px;
+          width: 0;
+          height: 40px;
           border-top: 8px solid transparent;
-          border-right: 272px solid #EC6B1B;
+          border-right: 234px solid #EC6B1B;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
           a.url_learnybox {
             position: relative;
-            left: 1.6vw;
+            top: 4px;
+            left: 27px;
             color: white;
             text-decoration: none;
             font-weight: bold;
             white-space: nowrap;
+            font-size: 16px;
           }
         }
-      }
     }
   }
 }
