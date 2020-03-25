@@ -12,24 +12,6 @@
     .trapezoids-title {
       display: inline;
 
-      // .trapezoid-blue {
-      //   margin: 0 auto;
-      //   width: 0;
-      //   height: 70px;
-      //   border-top: 18px solid transparent;
-      //   border-right: 304px solid #54BCB6;
-      //   border-left: 0px solid transparent;
-      //   border-bottom: 0px solid transparent;
-
-      //   h1 {
-      //     position: relative;
-      //     left: 27px;
-      //     white-space: nowrap;
-      //     font-size: 40px;
-      //     font-weight: bold;
-      //   }
-      // }
-
       @media (max-width: 321px) {
         .trapezoid-blue {
           margin: 0 auto;
@@ -113,11 +95,21 @@
           width: 80%;
         }
 
-        img.formation-play {
-          position: absolute;
-          top: 0;
-          left: 46px;
-          width: 76%;
+        a.yt-link-button {
+          img.formation-play {
+            position: absolute;
+            top: 0;
+            left: 46px;
+            width: 76%;
+          }
+        }
+
+        iframe {
+          display: none;
+
+          &.play-video-iframe {
+            display: block;
+          }
         }
       }
 

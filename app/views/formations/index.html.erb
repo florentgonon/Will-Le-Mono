@@ -14,7 +14,10 @@
           <div class="card">
             <div class="img-formation">
               <%= image_tag(formation.image, class: "formation-img") %>
-              <%= image_tag 'play.png', class: "formation-play"%>
+              <%= link_to "#", class: "yt-link-button" do %>
+                <%= image_tag 'play.png', class: "formation-play"%>
+              <% end %>
+              <iframe id="video" src="<%= formation.url_yt %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="description-formation">
               <h2><%= formation.title %></h2>
@@ -23,13 +26,6 @@
             <div class="trapezoid-btn-coaching">
               <%= link_to "JE VEUX ÊTRE COACHE", formation.url_learnybox, target: "_blank", class: "url_learnybox" %>
             </div>
-
-
-<%#= link_to "#", class: "yt-link-button" do %>
-  <%#= image_tag 'play.png', class: "formation-play"%>
-<%# end %>
-
-
           </div>
         </div>
       <% end %>
