@@ -9,11 +9,27 @@
     max-width: 85vw;
     margin: 0 auto;
 
-    .frame-yt {
-      position: absolute;
+    #my-modal-frame-yt {
+      display: none;
+      width: 50%;
+      position: fixed;
+      top: 20vh;
       z-index: 999;
-      top: 27vh;
+      text-align: center;
+      width: 100%;
+      height: 42%;
+
+      .my-modal-content {
+        width: 100%;
+        height: 100%;
+
+        iframe {
+          width: 66%;
+          height: 100%;
+        }
+      }
     }
+
 
     .trapezoids-title {
       display: inline;
@@ -108,10 +124,6 @@
             left: 46px;
             width: 76%;
           }
-        }
-
-        iframe.hide {
-          display: none;
         }
       }
 
