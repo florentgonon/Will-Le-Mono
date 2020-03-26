@@ -9,6 +9,12 @@
     max-width: 85vw;
     margin: 0 auto;
 
+    .frame-yt {
+      position: absolute;
+      z-index: 999;
+      top: 27vh;
+    }
+
     .trapezoids-title {
       display: inline;
 
@@ -104,12 +110,8 @@
           }
         }
 
-        iframe {
+        iframe.hide {
           display: none;
-
-          &.play-video-iframe {
-            display: block;
-          }
         }
       }
 
@@ -131,26 +133,27 @@
           text-align: left;
         }
       }
-      .trapezoid-btn-coaching {
-          margin: 0 auto;
-          width: 0;
-          height: 40px;
-          border-top: 8px solid transparent;
-          border-right: 234px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
 
-          a.url_learnybox {
-            position: relative;
-            top: 4px;
-            left: 27px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            white-space: nowrap;
-            font-size: 16px;
-          }
+      .trapezoid-btn-coaching {
+        margin: 0 auto;
+        width: 0;
+        height: 40px;
+        border-top: 8px solid transparent;
+        border-right: 234px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        a.url_learnybox {
+          position: relative;
+          top: 4px;
+          left: 27px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          white-space: nowrap;
+          font-size: 16px;
         }
+      }
     }
   }
 }

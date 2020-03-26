@@ -1,14 +1,12 @@
-$(document).ready(function() {
-  $('.yt-link-button').on('click', function(event) {
+function playyt() {
+  const frames = document.getElementById("frame");
+  const btnnns = document.querySelectorAll('.yt-link-button');
 
-    if($(window).click()) {
-          $('#video').addClass("play-video-iframe");
-    } else {
-          $('#video').removeClass("play-video-iframe");
-    }
-
-    // $("#video").addClass("play-video-iframe");
-    // event.preventDefault();
-
+  btnnns.forEach((btn)=>{
+    btn.addEventListener("click",(event) => {
+      frame.src = event.target.dataset.src;
+    });
   });
-});
+}
+
+export { playyt };
