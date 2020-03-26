@@ -13,18 +13,46 @@
       display: none;
       width: 50%;
       position: fixed;
-      top: 20vh;
+      top: 0;
+      left: 0;
       z-index: 999;
       text-align: center;
       width: 100%;
-      height: 42%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+
+      &.show {
+        display: block;
+      }
+
+      .modal-close {
+        width: 45%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 237px;
+        z-index: 999;
+
+        .close-yt {
+          width: 5%;
+          position: relative;
+          top: 35px;
+        }
+      }
 
       .my-modal-content {
+        position: fixed;
+        top: 35vh;
         width: 100%;
-        height: 100%;
+        height: 37%;
+
+        .modal-close {
+          color: black;
+        }
 
         iframe {
-          width: 66%;
+          width: 45%;
           height: 100%;
         }
       }
