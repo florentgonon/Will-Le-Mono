@@ -1,6 +1,18 @@
 <%= render 'shared/navbar' %>
 <section id="formations">
   <div class="container-formations">
+
+
+
+    <div id="my-modal-frame-yt" class="modal">
+      <div class="modal-close"><%= image_tag("close.png", class: "close-yt") %></div>
+      <div class="my-modal-content">
+        <iframe id="frame" src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+
     <div class="trapezoids-title">
       <div class="trapezoid-blue">
         <h1>FORMATIONS</h1>
@@ -9,27 +21,24 @@
     </div>
     <h2 class="title-question">Je souhaites me faire coacher sur...</h2>
     <div class="row">
-      <% @formations.each do |formation| %>
+      <% @formations.each_with_index do |formation, index| %>
         <div class="col-lg-4 col-md-6">
           <div class="card">
             <div class="img-formation">
               <%= image_tag(formation.image, class: "formation-img") %>
-              <%= image_tag 'play.png', class: "formation-play"%>
+              <%= link_to "#", id: index, :data => { :src => formation.url_yt }, class: "yt-link-button" do %>
+                <%= image_tag 'play.png', :data => { :src => formation.url_yt }, id: index, class: "formation-play"%>
+              <% end %>
             </div>
+
             <div class="description-formation">
               <h2><%= formation.title %></h2>
               <p><%= simple_format(formation.description) %></p>
             </div>
+
             <div class="trapezoid-btn-coaching">
               <%= link_to "JE VEUX ÊTRE COACHE", formation.url_learnybox, target: "_blank", class: "url_learnybox" %>
             </div>
-
-
-<%#= link_to "#", class: "yt-link-button" do %>
-  <%#= image_tag 'play.png', class: "formation-play"%>
-<%# end %>
-
-
           </div>
         </div>
       <% end %>
