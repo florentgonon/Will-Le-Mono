@@ -6,11 +6,12 @@ function playyt() {
   // const close = document.querySelector('.modal-close');
   // const top = window.screen.height - 300;
 
-  console.log(top);
+  console.log(frames.dataset);
 
   btns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       frames.src = event.target.dataset.src;
+      frames.dataset = event.target.dataset.src;
       // modals.classList.add('show')
       // modals.moveTo(top);
     });
