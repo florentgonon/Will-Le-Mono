@@ -4,10 +4,19 @@
 
 
 
-    <div id="my-modal-frame-yt" class="modal">
-      <div class="modal-close"><%= image_tag("close.png", class: "close-yt") %></div>
+    <!-- <div id="my-modal-frame-yt" class="modal">
+      <div class="modal-close"><%#= image_tag("close.png", class: "close-yt") %></div>
       <div class="my-modal-content">
         <iframe id="frame" src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="my-modal-content">
+          <iframe id="frame" src="" data-src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
@@ -26,7 +35,7 @@
           <div class="card">
             <div class="img-formation">
               <%= image_tag(formation.image, class: "formation-img") %>
-              <%= link_to "#", id: index, :data => { :src => formation.url_yt }, class: "yt-link-button" do %>
+              <%= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#exampleModalCenter" }, class: "yt-link-button" do %>
                 <%= image_tag 'play.png', :data => { :src => formation.url_yt }, id: index, class: "formation-play"%>
               <% end %>
             </div>

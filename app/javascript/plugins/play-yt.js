@@ -1,18 +1,25 @@
 function playyt() {
-  const frames = document.getElementById("frame");
+  const frames = document.getElementById('frame');
   const btns = document.querySelectorAll('.yt-link-button');
-  const modals = document.getElementById("my-modal-frame-yt");
-  const close = document.querySelector('.modal-close');
+  // const modalContent = document.querySelector('.my-modal-content')
+  // const modals = document.getElementById('my-modal-frame-yt');
+  // const close = document.querySelector('.modal-close');
+  // const top = window.screen.height - 300;
+
+  console.log(frames.dataset);
 
   btns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
-      modals.classList.add('show')
       frames.src = event.target.dataset.src;
+      frames.dataset = event.target.dataset.src;
+      // modals.classList.add('show')
+      // modals.moveTo(top);
     });
-    close.addEventListener('click', () => {
-      modals.classList.remove('show');
-    })
-    // modals.onclick(function (event))
+
+    // close.addEventListener('click', () => {
+    //   modals.classList.remove('show');
+    // })
+
   });
 }
 
