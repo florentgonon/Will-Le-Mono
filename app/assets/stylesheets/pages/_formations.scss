@@ -169,6 +169,8 @@
         }
 
         a.yt-link-button {
+          outline: none;
+
           img.formation-play {
             position: absolute;
             top: 0;
@@ -215,6 +217,7 @@
           font-weight: bold;
           white-space: nowrap;
           font-size: 16px;
+          outline: none;
         }
       }
     }

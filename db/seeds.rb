@@ -34,7 +34,7 @@ puts "Creating formations..."
                       # Coaching motivation
                       # Les erreurs à éviter
                       # Démonstrations",
-    url_yt:           'https://www.youtube.com/embed/RKOLG3llePo',
+    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-1.png')
  b = Formation.create!(
@@ -43,13 +43,13 @@ puts "Creating formations..."
                       # Démonstrations
                       # Les situations exceptionnelles
                       # Des techniques, des clés, des pépites inédites qui te feront passer à un niveau supérieur !",
-    url_yt:           'https://www.youtube.com/embed/7BmdYC4muY4',
+    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-4.png')
  c = Formation.create!(
     title:            'APPRENDRE A CONDUIRE DE A à Z ET OBTENIR SON PERMIS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
-    url_yt:           'https://www.youtube.com/embed/RKOLG3llePo',
+    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-2.png')
  d = Formation.create!(
@@ -59,7 +59,7 @@ puts "Creating formations..."
                       # Éliminer les croyances limitantes et trouver ses croyances ressources
                       # Exercises personnalisés
                       # Des clés pour éliminer ses peurs paralisantes",
-    url_yt:           'https://www.youtube.com/embed/7BmdYC4muY4',
+    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-3.png')
  e = Formation.create!(
@@ -68,7 +68,7 @@ puts "Creating formations..."
                       # Démonstrations avec analyses
                       # LES MEILLEURES techniques pour exploser dans ton apprentissage !
                       # La route n'aura plus de secret pour toi 💪",
-    url_yt:           'https://www.youtube.com/embed/RKOLG3llePo',
+    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
  f = Formation.create!(
@@ -76,7 +76,7 @@ puts "Creating formations..."
     description:      "# Toutes les manœuvres en détail
                       # Des techniques et surtout tes repères pour réussir ses rangements
                       # Les erreurs éliminatoires",
-    url_yt:           'https://www.youtube.com/embed/7BmdYC4muY4',
+    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
   g = Formation.create!(
@@ -84,7 +84,7 @@ puts "Creating formations..."
     description:      "# Tous les thèmes du Code de la route expliqués en détails
                       # Un gros paquet d'exemples simples
                       # Des trucs et astuces pour gagner du temps en conduite",
-    url_yt:           'https://www.youtube.com/embed/RKOLG3llePo',
+    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
 
