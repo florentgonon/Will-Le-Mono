@@ -13,9 +13,11 @@
       </ul>
     </div>
 
-    <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
-      <%= image_tag 'menu 2.png', class: "open-menu"%>
-    </a>
+    <div class="menu-burger">
+      <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+        <%= image_tag 'menu 2.png', class: "open-menu"%>
+      </a>
+    </div>
 
   </nav>
 <!--   <div class="img-will">
@@ -32,6 +34,8 @@
       <ul id="menuModal" class="list-group text-center">
         <%# LIST %>
 
+        <hr class="top">
+
             <%= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item"%>
             <%= link_to "Blog", articles_path, class: "nav-link list-group-item menu-item"%>
             <%= link_to "Formations", formations_path, class: "nav-link list-group-item menu-item"%>
@@ -40,7 +44,8 @@
 
 
         <%# MENU PROFIL / LOG OUT START %>
-        <hr>
+        <hr class="bottom">
+
         <li class="footer-menu list-inline ">
           <div class="d-flex justify-content-center">
               <a href="https://www.facebook.com/Wkerautret/" target="_blank"><%= image_tag 'icone-facebook.png', class: "social-icon"%></a>
