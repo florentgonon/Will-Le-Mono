@@ -12,8 +12,45 @@
         <li><%= link_to "Contact", pages_contact_path, class: "navbar-brand"%></li>
       </ul>
     </div>
+
+    <a id="dotsMenu" class="btn menu" data-target="#modalNavigation" data-toggle="modal">
+      <%= image_tag 'menu 2.png', class: "open-menu"%>
+    </a>
+
   </nav>
 <!--   <div class="img-will">
     <%#= image_tag 'will-header.png', class: "img-will-header"%>
   </div> -->
+  <div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
+  <%# BUTTON CLOSE %>
+  <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
+    <%= image_tag 'close-menu.png', class: "close-menu"%>
+  </a>
+  <%# MODAL %>
+  <div class="modal-dialog">
+    <div class="modal-content" role="document">
+      <ul id="menuModal" class="list-group text-center">
+        <%# LIST %>
+
+            <%= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item"%>
+            <%= link_to "Blog", articles_path, class: "nav-link list-group-item menu-item"%>
+            <%= link_to "Formations", formations_path, class: "nav-link list-group-item menu-item"%>
+            <%= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item"%>
+            <%= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item"%>
+
+
+        <%# MENU PROFIL / LOG OUT START %>
+        <hr>
+        <li class="footer-menu list-inline ">
+          <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/Wkerautret/" target="_blank"><%= image_tag 'icone-facebook.png', class: "social-icon"%></a>
+              <a href="https://www.youtube.com/channel/UC2c_l9vLefW82NbaUeqy6dA/featured" target="_blank"><%= image_tag 'icone-youtube.png', class: "social-icon"%></a>
+              <a href="https://www.instagram.com/will_le_mono/" target="_blank"><%= image_tag 'icone-instagram.png', class: "social-icon"%></a>
+          </div>
+        </li>
+        <%# MENU PROFIL / LOG OUT END %>
+      </ul>
+    </div>
+  </div>
+</div>
 </header>
