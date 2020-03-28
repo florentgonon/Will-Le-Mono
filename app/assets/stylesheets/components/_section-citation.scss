@@ -1,29 +1,5 @@
 #section-citation {
 
-  @media (min-width: 960px) {
-    img.guillemets {
-      width: 120px;
-    }
-  }
-
-  @media (min-width: 740px) {
-    img.guillemets {
-      width: 70px;
-    }
-  }
-
-  @media (min-width: 540px) {
-    img.guillemets {
-      width: 45px;
-    }
-  }
-
-  @media (min-width: 320px) {
-    img.guillemets {
-      width: 80px;
-    }
-  }
-
   padding: 100px 0;
   background-image: linear-gradient(rgba(0,0,0,0.2)), image_url('citation.png');
   background-position: center;
@@ -35,19 +11,69 @@
     max-width: 85vw;
     margin: 0 auto;
 
-    .citation {
-      text-align: center;
+    @media (min-width: 768px) {
+      .citation {
+        text-align: center;
 
-      p {
-        font-size: 40px;
-        font-weight: 300;
-        // line-height: 0;
+        img.guillemets {
+          width: 77px;
+        }
+
+        p {
+          font-size: 31px;
+          font-weight: 300;
+          // line-height: 0;
+        }
+
+        h2 {
+          font-size: 35px;
+          font-weight: bold;
+          margin-top: 60px;
+        }
       }
+    }
 
-      h2 {
-        font-size: 30px;
-        font-weight: bold;
-        margin-top: 60px;
+    @media (max-width: 540px) {
+      .citation {
+        text-align: center;
+
+        img.guillemets {
+          width: 59px;
+        }
+
+        p {
+          font-size: 28px;
+          font-weight: 300;
+          // line-height: 0;
+        }
+
+        h2 {
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 60px;
+        }
+      }
+    }
+
+    @media (max-width: 320px) {
+      .citation {
+        text-align: center;
+
+        img.guillemets {
+          width: 50px;
+        }
+
+        p {
+          font-size: 24px;
+          font-weight: 300;
+          // line-height: 0;
+        }
+
+        h2 {
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 60px;
+        }
       }
     }
   }
