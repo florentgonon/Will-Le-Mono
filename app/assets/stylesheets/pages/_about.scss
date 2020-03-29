@@ -1,5 +1,5 @@
 #about {
-    background-image: image_url('image-fond.jpg');
+  background-image: image_url('image-fond.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -11,13 +11,15 @@
       background-size: cover;
       background-position: center;
       background-repeat: none;
+
       #section-1 {
-        padding: 0 0 100px 0;
+        padding: 0 0 60px 0;
         max-width: 85vw;
         margin: 0 auto;
 
         .left-side1 {
           .trapezoids {
+            padding-bottom: 30px;
 
             @media (max-width: 321px) {
               .trapezoid-blue {
@@ -110,7 +112,7 @@
             text-align: center;
 
             img.tele-img {
-              width: 85%;
+              width: 77%;
             }
           }
         }
@@ -137,8 +139,11 @@
       #section-2 {
         max-width: 85vw;
         margin: 0 auto;
+        // padding : 100px 0;
 
         .left-side2 {
+          padding : 0 15px 60px 15px;
+
           h2 {
             font-size: 30px;
             font-weight: bold;
@@ -177,12 +182,48 @@
           }
         }
 
-        .right-side2 {
-          .image-will {
-            text-align: center;
 
-            img.will-about {
-              width: 118%;
+        @media (min-width: 1025px) {
+          .right-side2 {
+            .image-will {
+              height: 100%;
+              display: flex;
+              align-items: flex-end;
+
+              img.will-about {
+                margin-top: 83px;
+                width: 118%;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .right-side2 {
+            .image-will {
+              height: 100%;
+              display: flex;
+              align-items: flex-end;
+
+              img.will-about {
+                // margin-top: 83px;
+                width: 118%;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 768px) {
+          .right-side2 {
+            .image-will {
+              height: 100%;
+              display: flex;
+              align-items: flex-end;
+
+              img.will-about {
+                // padding-top: 55px;
+                width: 108%;
+              }
             }
           }
         }
@@ -201,6 +242,8 @@
 
       .container-citation {
         padding: 100px 0;
+        max-width: 85vw;
+        margin: 0 auto;
 
         @media (min-width: 768px) {
           .citation {
@@ -303,13 +346,56 @@
               }
             }
 
-            img.arrow {
-              width: 60px;
-              opacity: 1;
-              transform: rotate(-180deg);
-              position: relative;
-              left: -38px;
-              // top: -23px;
+            // img.arrow {
+            //   width: 60px;
+            //   opacity: 1;
+            //   transform: rotate(-180deg);
+            //   position: relative;
+            //   left: -38px;
+            //   // top: -23px;
+            // }
+            @media (min-width: 769px) {
+              img.arrow {
+                width: 60px;
+                opacity: 1;
+                transform: rotate(-180deg);
+                position: relative;
+                left: -38px;
+                // top: -23px;
+              }
+            }
+
+            @media (max-width: 768px) {
+              img.arrow {
+                width: 60px;
+                opacity: 1;
+                transform: rotate(-40deg);
+                position: relative;
+                left: 220px;
+                top: 12px;
+              }
+            }
+
+            @media (max-width: 540px) {
+              img.arrow {
+                width: 60px;
+                opacity: 1;
+                transform: rotate(-113deg);
+                position: relative;
+                left: 214px;
+                top: 10px;
+              }
+            }
+
+            @media (max-width: 320px) {
+              img.arrow {
+                width: 60px;
+                opacity: 1;
+                transform: rotate(-113deg);
+                position: relative;
+                left: 200px;
+                // top: -23px;
+              }
             }
 
             p {
@@ -325,7 +411,7 @@
 }
 
 @media (max-width: 960px) {
-  .left-side {
+  .left-side1 {
     .trapezoids {
     padding-bottom: 30px;
 
