@@ -1,6 +1,100 @@
 <section id="about">
   <div class="container-about">
-    <h1>A PROPOS</h1>
+
+    <div class="container-section1-2">
+      <div id="section-1">
+        <div class="row">
+          <div class="left-side1 col-lg-8">
+            <div class="trapezoids">
+              <div class="trapezoid-blue">
+                <h1>À PROPOS</h1>
+              </div>
+              <div class="trapezoid-orange">
+                <h1>DE MOI</h1>
+              </div>
+            </div>
+            <div class="image-tele">
+              <%= image_tag 'montage-tele.png', class: "tele-img"%>
+            </div>
+          </div>
+          <div class="right-side1 col-lg-4">
+            <h2><span class="blue">UNE HISTOIRE</span><br>QUI COMMENCE<br>EN 2014...</h2><br><br>
+            <p>Formateur, coach, enseignant, animateur, expert et tout cela dans le domaine de la sécurité routière spécifiquement en Auto / Moto.</p>
+            <p>En effet depuis 2014 je n'ai pas arrêté de me former à la psycho-pédagogie, par passion pour les relations intrapersonnelles et interpersonnelles.</p>
+            <p>Aujourd'hui je suis prêt à partager l'intégralité de mes expériences / connaissances / techniques dans le but de te permettre d'atteindre ton objectif PERMIS et pas que...</p>
+            <p>On ne peut rien enseigner à autrui. On ne peut que l'aider à le découvrir lui-même !</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="section-2">
+        <div class="row">
+          <div class="left-side2 col-lg-6">
+            <h2><span class="blue">POURQUOI</span><br>J'AI CHOISIS<br>D'ÊTRE COACH</h2><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enicommodo consequat.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis amolestie consequat, velaliquam erat volut- pat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit .</p>
+            <!-- <p>Aujourd'hui je suis prêt à partager l'intégralité de mes expériences / connaissances / techniques dans le but de te permettre d'atteindre ton objectif PERMIS et pas que...</p> -->
+            <!-- <p>On ne peut rien enseigner à autrui. On ne peut que l'aider à le découvrir lui-même !</p> -->
+            <div class="trapezoid-orange">
+              <%= link_to "JE VEUX ÊTRE COACHÉ", formations_path, class: "more-about" %>
+            </div>
+          </div>
+          <div class="right-side2 col-lg-6">
+            <div class="image-will">
+              <%= image_tag 'will-about.png', class: "will-about"%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section-3">
+      <div class="container-citation">
+        <div class="citation">
+          <p><%= image_tag 'guillemets-ouverts.png', class: "guillemets"%> Nous devons incarner le changement que nous espérons voir dans le monde. <%= image_tag 'guillemets-fermes.png', class: "guillemets"%></p>
+          <h2>GANDHI</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="my-modal-content">
+          <iframe id="frame" src="http://www.youtube.com/embed/RKOLG3llePo" data-src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="section-4">
+      <div class="container-formation">
+        <div class="row">
+          <div class="left-side3 col-lg-8">
+            <div class="image-formation">
+              <%= image_tag 'formation-about-play.png', :data => { :toggle => "modal", :target => "#exampleModalCenter" }, class: "formation-img"%>
+              <%#= link_to "#", :data => { :src => "http://www.youtube.com/embed/RKOLG3llePo", :toggle => "modal", :target => "#exampleModalCenter" }, class: "yt-link-button" do %>
+                <%#= image_tag 'play.png', :data => { :src => formation.url_yt }, id: index, class: "formation-play"%>
+              <%# end %>
+            </div>
+          </div>
+          <div class="right-side3 col-lg-4">
+            <div class="container-explication">
+              <%= image_tag 'fleche_droite.png', class: "arrow"%>
+              <h2><span class="blue">JE T'EXPLIQUE</span><br>TOUT EN VIDEO</h2><br><br>
+              <p>Comme la vidéo c’est mon DADA et qu’il est parfois plus compréhensible de s’expliquer à l’oral voici une bref vidéo de moi pour te donner l’envie d’être coacher ou de devenir partenaire Will Le Mono.</p>
+    <!--           <p>En effet depuis 2014 je n'ai pas arrêté de me former à la psycho-pédagogie, par passion pour les relations intrapersonnelles et interpersonnelles.</p>
+              <p>Aujourd'hui je suis prêt à partager l'intégralité de mes expériences / connaissances / techniques dans le but de te permettre d'atteindre ton objectif PERMIS et pas que...</p>
+              <p>On ne peut rien enseigner à autrui. On ne peut que l'aider à le découvrir lui-même !</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
   <%= render 'shared/footer' %>
 </section>
