@@ -64,6 +64,15 @@ footer.home {
           font-size: 34px;
           font-weight: bold;
         }
+
+        img.arrow {
+          width: 50px;
+          opacity: 1;
+          transform: rotate(-101deg);
+          position: relative;
+          left: 70px;
+          top: -5px;
+        }
       }
     }
 
@@ -86,6 +95,15 @@ footer.home {
           white-space: nowrap;
           font-size: 40px;
           font-weight: bold;
+        }
+
+        img.arrow {
+          width: 60px;
+          opacity: 1;
+          transform: rotate(-115deg);
+          position: relative;
+          left: 81px;
+          top: -27px;
         }
       }
     }
@@ -222,6 +240,7 @@ footer.home {
             position: relative;
             font-size: 18px;
             font-weight: 400;
+            font-family: 'Roboto Condensed';
             transition: font-weight 0.4s ease 0s;
 
             &:hover {
@@ -241,7 +260,13 @@ footer.home {
   }
 }
 
+
+
+
 // ###########################################   FOOTER  OTHERS  PAGES   ##################################################
+
+
+
 
 footer {
   padding: 50px 0;
@@ -309,6 +334,15 @@ footer {
           font-size: 34px;
           font-weight: bold;
         }
+
+        img.arrow {
+          width: 50px;
+          opacity: 1;
+          transform: rotate(-101deg);
+          position: relative;
+          left: 70px;
+          top: -5px;
+        }
       }
     }
 
@@ -331,6 +365,15 @@ footer {
           white-space: nowrap;
           font-size: 40px;
           font-weight: bold;
+        }
+
+        img.arrow {
+          width: 60px;
+          opacity: 1;
+          transform: rotate(-115deg);
+          position: relative;
+          left: 81px;
+          top: -27px;
         }
       }
     }
@@ -464,8 +507,9 @@ footer {
             text-decoration: none;
             color: white;
             position: relative;
-            font-size: 18px;
             font-weight: 400;
+            font-size: 18px;
+            font-family: 'Roboto Condensed';
             transition: font-weight 0.4s ease 0s;
 
             &:hover {
@@ -481,6 +525,8 @@ footer {
       text-align: center;
       padding-top: 30px;
       font-size: 12px;
+      font-weight: 400;
+      font-family: 'Roboto Condensed';
     }
   }
 }
