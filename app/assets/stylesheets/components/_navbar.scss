@@ -129,11 +129,12 @@
         position: relative;
         font-size: 20px;
         font-weight: 400;
+        font-family: 'Roboto Condensed';
         transition: font-weight 0.4s ease 0s;
         transition: font-size 0.5s ease;
 
         &:hover {
-          font-weight: 900;
+          font-weight: bold;
           transition: font-weight 0.4s ease 0s;
         }
 
