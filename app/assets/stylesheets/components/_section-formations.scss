@@ -9,41 +9,41 @@
     .trapezoids-title {
       padding-bottom: 50px;
 
-      @media (max-width: 321px) {
+      @media (min-width: 769px) {
         .trapezoid-blue {
           margin: 0 auto;
           width: 0;
           height: 70px;
           border-top: 18px solid transparent;
-          border-right: 271px solid #54BCB6;
+          border-right: 295px solid #54BCB6;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
           h1 {
             position: relative;
-            left: 27px;
+            left: 21px;
             white-space: nowrap;
-            font-size: 34px;
+            font-size: 40px;
             font-weight: bold;
           }
         }
       }
 
-      @media (min-width: 322px) {
+      @media (max-width: 768px) {
         .trapezoid-blue {
           margin: 0 auto;
           width: 0;
-          height: 70px;
+          height: 61px;
           border-top: 18px solid transparent;
-          border-right: 304px solid #54BCB6;
+          border-right: 235px solid #54BCB6;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
           h1 {
             position: relative;
-            left: 27px;
+            left: 12px;
             white-space: nowrap;
-            font-size: 40px;
+            font-size: 34px;
             font-weight: bold;
           }
         }

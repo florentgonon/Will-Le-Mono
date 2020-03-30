@@ -6,26 +6,7 @@ footer.home {
     max-width: 85vw;
     margin: 0 auto;
 
-    @media (max-width: 321px) {
-      .trapezoid-blue-title {
-        width: 0;
-        height: 63px;
-        border-top: 18px solid transparent;
-        border-right: 274px solid #54BCB6;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
-
-        h1 {
-          position: relative;
-          left: 5px;
-          white-space: nowrap;
-          font-size: 34px;
-          font-weight: bold;
-        }
-      }
-    }
-
-    @media (min-width: 322px) {
+    @media (min-width: 769px) {
       .trapezoid-blue-title {
         width: 0;
         height: 70px;
@@ -44,39 +25,26 @@ footer.home {
       }
     }
 
-    @media (max-width: 321px) {
-      .trapezoid-orange-title {
-        position: relative;
-        top: -10px;
-        left: 173px;
+    @media (max-width: 768px) {
+      .trapezoid-blue-title {
         width: 0;
-        height: 49px;
-        border-top: 14px solid transparent;
-        border-right: 82px solid #EC6B1B;
+        height: 63px;
+        border-top: 18px solid transparent;
+        border-right: 274px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
         h1 {
           position: relative;
-          top: -7px;
-          left: 8px;
+          left: 5px;
           white-space: nowrap;
           font-size: 34px;
           font-weight: bold;
         }
-
-        img.arrow {
-          width: 50px;
-          opacity: 1;
-          transform: rotate(-101deg);
-          position: relative;
-          left: 70px;
-          top: -5px;
-        }
       }
     }
 
-    @media (min-width: 322px) {
+    @media (min-width: 769px) {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
@@ -104,6 +72,38 @@ footer.home {
           position: relative;
           left: 81px;
           top: -27px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .trapezoid-orange-title {
+        position: relative;
+        top: -10px;
+        left: 173px;
+        width: 0;
+        height: 49px;
+        border-top: 14px solid transparent;
+        border-right: 82px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        h1 {
+          position: relative;
+          top: -7px;
+          left: 8px;
+          white-space: nowrap;
+          font-size: 34px;
+          font-weight: bold;
+        }
+
+        img.arrow {
+          width: 50px;
+          opacity: 1;
+          transform: rotate(-101deg);
+          position: relative;
+          left: 70px;
+          top: -12px;
         }
       }
     }
@@ -380,26 +380,7 @@ footer {
     max-width: 85vw;
     margin: 0 auto;
 
-    @media (max-width: 321px) {
-      .trapezoid-blue-title {
-        width: 0;
-        height: 63px;
-        border-top: 18px solid transparent;
-        border-right: 274px solid #54BCB6;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
-
-        h1 {
-          position: relative;
-          left: 5px;
-          white-space: nowrap;
-          font-size: 34px;
-          font-weight: bold;
-        }
-      }
-    }
-
-    @media (min-width: 322px) {
+    @media (min-width: 769px) {
       .trapezoid-blue-title {
         width: 0;
         height: 70px;
@@ -418,39 +399,26 @@ footer {
       }
     }
 
-    @media (max-width: 321px) {
-      .trapezoid-orange-title {
-        position: relative;
-        top: -10px;
-        left: 173px;
+    @media (max-width: 768px) {
+      .trapezoid-blue-title {
         width: 0;
-        height: 49px;
-        border-top: 14px solid transparent;
-        border-right: 82px solid #EC6B1B;
+        height: 63px;
+        border-top: 18px solid transparent;
+        border-right: 274px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
         h1 {
           position: relative;
-          top: -7px;
-          left: 8px;
+          left: 5px;
           white-space: nowrap;
           font-size: 34px;
           font-weight: bold;
         }
-
-        img.arrow {
-          width: 50px;
-          opacity: 1;
-          transform: rotate(-101deg);
-          position: relative;
-          left: 70px;
-          top: -5px;
-        }
       }
     }
 
-    @media (min-width: 322px) {
+    @media (min-width: 769px) {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
@@ -478,6 +446,38 @@ footer {
           position: relative;
           left: 81px;
           top: -27px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .trapezoid-orange-title {
+        position: relative;
+        top: -10px;
+        left: 173px;
+        width: 0;
+        height: 49px;
+        border-top: 14px solid transparent;
+        border-right: 82px solid #EC6B1B;
+        border-left: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+
+        h1 {
+          position: relative;
+          top: -7px;
+          left: 8px;
+          white-space: nowrap;
+          font-size: 34px;
+          font-weight: bold;
+        }
+
+        img.arrow {
+          width: 50px;
+          opacity: 1;
+          transform: rotate(-101deg);
+          position: relative;
+          left: 70px;
+          top: -12px;
         }
       }
     }
