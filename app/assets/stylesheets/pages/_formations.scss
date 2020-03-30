@@ -85,39 +85,19 @@
     .trapezoids-title {
       display: inline;
 
-      @media (max-width: 321px) {
-        .trapezoid-blue {
-          margin: 0 auto;
-          width: 0;
-          height: 59px;
-          border-top: 18px solid transparent;
-          border-right: 230px solid #54BCB6;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
-
-          h1 {
-            position: relative;
-            left: 7px;
-            white-space: nowrap;
-            font-size: 34px;
-            font-weight: bold;
-          }
-        }
-      }
-
-      @media (min-width: 322px) {
+      @media (min-width: 769px) {
         .trapezoid-blue {
           margin: 0 auto;
           width: 0;
           height: 70px;
           border-top: 18px solid transparent;
-          border-right: 274px solid #54BCB6;
+          border-right: 295px solid #54BCB6;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
           h1 {
             position: relative;
-            left: 10px;
+            left: 21px;
             white-space: nowrap;
             font-size: 40px;
             font-weight: bold;
@@ -125,24 +105,44 @@
         }
       }
 
-      @media (max-width: 321px) {
+      @media (max-width: 768px) {
+        .trapezoid-blue {
+          margin: 0 auto;
+          width: 0;
+          height: 61px;
+          border-top: 18px solid transparent;
+          border-right: 235px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            left: 12px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (min-width: 769px) {
         img.arrow {
           width: 60px;
           opacity: 1;
           transform: rotate(-120deg);
           position: relative;
-          left: 219px;
+          left: 293px;
           top: -51px;
         }
       }
 
-      @media (min-width: 322px) {
+      @media (max-width: 768px) {
         img.arrow {
           width: 60px;
           opacity: 1;
           transform: rotate(-120deg);
           position: relative;
-          left: 264px;
+          left: 230px;
           top: -51px;
         }
       }
