@@ -29,7 +29,7 @@ puts "Finished"
 
 puts "Creating formations..."
  a = Formation.create!(
-    title:            'PREPARATION AU PERMIS POUR ETRE AU TOP LE GRAND JOUR',
+    title:            'PRÉPARATION AU PERMIS POUR ÊTRE AU TOP LE GRAND JOUR',
     description:      "# Organisation de l'examen en détail
                       # Coaching motivation
                       # Les erreurs à éviter
@@ -47,7 +47,7 @@ puts "Creating formations..."
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-4.png')
  c = Formation.create!(
-    title:            'APPRENDRE A CONDUIRE DE A à Z ET OBTENIR SON PERMIS',
+    title:            'APPRENDRE À CONDUIRE DE A à Z ET OBTENIR SON PERMIS',
     description:      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita iste, tenetur ipsum culpa nostrum vero eligendi officiis iusto, ex officia est cum pariatur eius eos aliquid sit natus fugit.',
     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
@@ -72,7 +72,7 @@ puts "Creating formations..."
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
  f = Formation.create!(
-    title:            "SAVOIR SE GARER N'IMPORTE OU",
+    title:            "SAVOIR SE GARER N'IMPORTE OÙ",
     description:      "# Toutes les manœuvres en détail
                       # Des techniques et surtout tes repères pour réussir ses rangements
                       # Les erreurs éliminatoires",
