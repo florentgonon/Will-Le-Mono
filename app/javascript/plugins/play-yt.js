@@ -6,7 +6,7 @@ function playyt() {
   // const close = document.querySelector('.modal-close');
   // const top = window.screen.height - 300;
 
-  console.log(frames.dataset);
+  // console.log(frames.dataset);
 
   btns.forEach((btn) => {
     btn.addEventListener("click", (event) => {

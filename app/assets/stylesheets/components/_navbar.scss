@@ -124,6 +124,8 @@
 
       a {
         // margin: 0 0 0 40px;
+        // margin: 0 20px;
+        // width: 100%;
         text-decoration: none;
         color: white;
         position: relative;
@@ -139,12 +141,13 @@
         }
 
 
-      &:after {
+        &:after {
           background: none repeat scroll 0 0 transparent;
           bottom: 0;
           content: "";
           display: block;
           height: 3px;
+          top: 25px;
           left: -10%;
           position: absolute;
           background: #EC6B1B;
@@ -156,6 +159,32 @@
         &:hover:after {
           width: 120%;
           left: -10%;
+          top: 25px;
+        }
+
+        &.active {
+          font-weight: bold;
+          font-size: 24px;
+
+          &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 4px;
+          top: 30px;
+          left: -10%;
+          position: absolute;
+          background: #54BCB6;
+          // transition: width 0.4s ease 0s;
+          transform: rotate(-3deg);
+          width: 120%;
+        }
+
+
+          // font-size: 22px;
+          // font-style: italic;
+          // transform-origin: -3px;
         }
       }
     }
@@ -267,6 +296,7 @@
 
     .menu-item {
       font-size: 16px;
+      font-weight: bold;
       font-family: "Roboto", sans-serif;
       line-height: 1em;
     }
@@ -276,9 +306,10 @@
       font-weight: 300;
       letter-spacing: 0em;
       transition: all 300ms ease;
-      line-height: 0px;
+      // line-height: 0px;
       text-decoration: none;
       color: white;
+
       &:hover {
         color: white;
         transition: ease 300ms;
@@ -287,6 +318,12 @@
           opacity: 1;
           transition: ease 300ms;
         }
+      }
+
+      &.active {
+        font-weight: bold;
+        font-size: 20px;
+        // color: #EC6B1B;
       }
     }
   }
