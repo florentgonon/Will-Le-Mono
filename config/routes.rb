@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
   get 'pages/about'
+  get 'pages/mentions_legales'
 
   resources :articles, only: [:index, :show]
   resources :formations, only: [:index]
