@@ -79,8 +79,8 @@
       @media (max-width: 768px) {
         .trapezoid-orange {
           position: relative;
-          top: -17px;
-          left: 70px;
+          top: -16px;
+          left: 46px;
           width: 0;
           height: 48px;
           border-top: 14px solid transparent;
@@ -124,6 +124,8 @@
       }
 
       .list-mentions-legales {
+        padding-left: 17px;
+
         li {
           text-align: justify;
           font-weight: 300;
@@ -142,6 +144,20 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .trapezoids {
+  // padding-bottom: 30px;
+
+    .trapezoid-blue {
+      margin: 0 auto;
+    }
+
+    .trapezoid-orange {
+      margin: 0 auto;
     }
   }
 }
