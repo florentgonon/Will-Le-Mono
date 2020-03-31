@@ -38,9 +38,9 @@ puts "Creating formations..."
     image:            'formation-5.png')
  b = Formation.create!(
     title:            'APPRENDRE À MAÎTRISER TOTALEMENT TA VOITURE',
-    description:      "# Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      # Voluptatum dolores cumque accusantium sunt quisquam rem nobis.
-                      # Animi incidunt, id dolorem at odit nihil laudantium eligendi.",
+    description:      "# Des bonnes BASES bien solides comme il faut pour que tu puisses déplacer ta voiture de manière autonome
+                      # Explications du rôle et du fonctionnement de chaque commande
+                      # Des conseils très précis pour BOOSTER ta technique",
     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-2.png')
