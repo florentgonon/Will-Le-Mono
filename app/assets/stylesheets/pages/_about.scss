@@ -224,6 +224,28 @@
               white-space: nowrap;
               outline: none;
             }
+
+            @media (min-width: 769px) {
+              img.arrow {
+                width: 60px;
+                opacity: 1;
+                transform: rotate(-48deg);
+                position: relative;
+                left: 224px;
+                top: -45px;
+              }
+            }
+
+            @media (max-width: 768px) {
+              img.arrow {
+                width: 56px;
+                opacity: 1;
+                transform: rotate(-72deg);
+                position: relative;
+                left: 193px;
+                top: -45px;
+              }
+            }
           }
         }
 
