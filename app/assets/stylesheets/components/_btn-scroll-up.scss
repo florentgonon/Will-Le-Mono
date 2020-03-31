@@ -41,3 +41,42 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .scroll-up {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom: 27px;
+    right: 27px;
+
+    a {
+      background-color: none;
+
+      img.btn-top {
+        transition: width 0.5s ease;
+        width: 0px;
+      }
+    }
+
+
+    &.solid-scroll {
+      position: fixed;
+      z-index: 999;
+      bottom: 27px;
+      right: 27px;
+
+      a {
+        background-color: none;
+
+        img.btn-top {
+          transition: width 0.5s ease;
+          width: 24px;
+          animation: bounce 0.5s;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+}

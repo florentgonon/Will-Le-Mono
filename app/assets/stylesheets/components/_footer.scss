@@ -361,6 +361,24 @@ footer.home {
       padding-top: 30px;
       font-size: 12px;
     }
+
+    .mentions-legales {
+      text-align: center;
+
+      a {
+        color: white;
+        font-family: 'Roboto Condensed';
+        padding-top: 30px;
+        font-size: 12px;
+        text-decoration: none;
+        transition: font-weight 0.4s ease 0s;
+
+        &:hover {
+          font-weight: bold;
+          transition: font-weight 0.4s ease 0s;
+        }
+      }
+    }
   }
 }
 
@@ -769,6 +787,24 @@ footer {
       font-size: 12px;
       font-weight: 400;
       font-family: 'Roboto Condensed';
+    }
+
+    .mentions-legales {
+      text-align: center;
+
+      a {
+        color: white;
+        font-family: 'Roboto Condensed';
+        padding-top: 30px;
+        font-size: 12px;
+        text-decoration: none;
+        transition: font-weight 0.4s ease 0s;
+
+        &:hover {
+          font-weight: bold;
+          transition: font-weight 0.4s ease 0s;
+        }
+      }
     }
   }
 }
