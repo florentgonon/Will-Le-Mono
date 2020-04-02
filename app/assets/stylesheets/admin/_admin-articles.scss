@@ -1,8 +1,9 @@
 #articles-index {
   background-image: image_url('image-fond.jpg');
-  background-size: cover;
   background-position: center;
   background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
   padding-top: 245px;
 
   .container-articles {
@@ -135,19 +136,5 @@
         }
       }
     }
-  }
-}
-
-
-#articles-show {
-  background-color: #0A0E12;
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
-  padding-top: 245px;
-
-  .container-article {
-    max-width: 85vw;
-    margin: 0 auto;
   }
 }

@@ -1,5 +1,17 @@
-<h1><%= @article.title %></h1>
+<!-- <h1><%#= @article.title %></h1>
+<h3><%#= @article.description %></h3>
+<p><%#= @article.url_yt %></p>
+<p><%#= @article.url_learnybox %></p>
+<p><%#= @article.date %></p> -->
+
+<%= render 'shared/navbar' %>
+<section id="articles-show">
+  <div class="container-article">
+    <h1><%= @article.title %></h1>
 <h3><%= @article.description %></h3>
 <p><%= @article.url_yt %></p>
 <p><%= @article.url_learnybox %></p>
 <p><%= @article.date %></p>
+  </div>
+  <%= render 'shared/footer' %>
+</section>
