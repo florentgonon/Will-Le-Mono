@@ -11,12 +11,21 @@
       align-items: flex-end;
       height: 105vh;
       width: 100%;
+      margin: 0 auto;
 
       img.img-will-header {
         width: 50%;
         margin: 0 auto;
         // position: relative;
         // bottom: 0;
+      }
+
+      img.img-will-header-gif {
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        left: 26%;
       }
     }
   }
@@ -42,6 +51,14 @@
         // position: relative;
         // bottom: 0;
       }
+
+      img.img-will-header-gif {
+        width: 75%;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        left: 14%;
+      }
     }
   }
 }
@@ -65,6 +82,14 @@
         margin: 0 auto;
         // position: relative;
         // bottom: 0;
+      }
+
+      img.img-will-header-gif {
+        width: 75%;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        left: 15%;
       }
     }
   }
@@ -90,6 +115,14 @@
         // position: relative;
         // bottom: 0;
       }
+
+      img.img-will-header-gif {
+        width: 89%;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        left: 8%;
+      }
     }
   }
 }
@@ -113,6 +146,14 @@
         margin: 0 auto;
         // position: relative;
         // bottom: 0;
+      }
+
+      img.img-will-header-gif {
+        width: 89%;
+        margin: 0 auto;
+        position: absolute;
+        // bottom: 0;
+        left: 8%;
       }
     }
   }
