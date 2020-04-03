@@ -5,6 +5,11 @@ Article.destroy_all
 Formation.destroy_all
 
 
+# puts "Creating Admin..."
+
+#  will = Admin.create
+
+
 puts "Creating articles..."
  a = Article.create!(
     title:            'LA GESTION DU STRESS',
