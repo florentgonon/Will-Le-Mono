@@ -119,11 +119,21 @@
     li {
       display: inline;
 
+      button.btn-sign-out {
+        background-color: transparent;
+        border: none;
+        margin-left: 3rem;
+
+        img.nav-logout {
+          width: 30px;
+        }
+      }
+
       &.margin-right {
         margin-right: 3rem;
       }
 
-      a {
+      a:not(.logout) {
         // margin: 0 0 0 40px;
         // margin: 0 20px;
         // width: 100%;
