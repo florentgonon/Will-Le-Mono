@@ -3,9 +3,13 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    @articles_sorted_by_date = @articles.order('date DESC')
+    # raise
   end
 
   def show
+    @articles = Article.all
+    @articles_sorted_by_date = @articles.order('date DESC')
   end
 
   private
