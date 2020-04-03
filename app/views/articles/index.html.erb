@@ -1,4 +1,4 @@
-<%# @articles.each do |article| %>
+<!-- <%# @articles.each do |article| %> -->
 <!-- <h1><%#= article.title %></h1> -->
 <!-- <button><%#= link_to "Details", article_path(article) %></button> -->
 <!-- <%# end %> -->
@@ -16,7 +16,7 @@
 
 
     <div class="row">
-      <% @articles_sorted_by_date.each do |article| %>
+      <% @articles_sorted_by_date do |article| %>
         <div class="col-lg-6 col-md-6">
           <div class="card">
             <div class="img-article">
