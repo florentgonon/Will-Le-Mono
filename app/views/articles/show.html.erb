@@ -24,7 +24,7 @@
       </div>
 
       <div class="description-article">
-        <h2><span class="blue"><%= @article.title.split(" ").first(3).join(",").gsub(",", " ") %></span><br> <%= @article.title.split(" ").slice(3) %></h2>
+        <h2><span class="blue"><%= @article.title.split(" ").first(3).join(",").gsub(",", " ") %></span><br> <%= @article.title.split(" ").slice(3, 10).join(",").gsub(",", " ") %></h2>
         <p><%= simple_format(@article.description) %></p>
       </div>
     </div>
