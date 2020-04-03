@@ -101,7 +101,7 @@ puts "Creating formations..."
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-1.png')
  g = Formation.create!(
-    title:            "COMMENT MAÎTRISER TON STRESS LE JOUR DE L'EXAMEN",
+    title:            "COMMENT MAÎTRISER TON STRESS",
     description:      "# Des techniques avancées de gestion du stress et des émotions
                       # Transformer ses pensées limitantes et intrusives en pensées positives
                       # Des exercices simples
@@ -112,7 +112,7 @@ puts "Creating formations..."
     image:            'formation-3.png')
   h = Formation.create!(
     title:            "Le PACK COMPLET pour que TU obtiennes TON PERMIS (plus vite, plus facilement, et moins chère) même si aujourd'hui tu ne sais pas conduire",
-    description:      "# La grande formation pour conduire de A à Z
+    description:      "# La grande formation pour apprendre à conduire de A à Z
                       # La recette pour atteindre ton objectif PERMIS",
     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
