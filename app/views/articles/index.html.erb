@@ -31,7 +31,7 @@
               <p><%= article.description.first(400) %>...</p>
             </div>
 
-            <div class="trapezoid-btn-more">
+            <div class="trapezoid-btn-more <%= is_even?(article.id) %>">
               <%= link_to "LIRE LA SUITE", article_path(article), class: "article-show" %>
             </div>
           </div>
