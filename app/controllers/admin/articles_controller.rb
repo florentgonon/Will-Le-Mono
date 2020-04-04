@@ -1,16 +1,5 @@
 class Admin::ArticlesController < ApplicationController
-  before_action :find_article, only: [:show, :edit, :update, :destroy]
-
-  def index
-    @articles = Article.all
-    @articles_sorted_by_date = @articles.order('date DESC')
-    # raise
-  end
-
-  def show
-    @articles = Article.all
-    @articles_sorted_by_date = @articles.order('date DESC')
-  end
+  before_action :find_article, only: [:edit, :update, :destroy]
 
   def new
     @article = Article.new
@@ -19,7 +8,7 @@ class Admin::ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to admin_article_path
+      redirect_to articles_path
     else
       render :new
     end
@@ -30,12 +19,12 @@ class Admin::ArticlesController < ApplicationController
 
   def update
     @article.update(article_params)
-    redirect_to admin_article_path
+    redirect_to article_path
   end
 
   def destroy
     @article.destroy
-    redirect_to admin_articles_path
+    redirect_to articles_path
   end
 
   private
@@ -45,6 +34,6 @@ class Admin::ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :description, :url_yt, :date, :url_learnybox)
+    params.require(:article).permit(:title, :description, :url_yt, :date, :url_learnybox, :image)
   end
 end

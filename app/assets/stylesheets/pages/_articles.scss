@@ -76,6 +76,35 @@
       }
     }
 
+    .container-btn-new {
+      background-color: #46E031;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      max-width: 215px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 55px;
+      padding: 10px 0;
+
+      button.btn-new {
+        background: transparent;
+        border: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+        }
+
+        i {
+          color: white;
+          font-size: 19px;
+        }
+      }
+    }
+
     @media (min-width: 769px) {
       .card {
         background-color: transparent;
@@ -102,6 +131,7 @@
             font-size: 34px;
             font-family: 'Roboto Condensed';
             padding: 25px 0;
+            text-transform: uppercase;
           }
 
           p {
@@ -164,6 +194,7 @@
             font-size: 34px;
             font-family: 'Roboto Condensed';
             padding: 25px 0;
+            text-transform: uppercase;
           }
 
           p {
@@ -226,6 +257,7 @@
             font-size: 34px;
             font-family: 'Roboto Condensed';
             padding: 25px 0;
+            text-transform: uppercase;
           }
 
           p {
@@ -347,6 +379,66 @@
       }
     }
 
+    .container-btns-update-delete {
+      .container-btn-update {
+        background-color: #136DEE;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        max-width: 281px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+        padding: 10px 0;
+
+        button.btn-update {
+          background: transparent;
+          border: none;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+          }
+
+          i {
+            color: white;
+            font-size: 19px;
+          }
+        }
+      }
+
+      .container-btn-delete {
+        background-color: #EA2626;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        max-width: 281px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+        padding: 10px 0;
+
+        button.btn-delete {
+          background: transparent;
+          border: none;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+          }
+
+          i {
+            color: white;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+
     @media (min-width: 768px) {
       .card-article {
         background-color: transparent;
@@ -376,9 +468,11 @@
             font-size: 34px;
             font-family: 'Roboto Condensed';
             padding: 25px 0;
+            text-transform: uppercase;
 
             span.blue {
               color: #54BCB6;
+              text-transform: uppercase;
             }
           }
 
@@ -427,9 +521,11 @@
             font-size: 34px;
             font-family: 'Roboto Condensed';
             padding: 25px 0;
+            text-transform: uppercase;
 
             span.blue {
               color: #54BCB6;
+              text-transform: uppercase;
             }
           }
 
@@ -690,7 +786,7 @@
               height: 40px;
               border-top: 8px solid transparent;
               border-right: 132px solid #EC6B1B;
-              border-left: 22px solid transparent;
+              border-left: 8px solid transparent;
               border-bottom: 0px solid transparent;
 
               a.article-show {
