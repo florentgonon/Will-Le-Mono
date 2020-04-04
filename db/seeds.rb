@@ -5,9 +5,12 @@ Article.destroy_all
 Formation.destroy_all
 
 
-# puts "Creating Admin..."
+puts "Creating Admin..."
+ will = Admin.create!(
+  email:      "wkerautret.automoto@gmail.com",
+  password:   "060708WKag!")
 
-#  will = Admin.create
+puts "Finished"
 
 
 puts "Creating articles..."
