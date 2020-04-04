@@ -15,6 +15,21 @@
       </div>
     </div>
 
+    <% if admin_signed_in? %>
+      <div class="container-btns-update-delete">
+        <div class="row">
+          <div class="container-btn-update col-lg-6">
+            <button class="btn-update"><%= link_to "METTRE À JOUR CET ARTICLE ", edit_admin_article_path(@article) %><i class="fi-cwsuxl-update"></i></button>
+          </div>
+          <div class="container-btn-delete col-lg-6">
+            <button class="btn-delete"><%= link_to "SUPPRIMER CET ARTICLE ", admin_article_path(@article), method: :delete  %><i class="fi-cwluxl-minus-solid"></i></button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+
+
     <div class="card-article">
       <div class="img-article">
         <%= image_tag(@article.image, class: "article-img") %>
@@ -24,7 +39,19 @@
       </div>
 
       <div class="description-article">
-        <h2><span class="blue"><%= @article.title.split(" ").first(3).join(",").gsub(",", " ") %></span><br> <%= @article.title.split(" ").slice(3, 10).join(",").gsub(",", " ") %></h2>
+        <h2><span class="blue">
+            <% if @article.title.split(" ").size <= 2 %>
+              <%= @article.title %>
+            <% else %>
+              <%= @article.title.split(" ").first(3).join(",").gsub(",", " ") %>
+            <% end %>
+            </span>
+            <br>
+            <% if @article.title.split(" ").size <= 2 %>
+            <% else %>
+              <%= @article.title.split(" ").slice(3, 10).join(",").gsub(",", " ") %>
+            <% end %>
+        </h2>
         <p><%= simple_format(@article.description) %></p>
       </div>
     </div>

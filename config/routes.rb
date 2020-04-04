@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   resources :formations, only: [:index]
 
   namespace :admin do
-    resources :articles, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+    resources :articles, only: [:new, :create, :edit, :update, :destroy]
   end
 end
