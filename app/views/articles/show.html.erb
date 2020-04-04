@@ -53,6 +53,7 @@
             <% end %>
         </h2>
         <p><%= simple_format(@article.description) %></p>
+        <%= social_share_button_tag('Share to Facebook', :url => @article_path, desc: @article.title) %>
       </div>
     </div>
 
