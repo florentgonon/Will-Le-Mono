@@ -1,8 +1,54 @@
-<%= simple_form_for [:admin, @article] do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :url_yt %>
-  <%= f.input :url_learnybox %>
-  <%= f.input :date, as: :date  %>
-  <%= f.button :submit %>
-<% end %>
+<%#= simple_form_for [:admin, @article] do |f| %>
+  <%#= f.input :title %>
+  <%#= f.input :description %>
+  <%#= f.input :url_yt %>
+  <%#= f.input :url_learnybox %>
+  <%#= f.input :date, as: :date  %>
+  <%#= f.button :submit %>
+<%# end %>
+
+<section id="update-article">
+  <div class="container-update-article">
+    <div class="trapezoids">
+      <div class="trapezoid-blue">
+        <h1>MODIFIER</h1>
+      </div>
+      <div class="trapezoid-orange">
+        <h1>L'ARTICLE</h1>
+      </div>
+    </div>
+
+    <%= simple_form_for [:admin, @article] do |f| %>
+      <div class="form-inputs">
+        <%= f.input :title,
+                    :label => "TITRE",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Titre" } %>
+        <%= f.input :description,
+                    :label => "DESCRIPTION",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Description" } %>
+        <%= f.input :url_yt,
+                    :label => "LIEN YouTube",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "URL YouTube" } %>
+        <%= f.input :url_learnybox,
+                    :label => "LIEN LearnyBox",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "URL LearnyBox" } %>
+        <%= f.input :image,
+                    :label => "IMAGE",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Image" } %>
+        <%= f.input :date, as: :date,
+                    :label => "DATE",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input' } %>
+      </div>
+
+      <div class="form-actions update">
+        <%= f.button :submit, "MODIFIER L'ARTICLE", :class => "btn" %>
+      </div>
+    <% end %>
+  </div>
+</section>
