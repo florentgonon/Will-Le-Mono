@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
 
   def show
     @articles = Article.all
-    @articles_sorted_by_date = @articles.order('date DESC')
+    # @articles_sorted_by_date = @articles.order('date DESC')
   end
 
   private

@@ -53,6 +53,15 @@
             <% end %>
         </h2>
         <p><%= simple_format(@article.description) %></p>
+        <% if @article.url_learnybox.present? %>
+          <%= link_to @article.url_learnybox, target: "_blank", class: "more" do %>
+            <div class="trapezoid-orange">
+              <h1>FORMATIONS</h1>
+              <%= image_tag 'fleche_gauche_blue.png', class: "arrow"%>
+            </div>
+          <% end %>
+        <% else %>
+        <% end %>
       </div>
       <div class="container-facebook-share">
         <p>Vous avez trouvé mon article intéressant ? N’hésites pas à le partager à ta communauté.</p>
@@ -97,7 +106,7 @@
       </div>
     </div> -->
 
-    <!-- <div class="container-caroussel">
+    <div class="container-caroussel">
 
       <div class="row mx-auto my-auto">
         <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -106,13 +115,13 @@
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
-                    <%#= image_tag(@articles[0].image, class: "article-caroussel-img")%>
+                    <%= cl_image_tag(@articles[-1].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%#= @articles[0].title %></h2>
+                    <h2><%= @articles[-1].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", "#", class: "article-show" %>
+                    <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-1] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
@@ -122,13 +131,13 @@
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
-                    <%#= image_tag(@articles[1].image, class: "article-caroussel-img")%>
+                    <%= cl_image_tag(@articles[-2].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%#= @articles[1].title %></h2>
+                    <h2><%= @articles[-2].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", "#", class: "article-show" %>
+                    <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-2] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
@@ -138,19 +147,19 @@
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
-                    <%#= image_tag(@articles[2].image, class: "article-caroussel-img")%>
+                    <%= cl_image_tag(@articles[-3].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%#= @articles[2].title %></h2>
+                    <h2><%= @articles[-3].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", "#", class: "article-show" %>
+                    <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-3] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
+<!--             <div class="carousel-item">
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
@@ -160,7 +169,7 @@
                     <h2><%#= @articles[3].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", "#", class: "article-show" %>
+                    <%#= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-4] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
@@ -176,24 +185,24 @@
                     <h2><%#= @articles[4].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", "#", class: "article-show" %>
+                    <%#= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-5] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <%#= image_tag 'fleche_gauche.png', class: "carousel-control"%>
+            <%= image_tag 'fleche_gauche.png', class: "carousel-control"%>
           </a>
           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <%#= image_tag 'fleche_droite.png', class: "carousel-control"%>
+            <%= image_tag 'fleche_droite.png', class: "carousel-control"%>
           </a>
         </div>
       </div>
 
-    </div> -->
+    </div>
 
   </div>
   <%= render 'shared/footer' %>
