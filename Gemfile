@@ -10,6 +10,9 @@ gem 'rails', '5.2.4.1'
 gem 'redis'
 gem 'social-share-button'
 
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'
