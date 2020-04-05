@@ -36,10 +36,11 @@
                     :label => "LIEN LearnyBox",
                     :label_html => { :class => 'span-blue-label' },
                     input_html: { :class => 'form-input', :placeholder => "URL LearnyBox" } %>
-        <%= f.input :image,
+        <%= f.input :photo,
                     :label => "IMAGE",
                     :label_html => { :class => 'span-blue-label' },
                     input_html: { :class => 'form-input', :placeholder => "Image" } %>
+        <%= f.input :photo_cache, as: :hidden %>
         <%= f.input :date, as: :date,
                     :label => "DATE",
                     :label_html => { :class => 'span-blue-label' },

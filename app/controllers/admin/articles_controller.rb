@@ -34,6 +34,6 @@ class Admin::ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :description, :url_yt, :date, :url_learnybox, :image)
+    params.require(:article).permit(:title, :description, :url_yt, :date, :url_learnybox, :photo)
   end
 end
