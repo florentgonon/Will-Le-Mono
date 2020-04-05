@@ -55,7 +55,7 @@
         <p><%= simple_format(@article.description) %></p>
       </div>
       <div class="container-facebook-share">
-        <p>Vous avez trouvé mon article intéressant ? N’hésites pas à le partager a ta communauté.</p>
+        <p>Vous avez trouvé mon article intéressant ? N’hésites pas à le partager à ta communauté.</p>
         <%= image_tag 'fleche_gauche.png', class: "arrow"%>
         <%= social_share_button_tag('Share to Facebook', :url => @article_path, desc: @article.title) %>
       </div>
