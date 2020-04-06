@@ -159,17 +159,17 @@
               </div>
             </div>
 
-<!--             <div class="carousel-item">
+            <div class="carousel-item">
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
-                    <%#= image_tag(@articles[3].image, class: "article-caroussel-img")%>
+                    <%= cl_image_tag(@articles[-4].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%#= @articles[3].title %></h2>
+                    <h2><%= @articles[-4].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-4] }, class: "article-show" %>
+                    <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-4] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
@@ -179,17 +179,17 @@
               <div class="col-lg-4 col-md-6">
                 <div class="card">
                   <div class="img-article-caroussel">
-                    <%#= image_tag(@articles[4].image, class: "article-caroussel-img")%>
+                    <%= cl_image_tag(@articles[-5].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%#= @articles[4].title %></h2>
+                    <h2><%= @articles[-5].title %></h2>
                   </div>
                   <div class="trapezoid-btn-more">
-                    <%#= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-5] }, class: "article-show" %>
+                    <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-5] }, class: "article-show" %>
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
 
           </div>
 
