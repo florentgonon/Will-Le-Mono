@@ -1,5 +1,3 @@
-
-
 <%= render 'shared/navbar' %>
 <section id="articles-index">
   <div class="container-articles">
@@ -19,7 +17,8 @@
 
 
     <div class="row">
-      <% @articles_sorted_by_date.each do |article| %>
+      <%#= paginate @articles_page %>
+      <% @articles_page.order('date DESC').each do |article| %>
         <div class="col-lg-6 col-md-6">
           <div class="card">
             <div class="img-article">
@@ -37,6 +36,9 @@
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="container-pagination">
+      <%= paginate @articles_page %>
     </div>
 
   </div>

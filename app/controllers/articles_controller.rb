@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
-    @articles_sorted_by_date = @articles.order('date DESC')
+    # @articles_sorted_by_date = @articles.order('date DESC')
+    @articles_page = Article.page(params[:page]).per(6)
     # raise
   end
 
