@@ -149,11 +149,140 @@
     }
 
     h2.title-question {
-      padding-top: 35px;
+      padding: 35px 0 30px 0;
       text-align: center;
-      padding-bottom: 30px;
       font-size: 20px;
       font-weight: bold;
+    }
+
+    // h3.offer-confinement {
+    //   padding-bottom: 30px;
+    //   color: transparent;
+    //   text-align: center;
+    //   font-size: 30px;
+    //   font-weight: bold;
+    //   background: linear-gradient(90deg, #000, #EC6B1B, #000);
+    //   background-size: 80%;
+    //   background-repeat: no-repeat;
+    //   -webkit-background-clip: text;
+    //   animation: flashText 3s infinite;
+
+    //   @keyframes flashText {
+    //     from{ background-position: -500%; }
+    //     to{ background-position: 500%; }
+    //   }
+    // }
+
+    // h3.offer-confinement {
+    //   font-size: 30px;
+    //   font-weight: bold;
+    //   animation: blinker 1s linear infinite;
+    //   color: white;
+    //   text-align: center;
+    //   padding-bottom: 30px;
+    //   font-style: italic;
+
+    //   @keyframes blinker {
+    //     50% { opacity: 0; }
+    //   }
+    // }
+
+
+    h3.neon {
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      font-size: 35px;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      font-style: italic;
+      text-decoration: underline overline;
+    }
+
+    .neon {
+      animation: blink 3s infinite;
+      color: white;
+      text-shadow:
+
+        0 0 5px #EC6B1B,
+        0 0 10px #EC6B1B,
+        0 0 20px #EC6B1B,
+        0 0 40px #EC6B1B,
+        0 0 80px #EC6B1B,
+        0 0 90px #EC6B1B,
+        0 0 100px #EC6B1B,
+        0 0 150px #EC6B1B;
+    }
+
+    @keyframes blink {
+      9% {
+         opacity: 1;
+      }
+
+      10% {
+         opacity: 0;
+      }
+
+      13% {
+         opacity: 1;
+      }
+
+       39% {
+         opacity: 1;
+      }
+
+      40% {
+         opacity: 0;
+      }
+
+      43% {
+         opacity: 1;
+      }
+
+      44% {
+         opacity: 0;
+      }
+
+       44% {
+         opacity: 1;
+      }
+
+       50% {
+         opacity: 0;
+      }
+
+       52% {
+         opacity: 1;
+      }
+
+       72% {
+         opacity: 1;
+      }
+
+      75% {
+        opacity: 0;
+      }
+
+      78% {
+        opacity: 1;
+      }
+
+      97% {
+        opacity: 1;
+      }
+
+      98% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+    .pack-complet {
+      justify-content: center;
     }
 
     .card {
@@ -200,6 +329,18 @@
           font-weight: 300;
           font-size: 16px;
           line-height: 22px;
+        }
+      }
+
+      p.price {
+        font-size: 18px;
+        font-weight: bold;
+        span.barre {
+          text-decoration: line-through;
+
+          i {
+            font-weight: bold;
+          }
         }
       }
 
