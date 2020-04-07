@@ -6,8 +6,8 @@ $(document).ready(function() {
     }, 3500);
     if (!sessionStorage.isVisited) {
     sessionStorage.isVisited = 'true'
-    $("#preloader").delay(2000).fadeOut("slow")
-    $(".loader").delay(2000).fadeOut("slow")
+    $("#preloader").delay(2500).fadeOut("slow")
+    $(".loader").delay(2500).fadeOut("slow")
   } else {
     $("#preloader").hide()
     $(".loader").hide()
