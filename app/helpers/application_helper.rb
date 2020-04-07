@@ -11,8 +11,4 @@ module ApplicationHelper
       "orange"
     end
   end
-
-  def default_url_options
-    { host: ENV["DOMAIN"] || "localhost:3000" }
-  end
 end
