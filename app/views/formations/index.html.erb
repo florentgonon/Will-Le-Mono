@@ -29,11 +29,11 @@
       </div>
     </div>
 
+    <h3 class="neon blink">OFFRES SPÉCIALES CONFINEMENT 💪</h1>
+
     <h2 class="title-question">Je souhaites me faire coacher sur...</h2>
 
     <!-- <h3 class="offer-confinement">OFFRE SPÉCIALE CONFINEMENT 💪</h3> -->
-
-    <h3 class="neon blink">OFFRES SPÉCIALES CONFINEMENT 💪</h1>
 
     <!-- <div class="row">
       <%# @formations.each_with_index do |formation, index| %>
@@ -126,31 +126,7 @@
     </div>
 
     <div class="row pack-complet">
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="img-formation">
-            <%= image_tag(@formations[7].image, class: "formation-img") %>
-            <%= link_to "#", id: @formations[7].id, :data => { :src => @formations[7].url_yt, :toggle => "modal", :target => "#exampleModalCenter" }, class: "yt-link-button" do %>
-              <%= image_tag 'play.png', :data => { :src => @formations[7].url_yt }, id: @formations[7].id, class: "formation-play"%>
-            <% end %>
-          </div>
-
-          <div class="description-formation">
-            <h2><%= @formations[7].title %></h2>
-            <p><%= simple_format(@formations[7].description) %></p>
-          </div>
-
-          <p class="price"><span class="barre">297€ </span><i class="fi-xwlrxl-chevron-wide"></i> 97€</p>
-
-          <div class="trapezoid-btn-coaching">
-            <%= link_to "JE VEUX ÊTRE COACHÉ", @formations[7].url_learnybox, target: "_blank", class: "url_learnybox" %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-3 col-md-6">
         <div class="card">
           <div class="img-formation">
             <%= image_tag(@formations[3].image, class: "formation-img") %>
@@ -171,7 +147,28 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-5">
+        <div class="card">
+          <div class="img-formation">
+            <%= image_tag(@formations[7].image, class: "formation-img") %>
+            <%= link_to "#", id: @formations[7].id, :data => { :src => @formations[7].url_yt, :toggle => "modal", :target => "#exampleModalCenter" }, class: "yt-link-button" do %>
+              <%= image_tag 'play.png', :data => { :src => @formations[7].url_yt }, id: @formations[7].id, class: "formation-play"%>
+            <% end %>
+          </div>
+
+          <div class="description-formation">
+            <h2><%= @formations[7].title %></h2>
+            <p><%= simple_format(@formations[7].description) %></p>
+          </div>
+
+          <p class="price"><span class="barre">297€ </span><i class="fi-xwlrxl-chevron-wide"></i> 97€</p>
+
+          <div class="trapezoid-btn-coaching">
+            <%= link_to "JE VEUX ÊTRE COACHÉ", @formations[7].url_learnybox, target: "_blank", class: "url_learnybox" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
         <div class="card">
           <div class="img-formation">
             <%= image_tag(@formations[4].image, class: "formation-img") %>
@@ -189,27 +186,6 @@
 
           <div class="trapezoid-btn-coaching">
             <%= link_to "JE VEUX ÊTRE COACHÉ", @formations[4].url_learnybox, target: "_blank", class: "url_learnybox" %>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card">
-          <div class="img-formation">
-            <%= image_tag(@formations[5].image, class: "formation-img") %>
-            <%= link_to "#", id: @formations[5].id, :data => { :src => @formations[5].url_yt, :toggle => "modal", :target => "#exampleModalCenter" }, class: "yt-link-button" do %>
-              <%= image_tag 'play.png', :data => { :src => @formations[5].url_yt }, id: @formations[5].id, class: "formation-play"%>
-            <% end %>
-          </div>
-
-          <div class="description-formation">
-            <h2><%= @formations[5].title %></h2>
-            <p><%= simple_format(@formations[5].description) %></p>
-          </div>
-
-          <p class="price"><span class="barre">67€ </span><i class="fi-xwlrxl-chevron-wide"></i> 27€</p>
-
-          <div class="trapezoid-btn-coaching">
-            <%= link_to "JE VEUX ÊTRE COACHÉ", @formations[5].url_learnybox, target: "_blank", class: "url_learnybox" %>
           </div>
         </div>
       </div>
