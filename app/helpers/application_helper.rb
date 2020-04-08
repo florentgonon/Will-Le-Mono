@@ -11,4 +11,11 @@ module ApplicationHelper
       "orange"
     end
   end
+
+  def big_formation?(id)
+    if id == 5
+      "pack-complet"
+    else
+    end
+  end
 end
