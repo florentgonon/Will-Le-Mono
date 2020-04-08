@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:index, :show]
   resources :formations, only: [:index]
+  resources :users, only: [:new, :create]
 
   namespace :admin do
     resources :articles, only: [:new, :create, :edit, :update, :destroy]

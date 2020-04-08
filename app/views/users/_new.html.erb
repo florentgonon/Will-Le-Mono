@@ -1,0 +1,26 @@
+<div class="modal fade" id="exampleModalCenter" class="modal-mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="my-modal-content">
+      <%= simple_form_for @user, remote: true do |f| %>
+        <div class="form-inputs">
+          <%= f.input :lastname,
+                      :label => "NOM",
+                      :label_html => { :class => 'span-blue-label' },
+                      input_html: { :class => 'form-input', :placeholder => "Nom" } %>
+          <%= f.input :firstname,
+                      :label => "PRÉNOM",
+                      :label_html => { :class => 'span-blue-label' },
+                      input_html: { :class => 'form-input', :placeholder => "Prénom" } %>
+          <%= f.input :email,
+                      :label => "EMAIL",
+                      :label_html => { :class => 'span-blue-label' },
+                      input_html: { :class => 'form-input', :placeholder => "Email" } %>
+        </div>
+
+        <div class="form-actions new">
+          <%= f.button :submit, "GO !", :class => "btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

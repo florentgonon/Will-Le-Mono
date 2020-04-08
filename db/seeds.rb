@@ -121,7 +121,8 @@ puts "Creating formations..."
   h = Formation.create!(
     title:            "Le PACK COMPLET pour que TU obtiennes TON PERMIS (plus vite, plus facilement, et moins chère) même si aujourd'hui tu ne sais pas conduire",
     description:      "# La grande formation pour apprendre à conduire de A à Z
-                      # La recette pour atteindre ton objectif PERMIS",
+                      # La recette pour atteindre ton objectif PERMIS
+                      # Utilisation des commandes / Ronds-Points / Manœuvres / Routes de campagne / Voies rapides / Gestion du stress / Prépa permis / etc... Tout y est !",
     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
     url_learnybox:    'https://wkerautret.learnybox.com/',
     image:            'formation-5.png')
