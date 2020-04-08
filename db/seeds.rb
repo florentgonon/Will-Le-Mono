@@ -1,6 +1,6 @@
 puts "Destroy all"
 
-
+Admin.destroy_all
 Article.destroy_all
 Formation.destroy_all
 
@@ -59,73 +59,73 @@ puts "Finished"
 
 # puts "Finished"
 
-puts "Creating formations..."
- a = Formation.create!(
-    title:            "DU JAMAIS VU : LA NOUVELLE FAÇON D'APPRENDRE SON CODE de A à Z",
-    description:      "# Tous les thèmes du Code de la route expliqués en détails
-                      # Des exemples simples pour facilement retenir
-                      # Des conseils d'experts pour que tu apprenes à conduire plus rapidement",
-    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-5.png')
- b = Formation.create!(
-    title:            'APPRENDRE À MAÎTRISER TOTALEMENT TA VOITURE',
-    description:      "# Des bonnes BASES bien solides comme il faut pour que tu puisses déplacer ta voiture de manière autonome
-                      # Explications du rôle et du fonctionnement de chaque commande
-                      # Des conseils très précis pour BOOSTER ta technique",
-    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-2.png')
- c = Formation.create!(
-    title:            '27 ACTIONS CONCRÈTES POUR SAVOIR CONDUIRE DANS TOUTES LES SITUTATIONS',
-    description:      "# Conduite en ville, sur route de campagne, sur voie rapide
-                      # Énormément de démonstrations commentées et analysées
-                      # LES MEILLEURES techniques pour exploser dans ton apprentissage !",
-    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-5.png')
- d = Formation.create!(
-    title:            'LES 15 SECRETS POUR MAÎTRISER TOTALEMENT LES RONDS-POINTS',
-    description:      "# 72 démonstrations commentées et analysées
-                      # Des techniques, des clés, des pépites inédites qui te feront passer à un niveau supérieur !",
-    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-4.png')
- e = Formation.create!(
-    title:            "DES MÉTHODES D'EXPERT POUR TE GARER N'IMPORTE OÙ",
-    description:      "# Toutes les manœuvres en détail
-                      # Des techniques avancées et des repères
-                      # Les erreurs à ne pas faire",
-    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-5.png')
- f = Formation.create!(
-    title:            'TON PLAN DE PRÉPARATION AU PERMIS ET SES TECHNIQUES AVANCÉES POUR ÊTRE AU TOP LE GRAND JOUR',
-    description:      "# Organisation de l'examen en détail
-                      # Coaching motivation
-                      # Les erreurs à éviter
-                      # Démonstrations",
-    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-1.png')
- g = Formation.create!(
-    title:            "COMMENT MAÎTRISER TON STRESS",
-    description:      "# Des techniques avancées de gestion du stress et des émotions
-                      # Transformer ses pensées limitantes et intrusives en pensées positives
-                      # Des exercices simples
-                      # Exercises personnalisés
-                      # Des clés pour éliminer ses peurs paralysantes",
-    url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-3.png')
-  h = Formation.create!(
-    title:            "Le PACK COMPLET pour que TU obtiennes TON PERMIS (plus vite, plus facilement, et moins chère) même si aujourd'hui tu ne sais pas conduire",
-    description:      "# La grande formation pour apprendre à conduire de A à Z
-                      # La recette pour atteindre ton objectif PERMIS
-                      # Utilisation des commandes / Ronds-Points / Manœuvres / Routes de campagne / Voies rapides / Gestion du stress / Prépa permis / etc... Tout y est !",
-    url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
-    url_learnybox:    'https://wkerautret.learnybox.com/',
-    image:            'formation-5.png')
+# puts "Creating formations..."
+#  a = Formation.create!(
+#     title:            "DU JAMAIS VU : LA NOUVELLE FAÇON D'APPRENDRE SON CODE de A à Z",
+#     description:      "# Tous les thèmes du Code de la route expliqués en détails
+#                       # Des exemples simples pour facilement retenir
+#                       # Des conseils d'experts pour que tu apprenes à conduire plus rapidement",
+#     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-5.png')
+#  b = Formation.create!(
+#     title:            'APPRENDRE À MAÎTRISER TOTALEMENT TA VOITURE',
+#     description:      "# Des bonnes BASES bien solides comme il faut pour que tu puisses déplacer ta voiture de manière autonome
+#                       # Explications du rôle et du fonctionnement de chaque commande
+#                       # Des conseils très précis pour BOOSTER ta technique",
+#     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-2.png')
+#  c = Formation.create!(
+#     title:            '27 ACTIONS CONCRÈTES POUR SAVOIR CONDUIRE DANS TOUTES LES SITUTATIONS',
+#     description:      "# Conduite en ville, sur route de campagne, sur voie rapide
+#                       # Énormément de démonstrations commentées et analysées
+#                       # LES MEILLEURES techniques pour exploser dans ton apprentissage !",
+#     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-5.png')
+#  d = Formation.create!(
+#     title:            'LES 15 SECRETS POUR MAÎTRISER TOTALEMENT LES RONDS-POINTS',
+#     description:      "# 72 démonstrations commentées et analysées
+#                       # Des techniques, des clés, des pépites inédites qui te feront passer à un niveau supérieur !",
+#     url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-4.png')
+#  e = Formation.create!(
+#     title:            "DES MÉTHODES D'EXPERT POUR TE GARER N'IMPORTE OÙ",
+#     description:      "# Toutes les manœuvres en détail
+#                       # Des techniques avancées et des repères
+#                       # Les erreurs à ne pas faire",
+#     url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-5.png')
+#  f = Formation.create!(
+#     title:            'TON PLAN DE PRÉPARATION AU PERMIS ET SES TECHNIQUES AVANCÉES POUR ÊTRE AU TOP LE GRAND JOUR',
+#     description:      "# Organisation de l'examen en détail
+#                       # Coaching motivation
+#                       # Les erreurs à éviter
+#                       # Démonstrations",
+#     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-1.png')
+#  g = Formation.create!(
+#     title:            "COMMENT MAÎTRISER TON STRESS",
+#     description:      "# Des techniques avancées de gestion du stress et des émotions
+#                       # Transformer ses pensées limitantes et intrusives en pensées positives
+#                       # Des exercices simples
+#                       # Exercises personnalisés
+#                       # Des clés pour éliminer ses peurs paralysantes",
+#     url_yt:           'http://www.youtube.com/embed/7BmdYC4muY4',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-3.png')
+#   h = Formation.create!(
+#     title:            "Le PACK COMPLET pour que TU obtiennes TON PERMIS (plus vite, plus facilement, et moins chère) même si aujourd'hui tu ne sais pas conduire",
+#     description:      "# La grande formation pour apprendre à conduire de A à Z
+#                       # La recette pour atteindre ton objectif PERMIS
+#                       # Utilisation des commandes / Ronds-Points / Manœuvres / Routes de campagne / Voies rapides / Gestion du stress / Prépa permis / etc... Tout y est !",
+#     url_yt:           'http://www.youtube.com/embed/RKOLG3llePo',
+#     url_learnybox:    'https://wkerautret.learnybox.com/',
+#     image:            'formation-5.png')
 
 
-puts "Finished"
+# puts "Finished"

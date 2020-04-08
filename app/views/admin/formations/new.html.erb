@@ -1,0 +1,60 @@
+<%#= simple_form_for [:admin, @article] do |f| %>
+  <%#= f.input :title %>
+  <%#= f.input :description %>
+  <%#= f.input :url_yt %>
+  <%#= f.input :url_learnybox %>
+  <%#= f.input :image %>
+  <%#= f.input :date, as: :date  %>
+  <%#= f.button :submit %>
+<%# end %>
+
+<section id="new-formation">
+  <div class="container-new-formation">
+    <div class="trapezoids">
+      <div class="trapezoid-blue">
+        <h1>NOUVELLE</h1>
+      </div>
+      <div class="trapezoid-orange">
+        <h1>FORMATION</h1>
+      </div>
+    </div>
+
+    <%= simple_form_for [:admin, @formation] do |f| %>
+      <div class="form-inputs">
+        <%= f.input :title,
+                    :label => "TITRE",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Titre" } %>
+        <%= f.input :description,
+                    :label => "DESCRIPTION",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Description" } %>
+        <%= f.input :url_yt,
+                    :label => "LIEN YouTube",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "URL YouTube" } %>
+        <%= f.input :url_learnybox,
+                    :label => "LIEN LearnyBox",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "URL LearnyBox" } %>
+        <%= f.input :sales_price,
+                    :label => "PRIX Promo",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "PRIX Promo" } %>
+        <%= f.input :price,
+                    :label => "PRIX Courant",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "PRIX Courant" } %>
+        <%= f.input :photo,
+                    :label => "IMAGE",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Image" } %>
+        <%= f.input :photo_cache, as: :hidden %>
+      </div>
+
+      <div class="form-actions new">
+        <%= f.button :submit, "CRÉER LA FORMATION", :class => "btn" %>
+      </div>
+    <% end %>
+  </div>
+</section>
