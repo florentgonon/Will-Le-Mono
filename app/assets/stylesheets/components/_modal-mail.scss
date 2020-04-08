@@ -1,0 +1,67 @@
+.mail {
+  .modal-content {
+    background-color: #0A0E12;
+    border-radius: 2%;
+
+    .modal-header {
+      text-align: center;
+      border-bottom: 0;
+
+      h5 {
+        font-size: 30px;
+        font-weight: bold;
+
+        span.orange {
+          color: #54BCB6;
+        }
+      }
+
+      button.close {
+        opacity: 1;
+        outline: none;
+
+        img {
+          width: 28px;
+        }
+      }
+    }
+
+    .modal-body {
+      text-align: center;
+
+      p {
+        font-weight: 300;
+      }
+    }
+
+    .modal-footer {
+      border-top : 0;
+      display: flex;
+      justify-content: center;
+
+      .trapezoids {
+        .trapezoid-orange {
+          position: relative;
+          top: -20px;
+          // left: 70px;
+          width: 0;
+          height: 34px;
+          border-top: 9px solid transparent;
+          border-right: 97px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a {
+            position: relative;
+            top: -1px;
+            left: 10px;
+            white-space: nowrap;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
