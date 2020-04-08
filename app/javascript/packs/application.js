@@ -13,3 +13,8 @@ import { playyt } from "plugins/play-yt.js";
 formspree();
 playyt();
 
+// setTimeout(function() {
+//     $('.my-modal-content').modal();
+// }, 2000);
+
+// console.log('.form-inputs')

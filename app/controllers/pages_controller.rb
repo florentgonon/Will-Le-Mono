@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @formations = Formation.all
+    # @user = User.new
   end
 
   def about
