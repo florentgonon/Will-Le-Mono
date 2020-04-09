@@ -7,6 +7,7 @@ import "../plugins/play-yt.js";
 import "../plugins/btn_scrollup.js";
 import "../plugins/preloader.js";
 import "../plugins/captation-mail.js";
+import "../plugins/btn-capture-mail.js";
 
 import { formspree } from "plugins/formspree.js";
 import { playyt } from "plugins/play-yt.js";
