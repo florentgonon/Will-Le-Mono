@@ -56,7 +56,7 @@
         <% if @article.url_learnybox.present? %>
           <%= link_to @article.url_learnybox, target: "_blank", class: "more" do %>
             <div class="trapezoid-orange">
-              <h1>FORMATIONS</h1>
+              <h3>FORMATIONS</h3>
               <%= image_tag 'fleche_gauche_blue.png', class: "arrow"%>
             </div>
           <% end %>
@@ -72,7 +72,7 @@
 
     <div class="trapezoid-title2">
       <div class="trapezoid-blue">
-        <h1>ET AUSSI...</h1>
+        <h3>ET AUSSI...</h3>
         <%= image_tag 'fleche_gauche.png', class: "arrow"%>
       </div>
     </div>
@@ -118,7 +118,7 @@
                     <%= cl_image_tag(@articles[-1].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%= @articles[-1].title %></h2>
+                    <h4><%= @articles[-1].title %></h4>
                   </div>
                   <div class="trapezoid-btn-more <%= is_even?(@articles[-1].id) %>">
                     <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-1] }, class: "article-show" %>
@@ -134,7 +134,7 @@
                     <%= cl_image_tag(@articles[-2].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%= @articles[-2].title %></h2>
+                    <h4><%= @articles[-2].title %></h4>
                   </div>
                   <div class="trapezoid-btn-more <%= is_even?(@articles[-2].id) %>">
                     <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-2] }, class: "article-show" %>
@@ -150,7 +150,7 @@
                     <%= cl_image_tag(@articles[-3].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%= @articles[-3].title %></h2>
+                    <h4><%= @articles[-3].title %></h4>
                   </div>
                   <div class="trapezoid-btn-more <%= is_even?(@articles[-3].id) %>">
                     <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-3] }, class: "article-show" %>
@@ -166,7 +166,7 @@
                     <%= cl_image_tag(@articles[-4].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%= @articles[-4].title %></h2>
+                    <h4><%= @articles[-4].title %></h4>
                   </div>
                   <div class="trapezoid-btn-more <%= is_even?(@articles[-4].id) %>">
                     <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-4] }, class: "article-show" %>
@@ -182,7 +182,7 @@
                     <%= cl_image_tag(@articles[-5].photo, class: "article-caroussel-img")%>
                   </div>
                   <div class="description-article-caroussel">
-                    <h2><%= @articles[-5].title %></h2>
+                    <h4><%= @articles[-5].title %></h4>
                   </div>
                   <div class="trapezoid-btn-more <%= is_even?(@articles[-5].id) %>">
                     <%= link_to "LIRE LA SUITE", { :controller => "articles", :action => "show", :id => @articles[-5] }, class: "article-show" %>
