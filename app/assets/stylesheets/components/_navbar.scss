@@ -392,6 +392,21 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 @media (min-width: 768px) {
+  a.logout {
+    position: fixed;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 41px;
+    left: 31px;
+
+    button.btn-sign-out {
+      img.nav-logout {
+        width: 45px;
+      }
+    }
+  }
+
   #dotsMenuClose {
     position: fixed;
     width: 76px;
@@ -408,6 +423,21 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 @media (max-width: 767px) {
+  a.logout {
+    position: fixed;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 21px;
+    left: 31px;
+
+    button.btn-sign-out {
+      img.nav-logout {
+        width: 34px;
+      }
+    }
+  }
+
   #dotsMenuClose {
     position: fixed;
     width: 76px;
@@ -424,6 +454,21 @@ $pix-size: 6px; // <---- Definir la taille du menu
 }
 
 @media (max-width: 321px) {
+  a.logout {
+    position: fixed;
+    width: 76px;
+    height: 51px;
+    padding: 0;
+    top: 13px;
+    left: 31px;
+
+    button.btn-sign-out {
+      img.nav-logout {
+        width: 34px;
+      }
+    }
+  }
+
   #dotsMenuClose {
     position: fixed;
     width: 76px;
