@@ -356,6 +356,40 @@ footer.home {
       }
     }
 
+    @media (max-width: 320px) {
+      .footer-tab {
+        width: 86vw;
+        margin: 0 auto;
+
+        .list-footer {
+          display: flex;
+          justify-content: space-between;
+          list-style: none;
+          padding-top: 30px;
+          text-align: center;
+          padding-inline-start: 0;
+          margin-bottom: 0;
+
+          li {
+            a {
+              text-decoration: none;
+              color: white;
+              position: relative;
+              font-weight: 400;
+              font-size: 16px;
+              font-family: 'Roboto Condensed';
+              transition: font-weight 0.4s ease 0s;
+
+              &:hover {
+                font-weight: 900;
+                transition: font-weight 0.4s ease 0s;
+              }
+            }
+          }
+        }
+      }
+    }
+
     .copyright {
       text-align: center;
       padding-top: 30px;
@@ -504,6 +538,7 @@ footer {
       .img-footer {
         margin: 0 auto;
         width: 70vw;
+        text-align: center;
 
         img.img-will {
           width: 70vw;
@@ -715,7 +750,7 @@ footer {
 
     @media (max-width: 540px) {
       .footer-tab {
-        width: 68vw;
+        width: 86vw;
         margin: 0 auto;
 
         .list-footer {
@@ -733,7 +768,7 @@ footer {
               color: white;
               position: relative;
               font-weight: 400;
-              font-size: 18px;
+              font-size: 16px;
               font-family: 'Roboto Condensed';
               transition: font-weight 0.4s ease 0s;
 
@@ -749,7 +784,7 @@ footer {
 
     @media (max-width: 320px) {
       .footer-tab {
-        width: 80vw;
+        width: 86vw;
         margin: 0 auto;
 
         .list-footer {
@@ -767,7 +802,7 @@ footer {
               color: white;
               position: relative;
               font-weight: 400;
-              font-size: 18px;
+              font-size: 16px;
               font-family: 'Roboto Condensed';
               transition: font-weight 0.4s ease 0s;
 
@@ -785,8 +820,6 @@ footer {
       text-align: center;
       padding-top: 30px;
       font-size: 12px;
-      font-weight: 400;
-      font-family: 'Roboto Condensed';
     }
 
     .mentions-legales {
