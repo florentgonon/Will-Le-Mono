@@ -45,7 +45,7 @@
             <div class="img-formation">
               <%= cl_image_tag(formation.photo, class: "formation-img", id: big_formation?(formation.id)) %>
               <%= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
-                <%= image_tag 'play.png', :data => { :src => formation.url_yt }, id: index, class: "formation-play"%>
+                <%= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
               <% end %>
             </div>
 
