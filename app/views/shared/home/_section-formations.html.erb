@@ -2,7 +2,7 @@
   <div class="container-formations">
     <div class="trapezoids-title">
       <div class="trapezoid-blue">
-        <h1>FORMATIONS</h1>
+        <h2>FORMATIONS</h2>
       </div>
     </div>
 
@@ -16,7 +16,7 @@
                   <%= cl_image_tag(@formations[0].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2><%= @formations[0].title %></h2>
+                  <h3><%= @formations[0].title %></h3>
                   <p><%= simple_format(@formations[0].description.first(50)) %>...</p>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                   <%= cl_image_tag(@formations[1].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2><%= @formations[1].title %></h2>
+                  <h3><%= @formations[1].title %></h3>
                   <p><%= simple_format(@formations[1].description.first(50)) %>...</p>
                 </div>
               </div>
@@ -44,7 +44,7 @@
                   <%= cl_image_tag(@formations[5].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2><%= @formations[5].title %></h2>
+                  <h3><%= @formations[5].title %></h3>
                   <p><%= simple_format(@formations[5].description.first(50)) %>...</p>
                 </div>
               </div>
@@ -58,7 +58,7 @@
                   <%= cl_image_tag(@formations[3].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2><%= @formations[3].title %></h2>
+                  <h3><%= @formations[3].title %></h3>
                   <p><%= simple_format(@formations[3].description.first(50)) %>...</p>
                 </div>
               </div>
@@ -72,7 +72,7 @@
                   <%= cl_image_tag(@formations[4].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h2><%= @formations[4].title %></h2>
+                  <h3><%= @formations[4].title %></h3>
                   <p><%= simple_format(@formations[4].description.first(50)) %>...</p>
                 </div>
               </div>
