@@ -256,10 +256,11 @@
               height: 100%;
               display: flex;
               align-items: flex-end;
+              justify-content: center;
 
               img.will-about {
                 margin-top: 83px;
-                width: 115%;
+                width: 80%;
               }
             }
           }
@@ -271,6 +272,7 @@
               height: 100%;
               display: flex;
               align-items: flex-end;
+              // justify-content: center;
 
               img.will-about {
                 // margin-top: 83px;
@@ -286,10 +288,11 @@
               height: 100%;
               display: flex;
               align-items: flex-end;
+              justify-content: center;
 
               img.will-about {
                 // padding-top: 55px;
-                width: 108%;
+                width: 75%;
               }
             }
           }

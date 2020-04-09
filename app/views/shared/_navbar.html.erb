@@ -30,10 +30,20 @@
 </nav>
 
 <div class="modal fade" id="modalNavigation" role="dialog"  aria-hidden="true">
+  <% if admin_signed_in? %>
+    <%= link_to destroy_admin_session_path, class: "logout", method: :delete do %>
+      <button class="btn-sign-out">
+        <%= image_tag 'logout.png', class: "nav-logout"%>
+      </button>
+    <% end %>
+  <% else %>
+  <% end %>
   <%# BUTTON CLOSE %>
   <a id="dotsMenuClose" class="btn menu active" data-target="#modalNavigation" data-toggle="modal" aria-label="Close" class="close" data-dismiss="modal">
     <%= image_tag 'quit (1).png', class: "close-menu"%>
   </a>
+
+
   <%# MODAL %>
   <div class="modal-dialog">
     <div class="modal-content" role="document">
@@ -48,7 +58,6 @@
             <%= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
             <%= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item", class: is_active?("about") %>
             <%= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item", class: is_active?("contact") %>
-
 
 
         <%# MENU PROFIL / LOG OUT START %>
