@@ -391,7 +391,7 @@ $pix-size: 6px; // <---- Definir la taille du menu
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   a.logout {
     position: fixed;
     width: 76px;
@@ -418,37 +418,6 @@ $pix-size: 6px; // <---- Definir la taille du menu
 
     img.close-menu {
       width: 42px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  a.logout {
-    position: fixed;
-    width: 76px;
-    height: 51px;
-    padding: 0;
-    top: 21px;
-    left: 31px;
-
-    button.btn-sign-out {
-      img.nav-logout {
-        width: 34px;
-      }
-    }
-  }
-
-  #dotsMenuClose {
-    position: fixed;
-    width: 76px;
-    height: 51px;
-    padding: 0;
-    top: 22px;
-    right: 31px;
-
-
-    img.close-menu {
-      width: 32px;
     }
   }
 }

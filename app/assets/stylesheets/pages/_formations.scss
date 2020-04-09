@@ -305,9 +305,16 @@
 
           img.formation-play {
             position: absolute;
-            top: 0;
+            top: 5px;
             left: 46px;
             width: 76%;
+          }
+
+          img#pack-complet {
+            position: absolute;
+            top: 29px;
+            left: 26px;
+            width: 90%;
           }
         }
       }
