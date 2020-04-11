@@ -294,6 +294,106 @@
           width: 80%;
         }
 
+        @media (min-width: 1025px) {
+          @keyframes packcomplet {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-20px); }
+        }
+
+
+          img.arrow {
+            width: 60px;
+            opacity: 1;
+            transform: rotate(-177deg);
+            position: relative;
+            left: -150px;
+            top: 46px;
+            animation: packcomplet 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          @keyframes packcomplet {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-15px); }
+        }
+
+
+          img.arrow {
+            width: 60px;
+            opacity: 1;
+            transform: rotate(-177deg);
+            position: relative;
+            left: -122px;
+            top: 34px;
+            animation: packcomplet 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+
+        @media (max-width: 768px) {
+          @keyframes packcomplet {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-20px); }
+        }
+
+
+          img.arrow {
+            width: 50px;
+            opacity: 1;
+            transform: rotate(-177deg);
+            position: relative;
+            left: -150px;
+            top: 46px;
+            animation: packcomplet 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+
+        @media (max-width: 540px) {
+          @keyframes packcomplet {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-15px); }
+        }
+
+
+          img.arrow {
+            width: 50px;
+            opacity: 1;
+            transform: rotate(-177deg);
+            position: relative;
+            left: -122px;
+            top: 34px;
+            animation: packcomplet 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+
+        @media (max-width: 321px) {
+          @keyframes packcomplet {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-15px); }
+        }
+
+
+          img.arrow {
+            width: 50px;
+            opacity: 1;
+            transform: rotate(-177deg);
+            position: relative;
+            left: -112px;
+            top: 34px;
+            animation: packcomplet 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+          }
+        }
+
         img#pack-complet {
           width: 110%;
           position: relative;
