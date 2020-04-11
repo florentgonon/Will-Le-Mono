@@ -148,6 +148,17 @@
       }
     }
 
+    .container-video-presentation {
+      padding: 50px 0;
+      text-align: center;
+
+      iframe#frame-presentation {
+        width: 400px;
+        height: 250px;
+        border-radius: 2%;
+      }
+    }
+
     h2.title-question {
       padding: 35px 0 30px 0;
       text-align: center;
@@ -161,7 +172,7 @@
       text-align: center;
       font-size: 35px;
       text-transform: uppercase;
-      padding-top: 40px;
+      // padding-top: 40px;
       font-style: italic;
       text-decoration: underline overline;
     }
