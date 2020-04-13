@@ -553,5 +553,30 @@
         }
       }
     }
+
+    .container-reviews {
+      text-align: center;
+      padding-bottom: 20px;
+
+      h2 {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: left;
+        // margin-bottom: 30px;
+
+        span.blue {
+          color: #54BCB6;
+        }
+      }
+
+      .review {
+        padding-bottom: 30px;
+
+        img.review {
+          width: 300px;
+          border-radius: 2px;
+        }
+      }
+    }
   }
 }
