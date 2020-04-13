@@ -11,18 +11,17 @@ function formspree() {
 
     function success() {
       form.reset();
-      // status.innerHTML = "Merci!";
+      button.style = "display: none ";
+      status.innerHTML = "Merci pour la prise de contact ! 🙂";
     }
 
     function error() {
-      status.innerHTML = "Oups! Il y a un problème.";
-      button.style = "display: none ";
+      status.innerHTML = "Oups! Il y a eu un problème, veuillez réessayer. 🙁";
     }
 
     // handle the form submission event
 
     form.addEventListener("submit", function(ev) {
-      console.log(event);
       ev.preventDefault();
       var data = new FormData(form);
       ajax(form.method, form.action, data, success, error);

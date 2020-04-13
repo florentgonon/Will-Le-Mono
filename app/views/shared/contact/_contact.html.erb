@@ -9,7 +9,7 @@
     <h2>Tu souhaites te faire coacher ? Tu veux plus d’informations ?</h2>
     <div class="row">
       <div class="col-lg-12">
-        <form name="sentMessage" id="my-form" novalidate="" action="https://formspree.io/mqkledvv" method="POST">
+        <form name="sentMessage" id="my-form" novalidate="" action="https://formspree.io/meqlpyky" method="POST">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -50,9 +50,9 @@
             <div class="col-lg-12 text-center">
               <div id="success"></div>
               <button id="my-form-button" class="mail-btn" type="submit">
-                <div class="trapezoid-orange">
-                  <%= link_to "ENVOYER", formations_path, class: "more-about" %>
-                </div>
+                <%= link_to pages_contact_path, class: "more-about" do %>
+                  <div class="trapezoid-orange"><p>ENVOYER</p></div>
+                <% end %>
               </button>
               <p id="my-form-status"></p>
             </div>

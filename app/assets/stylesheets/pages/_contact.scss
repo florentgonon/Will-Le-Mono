@@ -116,25 +116,35 @@
         border: transparent;
         padding-bottom: 100px;
 
-        .trapezoid-orange {
-          width: 0;
-          height: 36px;
-          border-top: 8px solid transparent;
-          border-right: 106px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
 
-          a.more-about {
-            position: relative;
-            top: 3px;
-            left: 18px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            white-space: nowrap;
-            outline: none;
+        a.more-about {
+          position: relative;
+          top: 3px;
+          left: 18px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          white-space: nowrap;
+          outline: none;
+
+          .trapezoid-orange {
+            width: 0;
+            height: 36px;
+            border-top: 8px solid transparent;
+            border-right: 106px solid #EC6B1B;
+            border-left: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+
+            p {
+              position: relative;
+              left: 17px;
+            }
           }
         }
+      }
+
+      p#my-form-status {
+        font-weight: 900;
       }
     }
   }
