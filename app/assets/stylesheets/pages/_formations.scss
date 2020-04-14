@@ -732,27 +732,197 @@
       }
     }
 
-    .container-reviews {
-      text-align: center;
-      padding-bottom: 20px;
+    @media (min-width: 1025px) {
+      .container-caroussel {
+        text-align: center;
+        padding-bottom: 100px;
 
-      h2 {
-        font-size: 34px;
-        font-weight: bold;
-        text-align: left;
-        // margin-bottom: 30px;
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
 
-        span.blue {
-          color: #54BCB6;
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 300px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: #0A0E12;
+          opacity: 1;
+          width: 6vw;
+          margin-right: -72px;
+        }
+
+          .carousel-control-prev {
+          background-color: #0A0E12;
+          opacity: 1;
+          width: 6vw;
+          margin-left: -72px;
         }
       }
+    }
 
-      .review {
-        padding-bottom: 30px;
+    @media (max-width: 1024px) {
+      .container-caroussel {
+        text-align: center;
+        padding-bottom: 100px;
 
-        img.review {
-          width: 270px;
-          border-radius: 2px;
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 270px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-right: -54px;
+        }
+
+          .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-left: -54px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container-caroussel {
+        text-align: center;
+        padding-bottom: 100px;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 298px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 8vw;
+          margin-right: -50px;
+        }
+
+          .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 8vw;
+          margin-left: -50px;
+        }
+      }
+    }
+
+    @media (max-width: 540px) {
+      .container-caroussel {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 235px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-right: -10px;
+        }
+
+          .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-left: -10px;
+        }
+      }
+    }
+
+    @media (max-width: 320px) {
+      .container-caroussel {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 205px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-right: -10px;
+        }
+
+          .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-left: -10px;
         }
       }
     }
