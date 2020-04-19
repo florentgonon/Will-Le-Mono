@@ -1,0 +1,26 @@
+<button type="button" class="button-captation" data-toggle="modal" data-target="#modal-mail">
+  <%= image_tag 'email.png', class: "btn-mail"%>
+</button>
+
+<div class="modal fade captation-mail" id="modal-mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content-popup-mail">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">VEUX-TU FAIRE PARTIE DE MA <span class="orange">MAILING LIST PRIVÉE ?</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><%= image_tag "quit (1).png" %></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Ca te plairait de recevoir GRATUITEMENT 9 vidéos de formation sur les thématiques les plus importantes ?</p>
+      </div>
+      <div class="modal-footer">
+        <div class="trapezoids">
+          <div class="trapezoid-orange">
+            <a href="https://wkerautret.learnybox.com/obtenir-son-code-en-accelere/" target="_blank">OUI, je suis motivé !</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

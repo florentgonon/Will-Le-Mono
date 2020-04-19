@@ -1,5 +1,7 @@
 <%= render 'shared/navbar' %>
-<%= render './shared/btn-capture-mail' %>
+<%#= render './shared/btn-capture-mail' %>
+<%= render 'shared/popup-captation-mail' %>
+<%= render 'shared/btn&popup-captation-mail' %>
 <section id="formations">
   <div class="container-formations">
 
@@ -10,14 +12,14 @@
       </div>
     </div> -->
 
-    <!-- Modal -->
-    <div class="modal fade yt" id="yt-player" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- BONNE Modal YT -->
+    <!-- <div class="modal fade yt" id="yt-player" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="my-modal-content">
           <iframe id="frame" src="" data-src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -34,13 +36,13 @@
       <h2 class="phrase-accroche"><span class="blue">ÉLÈVE D'UNE AUTO-ÉCOLE TRADITIONNELLE, D'UNE AUTO-ÉCOLE EN LIGNE, OU CANDIDAT(E) LIBRE ?</span><br> CES FORMATIONS SONT FAITES POUR TOI !</h2>
     </div>
 
+    <h2 class="title-question">Je souhaites me faire coacher sur...</h2>
+
     <% if admin_signed_in? %>
       <div class="container-btn-new">
         <button class="btn-new"><%= link_to "AJOUTER UNE FORMATION ", new_admin_formation_path %> <i class="fi-cwsuxl-plus-solid"></i></button>
       </div>
     <% end %>
-
-    <h2 class="title-question">Je souhaites me faire coacher sur...</h2>
 
     <div class="row">
       <%#= paginate @articles_page %>
@@ -56,15 +58,16 @@
                 <%= cl_image_tag(formation.photo, class: "formation-img") %>
               <% end %>
 
-              <% if formation.id == 5 %>
-                <%= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
-                  <%= image_tag 'play-pack-complet.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
-                <% end %>
-              <% else %>
-                <%= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
-                  <%= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play" %>
-                <% end %>
-              <% end %>
+              <!-- LOGIC MODAL YT -->
+              <%# if formation.id == 5 %>
+                <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                  <%#= image_tag 'play-pack-complet.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
+                <%# end %>
+              <%# else %>
+                <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                  <%#= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play" %>
+                <%# end %>
+              <%# end %>
 
             </div>
 
