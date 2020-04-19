@@ -29,8 +29,20 @@
     .modal-body {
       text-align: center;
 
-      p {
-        font-weight: 300;
+      img {
+        width: 200px;
+      }
+
+      p.first-line {
+        font-size: 25px;
+        margin: 0;
+        padding-top: 20px;
+      }
+
+      p.second-line {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
       }
     }
 
@@ -47,7 +59,7 @@
           width: 0;
           height: 34px;
           border-top: 9px solid transparent;
-          border-right: 97px solid #EC6B1B;
+          border-right: 184px solid #EC6B1B;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
