@@ -41,11 +41,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= cl_image_tag(@formations[5].photo, class: "formation-img")%>
+                  <%= cl_image_tag(@formations[2].photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
-                  <h3><%= @formations[5].title %></h3>
-                  <p><%= simple_format(@formations[5].description.first(50)) %>...</p>
+                  <h3><%= @formations[2].title %></h3>
+                  <p><%= simple_format(@formations[2].description.first(50)) %>...</p>
                 </div>
               </div>
             </div>
@@ -74,6 +74,34 @@
                 <div class="description-formation">
                   <h3><%= @formations[4].title %></h3>
                   <p><%= simple_format(@formations[4].description.first(50)) %>...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= cl_image_tag(@formations[5].photo, class: "formation-img")%>
+                </div>
+                <div class="description-formation">
+                  <h3><%= @formations[5].title %></h3>
+                  <p><%= simple_format(@formations[5].description.first(50)) %>...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="img-formation">
+                  <%= cl_image_tag(@formations[6].photo, class: "formation-img")%>
+                </div>
+                <div class="description-formation">
+                  <h3><%= @formations[6].title %></h3>
+                  <p><%= simple_format(@formations[6].description.first(50)) %>...</p>
                 </div>
               </div>
             </div>
