@@ -3,6 +3,10 @@
 # Article.destroy_all
 # Formation.destroy_all
 
+a = Admin.create!(
+  email: 'blabla@gmail.com',
+  password: 'helloworld')
+
 
 # puts "Creating articles..."
 #  a = Article.create!(

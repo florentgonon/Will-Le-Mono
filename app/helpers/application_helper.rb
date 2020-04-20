@@ -12,8 +12,8 @@ module ApplicationHelper
     end
   end
 
-  def big_formation?(id)
-    if id == 5
+  def big_formation(formation_name)
+    if formation_name.include? "PACK COMPLET"
       "pack-complet"
     else
     end

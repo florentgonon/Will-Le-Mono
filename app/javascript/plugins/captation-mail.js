@@ -16,5 +16,9 @@
 // })
 
 setTimeout(function() {
-  $('.mail').modal();
-}, 10000);
+  $('.mail-formations').modal();
+}, 5000);
+
+setTimeout(function() {
+  $('.mail-blog').modal();
+}, 5000);
