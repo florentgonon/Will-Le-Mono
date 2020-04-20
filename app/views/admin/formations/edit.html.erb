@@ -44,6 +44,11 @@
                     :label => "PRIX Courant",
                     :label_html => { :class => 'span-blue-label' },
                     input_html: { :class => 'form-input', :placeholder => "PRIX Courant" } %>
+        <%= f.input :number,
+                    :collection => 1..30,
+                    :label => "Numéro de la Formation",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Numéro de la Formation" } %>
         <%= f.input :photo,
                     :label => "IMAGE",
                     :label_html => { :class => 'span-blue-label' },

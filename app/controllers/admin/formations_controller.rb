@@ -34,6 +34,6 @@ class Admin::FormationsController < ApplicationController
   end
 
   def formation_params
-    params.require(:formation).permit(:title, :description, :url_yt, :url_learnybox, :photo, :sales_price, :price)
+    params.require(:formation).permit(:title, :description, :url_yt, :url_learnybox, :photo, :sales_price, :price, :number)
   end
 end
