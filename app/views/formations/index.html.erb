@@ -55,7 +55,7 @@
           <div class="card">
             <div class="img-formation">
 
-              <% if formation.id == 5 %>
+              <% if formation.number == 5 %>
                 <%= image_tag 'fleche_pack-complet.png', class: "arrow"%>
                 <%= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
               <% else %>
@@ -77,7 +77,6 @@
 
             <div class="description-formation">
               <h2><%= formation.title %></h2>
-              <%= formation.number %>
               <%#= formation.id %>
               <p><%= simple_format(formation.description) %></p>
             </div>
