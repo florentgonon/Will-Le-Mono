@@ -195,6 +195,8 @@ GEM
     simple_form (5.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
+    sitemap_generator (5.3.1)
+      builder (~> 3.0)
     social-share-button (1.2.1)
       coffee-rails
     spring (2.1.0)
@@ -255,6 +257,7 @@ DEPENDENCIES
   redis
   sassc-rails
   simple_form
+  sitemap_generator (~> 5.1)
   social-share-button
   spring
   spring-watcher-listen (~> 2.0.0)

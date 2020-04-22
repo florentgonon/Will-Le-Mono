@@ -15,6 +15,8 @@ gem 'carrierwave', '~> 1.2'
 
 gem 'kaminari'
 
+gem 'sitemap_generator', '~> 5.1'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'
