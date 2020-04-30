@@ -20,5 +20,5 @@ setTimeout(function() {
 }, 5000);
 
 setTimeout(function() {
-  $('.mail-blog').modal();
-}, 5000);
+  $('.mail-home').modal();
+}, 1000);
