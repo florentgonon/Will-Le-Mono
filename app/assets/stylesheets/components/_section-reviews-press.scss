@@ -6,8 +6,62 @@
     max-width: 85vw;
     margin: 0 auto;
 
-    .reviews-google {
+    .citation {
+      text-align: center;
 
+      h2 {
+        margin-bottom: 10px;
+        font-size: 26px;
+
+        span.blue {
+          color: #54BCB6;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        font-weight: 300;
+
+        span.orange {
+          color: #EC6B1B;
+          font-size: 20px;
+        }
+
+        a {
+          img.info-img {
+            width: 6%;
+          }
+        }
+      }
+    }
+
+    .reviews-google {
+      text-align: center;
+
+      img.review-img {
+        width: 60%;
+        margin: 26px 0;
+      }
+    }
+
+    .press-citation {
+      text-align: center;
+
+      img.press-img {
+        width: 62%;
+      }
+
+      p {
+        font-weight: 300;
+        margin-bottom: 26px;
+        font-style: italic;
+
+        span.bold {
+          font-weight: bold;
+          font-size: 20px;
+          font-style: normal;
+        }
+      }
     }
   }
 }
