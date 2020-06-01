@@ -3,13 +3,21 @@
     <div class="row permis-code">
       <div class="col-lg-6 code">
         <div class="title-code">
-          <h2><span class="bold">CODE</span> <br> DE LA ROUTE</h2>
+          <h2>
+            <%= link_to formations_path do %>
+              <span class="bold">CODE</span> <br> DE LA ROUTE
+            <% end %>
+          </h2>
         </div>
         <%= image_tag 'depassement.png', class: "code-img", alt: "Panneau STOP"%>
       </div>
       <div class="col-lg-6 permis">
         <div class="title-permis">
-          <h2><span class="bold">PERMIS</span> <br> DE CONDUIRE</h2>
+          <h2>
+            <%= link_to formations_path do %>
+              <span class="bold">PERMIS</span> <br> DE CONDUIRE
+            <% end %>
+          </h2>
         </div>
         <%= image_tag 'voiture.png', class: "car-img", alt: "Citroën c4"%>
       </div>
