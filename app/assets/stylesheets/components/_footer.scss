@@ -11,7 +11,7 @@ footer.home {
         width: 0;
         height: 70px;
         border-top: 18px solid transparent;
-        border-right: 320px solid #54BCB6;
+        border-right: 352px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
@@ -30,7 +30,7 @@ footer.home {
         width: 0;
         height: 63px;
         border-top: 18px solid transparent;
-        border-right: 274px solid #54BCB6;
+        border-right: 276px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
@@ -38,7 +38,7 @@ footer.home {
           position: relative;
           left: 5px;
           white-space: nowrap;
-          font-size: 34px;
+          font-size: 31px;
           font-weight: bold;
         }
       }
@@ -82,7 +82,7 @@ footer.home {
         top: -10px;
         left: 173px;
         width: 0;
-        height: 49px;
+        height: 45px;
         border-top: 14px solid transparent;
         border-right: 82px solid #EC6B1B;
         border-left: 0px solid transparent;
@@ -93,7 +93,7 @@ footer.home {
           top: -7px;
           left: 8px;
           white-space: nowrap;
-          font-size: 34px;
+          font-size: 31px;
           font-weight: bold;
         }
 
@@ -108,44 +108,11 @@ footer.home {
       }
     }
 
-    .instagram-follow {
-      .img-footer {
-        margin: 0 auto;
-        width: 70vw;
-        text-align: center;
-
-        img.img-will {
-          width: 70vw;
-          margin-top: 5vh;
-        }
-
-        .trapezoid-btn-follow {
-          margin-top: 30px;
-          text-align: right;
-          height: 30px;
-          border-top: 8px solid transparent;
-          border-right: 106px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
-
-          a.more-about {
-            position: relative;
-            left: 93px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            white-space: nowrap;
-            outline: none;
-          }
-        }
-      }
-    }
-
     .social-list {
       ul {
         list-style: none;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 53px;
         padding-inline-start: 0;
         margin-bottom: 0;
 
@@ -153,34 +120,108 @@ footer.home {
           display: inline;
 
           @media (min-width: 960px) {
-            img.social-icon {
+            img.iphone-icon {
               width: 7%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 7%;
+            }
+
+            img.macbook-icon {
+              width: 19%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 960px) {
-            img.social-icon {
-              width: 14%;
+            img.iphone-icon {
+              width: 7%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 7%;
+            }
+
+            img.macbook-icon {
+              width: 19%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 768px) {
-            img.social-icon {
-              width: 15%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 540px) {
-            img.social-icon {
-              width: 16%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 320px) {
-            img.social-icon {
-              width: 17%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
+
+          // @media (max-width: 960px) {
+          //   img.social-icon {
+          //     width: 14%;
+          //   }
+          // }
+
+          // @media (max-width: 768px) {
+          //   img.social-icon {
+          //     width: 15%;
+          //   }
+          // }
+
+          // @media (max-width: 540px) {
+          //   img.social-icon {
+          //     width: 16%;
+          //   }
+          // }
+
+          // @media (max-width: 320px) {
+          //   img.social-icon {
+          //     width: 17%;
+          //   }
+          // }
         }
       }
     }
@@ -437,7 +478,7 @@ footer {
         width: 0;
         height: 70px;
         border-top: 18px solid transparent;
-        border-right: 320px solid #54BCB6;
+        border-right: 352px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
@@ -456,7 +497,7 @@ footer {
         width: 0;
         height: 63px;
         border-top: 18px solid transparent;
-        border-right: 274px solid #54BCB6;
+        border-right: 276px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
 
@@ -464,7 +505,7 @@ footer {
           position: relative;
           left: 5px;
           white-space: nowrap;
-          font-size: 34px;
+          font-size: 31px;
           font-weight: bold;
         }
       }
@@ -508,7 +549,7 @@ footer {
         top: -10px;
         left: 173px;
         width: 0;
-        height: 49px;
+        height: 45px;
         border-top: 14px solid transparent;
         border-right: 82px solid #EC6B1B;
         border-left: 0px solid transparent;
@@ -519,7 +560,7 @@ footer {
           top: -7px;
           left: 8px;
           white-space: nowrap;
-          font-size: 34px;
+          font-size: 31px;
           font-weight: bold;
         }
 
@@ -534,44 +575,11 @@ footer {
       }
     }
 
-    .instagram-follow {
-      .img-footer {
-        margin: 0 auto;
-        width: 70vw;
-        text-align: center;
-
-        img.img-will {
-          width: 70vw;
-          margin-top: 5vh;
-        }
-
-        .trapezoid-btn-follow {
-          margin-top: 30px;
-          text-align: right;
-          height: 30px;
-          border-top: 8px solid transparent;
-          border-right: 106px solid #EC6B1B;
-          border-left: 0px solid transparent;
-          border-bottom: 0px solid transparent;
-
-          a.more-about {
-            position: relative;
-            left: 93px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            white-space: nowrap;
-            outline: none;
-          }
-        }
-      }
-    }
-
     .social-list {
       ul {
         list-style: none;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 53px;
         padding-inline-start: 0;
         margin-bottom: 0;
 
@@ -579,32 +587,82 @@ footer {
           display: inline;
 
           @media (min-width: 960px) {
-            img.social-icon {
+            img.iphone-icon {
               width: 7%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 7%;
+            }
+
+            img.macbook-icon {
+              width: 19%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 960px) {
-            img.social-icon {
-              width: 14%;
+            img.iphone-icon {
+              width: 7%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 7%;
+            }
+
+            img.macbook-icon {
+              width: 19%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 768px) {
-            img.social-icon {
-              width: 15%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 540px) {
-            img.social-icon {
-              width: 16%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
 
           @media (max-width: 320px) {
-            img.social-icon {
-              width: 17%;
+            img.iphone-icon {
+              width: 14%;
+              margin-right: 17px;
+            }
+
+            img.ipad-icon {
+              width: 14%;
+            }
+
+            img.macbook-icon {
+              width: 38%;
+              margin-right: 20px;
             }
           }
         }
