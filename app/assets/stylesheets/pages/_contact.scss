@@ -147,5 +147,137 @@
         font-weight: 900;
       }
     }
+
+    .adress-phone {
+      text-align: center;
+
+      .logo-site {
+        img.logo {
+          width: 135px;
+        }
+      }
+
+      .adress {
+        margin-top: 10px;
+
+        img.icone-adress {
+          width: 40px;
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        p.adress {
+          margin: 10px 0 0 0;
+        }
+      }
+
+      .phone {
+        margin-top: 30px;
+
+        img.icone-phone {
+          width: 40px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+
+    .all-schedules {
+      padding-bottom: 100px;
+
+      .office-schedules {
+        h3.title-schedules {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 900;
+
+          img.icone-clock {
+            width: 40px;
+          }
+        }
+
+        table.office-schedule {
+          margin: 0 auto;
+
+          thead {
+            th.days {
+              p {
+                margin-bottom: 0;
+                font-weight: 300;
+              }
+            }
+
+            th.chevron {
+              p {
+                margin-bottom: 0;
+
+                i {
+                  margin: 0 20px 0 20px;
+                  font-weight: 300;
+                }
+              }
+            }
+
+            th.schedule-associated {
+              p {
+                margin-bottom: 0;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      .course-schedules {
+        h3.title-schedules {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 900;
+
+          img.icone-clock {
+            width: 40px;
+          }
+        }
+
+        table.office-schedule {
+          margin: 0 auto;
+
+          thead {
+            th.days {
+              p {
+                margin-bottom: 0;
+                font-weight: 300;
+              }
+            }
+
+            th.chevron {
+              p {
+                margin-bottom: 0;
+
+                i {
+                  margin: 0 20px 0 20px;
+                  font-weight: 300;
+                }
+              }
+            }
+
+            th.schedule-associated {
+              p {
+                margin-bottom: 0;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
