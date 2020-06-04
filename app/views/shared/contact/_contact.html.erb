@@ -9,7 +9,22 @@
     <h2>Tu souhaites te faire coacher ? Tu veux plus d’informations ?</h2>
     <div class="row">
 
-      <div class="col-lg-9">
+      <div class="col-md-3 adress-phone">
+        <div class="logo-site">
+          <%= image_tag "logo.png", class: "logo", alt: "Logo Will Le Mono" %>
+        </div>
+        <div class="adress">
+          <%= image_tag "adresse.png", class: "icone-adress", alt: "Icône localisation" %>
+          <p class="adress">14 Avenue Jean Jaurès</p>
+          <p>56100 - LORIENT</p>
+        </div>
+        <div class="phone">
+          <%= image_tag "telephone-bleu.png", class: "icone-phone", alt: "Icône téléphone" %>
+          <p>09 82 27 19 42</p>
+        </div>
+      </div>
+
+      <div class="col-md-9">
         <form name="sentMessage" id="my-form" novalidate="" action="https://formspree.io/meqlpyky" method="POST">
           <div class="row">
             <div class="col-md-6">
@@ -61,24 +76,10 @@
         </form>
       </div>
 
-      <div class="col-lg-3 adress-phone">
-        <div class="logo-site">
-          <%= image_tag "logo.png", class: "logo", alt: "Logo Will Le Mono" %>
-        </div>
-        <div class="adress">
-          <%= image_tag "adresse.png", class: "icone-adress", alt: "Icône localisation" %>
-          <p class="adress"># 14 Avenue Jean Jaurès</p>
-          <p>56100 - LORIENT</p>
-        </div>
-        <div class="phone">
-          <%= image_tag "telephone-bleu.png", class: "icone-phone", alt: "Icône téléphone" %>
-          <p># 09 82 27 19 42</p>
-        </div>
-      </div>
     </div>
     <div class="row all-schedules">
       <div class="col-lg-6 office-schedules">
-        <h3 class="title-schedules"><%= image_tag "time-blue.png", class: "icone-clock", alt: "Icône horloge" %> # SECRÉTARIAT</h3>
+        <h3 class="title-schedules"><%= image_tag "time-blue.png", class: "icone-clock", alt: "Icône horloge" %>SECRÉTARIAT</h3>
         <table class="office-schedule">
           <thead>
             <th class="days">
@@ -106,7 +107,7 @@
         </table>
       </div>
       <div class="col-lg-6 course-schedules">
-        <h3 class="title-schedules"><%= image_tag "time-orange.png", class: "icone-clock", alt: "Icône horloge" %> # COURS THÉORIQUES AVEC MONITEUR</h3>
+        <h3 class="title-schedules"><%= image_tag "time-orange.png", class: "icone-clock", alt: "Icône horloge" %>COURS THÉORIQUES AVEC MONITEUR</h3>
         <table class="office-schedule">
           <thead>
             <th class="days">
