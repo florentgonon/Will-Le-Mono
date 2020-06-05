@@ -18,9 +18,19 @@
           <p class="adress">14 Avenue Jean Jaurès</p>
           <p>56100 - LORIENT</p>
         </div>
-        <div class="phone">
-          <%= image_tag "telephone-bleu.png", class: "icone-phone", alt: "Icône téléphone" %>
-          <p>09 82 27 19 42</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="phone">
+              <%= image_tag "telephone-bleu.png", class: "icone-phone", alt: "Icône téléphone" %>
+              <p>09 82 27 19 42</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="phone">
+              <%= image_tag "mobile.png", class: "icone-phone", alt: "Icône téléphone" %>
+              <p>06 61 99 60 59</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -75,8 +85,8 @@
           </div>
         </form>
       </div>
-
     </div>
+
     <div class="row all-schedules">
       <div class="col-lg-6 office-schedules">
         <h3 class="title-schedules"><%= image_tag "time-blue.png", class: "icone-clock", alt: "Icône horloge" %>SECRÉTARIAT</h3>
@@ -124,6 +134,11 @@
             </th>
           </thead>
         </table>
+      </div>
+    </div>
+
+    <div class="container-map">
+      <div id="map" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
     </div>
 
