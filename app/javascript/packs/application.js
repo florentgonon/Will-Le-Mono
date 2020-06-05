@@ -1,6 +1,7 @@
 import "bootstrap";
 import $ from "jquery";
 
+
 import "../plugins/solidnav.js";
 import "../plugins/caroussel.js";
 import "../plugins/play-yt.js";
@@ -11,9 +12,11 @@ import "../plugins/btn-capture-mail.js";
 
 import { formspree } from "plugins/formspree.js";
 import { playyt } from "plugins/play-yt.js";
+import { map } from "plugins/map.js";
 
 formspree();
 playyt();
+map();
 
 
 
