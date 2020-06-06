@@ -106,26 +106,152 @@
     }
 
     .right-side {
-
-      h4 {
-        font-size: 34px;
-        font-weight: bold;
-
-        span.blue {
-          color: #54BCB6;
-        }
+      @media (max-width: 768px) {
+        padding-top: 0px;
       }
 
-      p {
-        text-align: justify;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 22px;
+      @media (min-width: 769px) {
+        padding-top: 110px;
+      }
+
+      // h4 {
+      //   font-size: 34px;
+      //   font-weight: bold;
+
+      //   span.blue {
+      //     color: #54BCB6;
+      //   }
+      // }
+
+      // p {
+      //   text-align: justify;
+      //   font-weight: 300;
+      //   font-size: 16px;
+      //   line-height: 22px;
+      // }
+
+      ul {
+        text-align: center;
+        list-style: none;
+        padding: 0;
+
+        li.orange {
+          color: #ec6b1b;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        li.blue {
+          padding-top: 25px;
+
+          i {
+            color: #54bcb6;
+            font-size: 35px;
+            font-weight: bold;
+          }
+        }
+
+        li.list {
+          font-weight: 300;
+        }
+
+        li.neon {
+          margin-bottom: 0;
+          padding: 35px 0 35px 0;
+          color: white;
+          font-weight: 900;
+          text-align: center;
+          font-size: 25px;
+          // text-transform: uppercase;
+          // padding-top: 40px;
+          font-style: italic;
+          text-decoration: underline overline;
+        }
+
+        li.neon {
+          animation: blink 3s infinite;
+          color: white;
+          text-shadow:
+
+            0 0 5px #54bcb6,
+            0 0 10px #54bcb6,
+            0 0 20px #54bcb6,
+            0 0 40px #54bcb6,
+            0 0 80px #54bcb6,
+            0 0 90px #54bcb6,
+            0 0 100px #54bcb6
+        }
+
+        @keyframes blink {
+          9% {
+             opacity: 1;
+          }
+
+          10% {
+             opacity: 0;
+          }
+
+          13% {
+             opacity: 1;
+          }
+
+           39% {
+             opacity: 1;
+          }
+
+          40% {
+             opacity: 0;
+          }
+
+          43% {
+             opacity: 1;
+          }
+
+          44% {
+             opacity: 0;
+          }
+
+           44% {
+             opacity: 1;
+          }
+
+           50% {
+             opacity: 0;
+          }
+
+           52% {
+             opacity: 1;
+          }
+
+           72% {
+             opacity: 1;
+          }
+
+          75% {
+            opacity: 0;
+          }
+
+          78% {
+            opacity: 1;
+          }
+
+          97% {
+            opacity: 1;
+          }
+
+          98% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
       }
 
       .trapezoid-orange {
         position: relative;
-        top: 8px;
+        top: -6px;
         float: right;
         width: 0;
         height: 30px;
