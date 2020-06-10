@@ -1,10 +1,12 @@
 #section-citation {
-  padding: 50px 0;
+  padding: 80px 0;
   background-image: linear-gradient(rgba(0,0,0,0.2)), image_url('citation.png');
   background-position: center;
   background-repeat: none;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
 
   .container-citation {
     max-width: 85vw;
