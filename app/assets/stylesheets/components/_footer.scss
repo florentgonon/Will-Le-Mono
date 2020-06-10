@@ -11,13 +11,14 @@ footer.home {
         width: 0;
         height: 70px;
         border-top: 18px solid transparent;
-        border-right: 352px solid #54BCB6;
+        border-right: 250px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h2 {
           position: relative;
-          left: 5px;
+          left: 13px;
           white-space: nowrap;
           font-size: 40px;
           font-weight: bold;
@@ -30,9 +31,10 @@ footer.home {
         width: 0;
         height: 63px;
         border-top: 18px solid transparent;
-        border-right: 276px solid #54BCB6;
+        border-right: 184px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h2 {
           position: relative;
@@ -48,13 +50,14 @@ footer.home {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
-        left: 173px;
+        left: 38px;
         width: 0;
         height: 49px;
         border-top: 14px solid transparent;
-        border-right: 92px solid #EC6B1B;
+        border-right: 212px solid #EC6B1B;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h3 {
           position: relative;
@@ -68,10 +71,10 @@ footer.home {
         img.arrow {
           width: 60px;
           opacity: 1;
-          transform: rotate(-115deg);
+          transform: rotate(-256deg);
           position: relative;
-          left: 81px;
-          top: -27px;
+          left: -63px;
+          top: -20px;
         }
       }
     }
@@ -80,13 +83,14 @@ footer.home {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
-        left: 173px;
+        left: 27px;
         width: 0;
         height: 45px;
         border-top: 14px solid transparent;
-        border-right: 82px solid #EC6B1B;
+        border-right: 169px solid #EC6B1B;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h3 {
           position: relative;
@@ -100,9 +104,9 @@ footer.home {
         img.arrow {
           width: 50px;
           opacity: 1;
-          transform: rotate(-101deg);
+          transform: rotate(-256deg);
           position: relative;
-          left: 70px;
+          left: -49px;
           top: -12px;
         }
       }
@@ -120,108 +124,74 @@ footer.home {
           display: inline;
 
           @media (min-width: 960px) {
-            img.iphone-icon {
-              width: 7%;
-              margin-right: 17px;
-            }
-
-            img.ipad-icon {
+            img.instagram-icon {
               width: 7%;
             }
 
-            img.macbook-icon {
-              width: 19%;
-              margin-right: 20px;
+            img.facebook-icon {
+              width: 7%;
+            }
+
+            img.youtube-icon {
+              width: 7%;
             }
           }
 
           @media (max-width: 960px) {
-            img.iphone-icon {
-              width: 7%;
-              margin-right: 17px;
-            }
-
-            img.ipad-icon {
+            img.instagram-icon {
               width: 7%;
             }
 
-            img.macbook-icon {
-              width: 19%;
-              margin-right: 20px;
+            img.facebook-icon {
+              width: 7%;
+            }
+
+            img.youtube-icon {
+              width: 7%;
             }
           }
 
           @media (max-width: 768px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 15%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 15%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 15%;
             }
           }
 
           @media (max-width: 540px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 20%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 20%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 20%;
             }
           }
 
           @media (max-width: 320px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 20%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 20%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 20%;
             }
           }
-
-          // @media (max-width: 960px) {
-          //   img.social-icon {
-          //     width: 14%;
-          //   }
-          // }
-
-          // @media (max-width: 768px) {
-          //   img.social-icon {
-          //     width: 15%;
-          //   }
-          // }
-
-          // @media (max-width: 540px) {
-          //   img.social-icon {
-          //     width: 16%;
-          //   }
-          // }
-
-          // @media (max-width: 320px) {
-          //   img.social-icon {
-          //     width: 17%;
-          //   }
-          // }
         }
       }
     }
@@ -467,7 +437,7 @@ footer.home {
 
 footer {
   padding: 50px 0;
-  // background-color: #0A0E12;
+  background-color: #0A0E12;
 
   #container-footer {
     max-width: 85vw;
@@ -478,13 +448,14 @@ footer {
         width: 0;
         height: 70px;
         border-top: 18px solid transparent;
-        border-right: 352px solid #54BCB6;
+        border-right: 250px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h2 {
           position: relative;
-          left: 5px;
+          left: 13px;
           white-space: nowrap;
           font-size: 40px;
           font-weight: bold;
@@ -497,9 +468,10 @@ footer {
         width: 0;
         height: 63px;
         border-top: 18px solid transparent;
-        border-right: 276px solid #54BCB6;
+        border-right: 184px solid #54BCB6;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h2 {
           position: relative;
@@ -515,13 +487,14 @@ footer {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
-        left: 173px;
+        left: 38px;
         width: 0;
         height: 49px;
         border-top: 14px solid transparent;
-        border-right: 92px solid #EC6B1B;
+        border-right: 212px solid #EC6B1B;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h3 {
           position: relative;
@@ -535,10 +508,10 @@ footer {
         img.arrow {
           width: 60px;
           opacity: 1;
-          transform: rotate(-115deg);
+          transform: rotate(-256deg);
           position: relative;
-          left: 81px;
-          top: -27px;
+          left: -63px;
+          top: -20px;
         }
       }
     }
@@ -547,13 +520,14 @@ footer {
       .trapezoid-orange-title {
         position: relative;
         top: -10px;
-        left: 173px;
+        left: 27px;
         width: 0;
         height: 45px;
         border-top: 14px solid transparent;
-        border-right: 82px solid #EC6B1B;
+        border-right: 169px solid #EC6B1B;
         border-left: 0px solid transparent;
         border-bottom: 0px solid transparent;
+        margin: 0 auto;
 
         h3 {
           position: relative;
@@ -567,9 +541,9 @@ footer {
         img.arrow {
           width: 50px;
           opacity: 1;
-          transform: rotate(-101deg);
+          transform: rotate(-256deg);
           position: relative;
-          left: 70px;
+          left: -49px;
           top: -12px;
         }
       }
@@ -587,82 +561,72 @@ footer {
           display: inline;
 
           @media (min-width: 960px) {
-            img.iphone-icon {
-              width: 7%;
-              margin-right: 17px;
-            }
-
-            img.ipad-icon {
+            img.instagram-icon {
               width: 7%;
             }
 
-            img.macbook-icon {
-              width: 19%;
-              margin-right: 20px;
+            img.facebook-icon {
+              width: 7%;
+            }
+
+            img.youtube-icon {
+              width: 7%;
             }
           }
 
           @media (max-width: 960px) {
-            img.iphone-icon {
-              width: 7%;
-              margin-right: 17px;
-            }
-
-            img.ipad-icon {
+            img.instagram-icon {
               width: 7%;
             }
 
-            img.macbook-icon {
-              width: 19%;
-              margin-right: 20px;
+            img.facebook-icon {
+              width: 7%;
+            }
+
+            img.youtube-icon {
+              width: 7%;
             }
           }
 
           @media (max-width: 768px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 15%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 15%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 15%;
             }
           }
 
           @media (max-width: 540px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 20%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 20%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 20%;
             }
           }
 
           @media (max-width: 320px) {
-            img.iphone-icon {
-              width: 14%;
-              margin-right: 17px;
+            img.instagram-icon {
+              width: 20%;
             }
 
-            img.ipad-icon {
-              width: 14%;
+            img.facebook-icon {
+              width: 20%;
             }
 
-            img.macbook-icon {
-              width: 38%;
-              margin-right: 20px;
+            img.youtube-icon {
+              width: 20%;
             }
           }
         }
