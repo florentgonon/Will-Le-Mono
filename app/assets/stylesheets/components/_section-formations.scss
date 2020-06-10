@@ -10,12 +10,12 @@
       padding-bottom: 50px;
 
       @media (min-width: 769px) {
-        .trapezoid-blue {
+        .trapezoid-orange {
           margin: 0 auto;
           width: 0;
           height: 70px;
           border-top: 18px solid transparent;
-          border-right: 295px solid #54BCB6;
+          border-right: 295px solid #ec6b1b;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
@@ -30,12 +30,12 @@
       }
 
       @media (max-width: 768px) {
-        .trapezoid-blue {
+        .trapezoid-orange {
           margin: 0 auto;
           width: 0;
           height: 61px;
           border-top: 18px solid transparent;
-          border-right: 235px solid #54BCB6;
+          border-right: 235px solid #ec6b1b;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
@@ -58,12 +58,12 @@
       padding-top: 50px;
 
       @media (max-width: 321px) {
-        .trapezoid-orange {
+        .trapezoid-blue {
           margin: 0 auto;
           width: 0;
           height: 40px;
           border-top: 8px solid transparent;
-          border-right: 271px solid #EC6B1B;
+          border-right: 271px solid #54BCB6;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
@@ -82,12 +82,12 @@
       }
 
       @media (min-width: 322px) {
-        .trapezoid-orange {
+        .trapezoid-blue {
           margin: 0 auto;
           width: 0;
           height: 40px;
           border-top: 8px solid transparent;
-          border-right: 304px solid #EC6B1B;
+          border-right: 304px solid #54BCB6;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
 
