@@ -4,20 +4,40 @@
 
       <div class="col-lg-6 code">
         <%= link_to formations_path, class: "link-formation" do %>
-        <div class="title-code">
-          <h2><span class="bold">CODE</span> <br> DE LA ROUTE</h2>
-        </div>
-        <%= image_tag 'depassement.png', class: "code-img", alt: "Panneau STOP"%>
+          <div class="trapezoids">
+            <div class="trapezoid-orange">
+              <h2>CODE</h2>
+            </div>
+            <div class="second-title">
+              <h3>DE LA ROUTE</h3>
+            </div>
+          </div>
         <% end %>
+        <%#= link_to formations_path, class: "link-formation" do %>
+        <!-- <div class="title-code">
+          <h2><span class="bold">CODE</span> <br> DE LA ROUTE</h2>
+        </div> -->
+        <%#= image_tag 'depassement.png', class: "code-img", alt: "Panneau STOP"%>
+        <%# end %>
       </div>
 
       <div class="col-lg-6 permis">
         <%= link_to formations_path, class: "link-formation" do %>
-          <div class="title-permis">
-            <h2><span class="bold">PERMIS</span> <br> DE CONDUIRE</h2>
+          <div class="trapezoids">
+            <div class="trapezoid-blue">
+              <h2>PERMIS</h2>
+            </div>
+            <div class="second-title">
+              <h3>DE CONDUIRE</h3>
+            </div>
           </div>
-        <%= image_tag 'voiture.png', class: "car-img", alt: "Citroën c4"%>
         <% end %>
+        <%#= link_to formations_path, class: "link-formation" do %>
+          <!-- <div class="title-permis">
+            <h2><span class="bold">PERMIS</span> <br> DE CONDUIRE</h2>
+          </div> -->
+        <%#= image_tag 'voiture.png', class: "car-img", alt: "Citroën c4"%>
+        <%# end %>
       </div>
 
     </div>
