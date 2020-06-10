@@ -1,6 +1,6 @@
 #section-yt {
   background-color : #0a0e12;
-  padding: 50px 0;
+  // padding: 0 0 50px 0;
 
   .container-yt {
     max-width: 80vw;
@@ -9,12 +9,10 @@
     .yt {
       margin: 0 auto;
 
-      @media (min-width: 769px) {
+      @media (min-width: 1025px) {
         .title-yt {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
+          position: relative;
+          top: 35px;
 
           h2 {
             font-weight: bold;
@@ -32,17 +30,103 @@
           // margin-top: 20px;
 
           img.img-logo-yt {
-            width: 60%;
+            position: relative;
+            top: -65px;
+            width: 90%;
           }
+        }
+
+        .trapezoid-red {
+          position: relative;
+          // top: 24px;
+          width: 0;
+          height: 30px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #FF0202;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.subscribe {
+            position: relative;
+            left: 7px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            outline: none;
+          }
+        }
+
+        img.arrow {
+          width: 63px;
+          position: relative;
+          left: 121px;
+          top: -37px;
+          transform: rotate(-30deg);
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .title-yt {
+          position: relative;
+          top: 15px;
+
+          h2 {
+            font-weight: bold;
+            font-size: 30px;
+
+            span.thin {
+              font-weight: 300;
+              color: white;
+            }
+          }
+        }
+
+        .img-yt {
+          text-align: center;
+          // margin-top: 20px;
+
+          img.img-logo-yt {
+            position: relative;
+            top: -65px;
+            width: 100%;
+          }
+        }
+
+        .trapezoid-red {
+          position: relative;
+          // top: 24px;
+          width: 0;
+          height: 30px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #FF0202;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.subscribe {
+            position: relative;
+            left: 7px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            outline: none;
+          }
+        }
+
+        img.arrow {
+          width: 63px;
+          position: relative;
+          left: 121px;
+          top: -37px;
+          transform: rotate(-30deg);
         }
       }
 
       @media (max-width: 768px) {
         .title-yt {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           text-align: center;
+          display: block;
 
           h2 {
             font-weight: bold;
@@ -57,11 +141,99 @@
 
         .img-yt {
           text-align: center;
-          margin-top: 20px;
+          margin-top: 130px;
 
           img.img-logo-yt {
-            width: 60%;
+            width: 90%;
           }
+        }
+
+        .trapezoid-red {
+          position: relative;
+          top: 19px;
+          right: 0;
+          width: 0;
+          height: 30px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #FF0202;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+          margin: 0 auto;
+
+          a.subscribe {
+            position: relative;
+            left: 7px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            outline: none;
+          }
+        }
+
+        img.arrow {
+          width: 63px;
+          position: relative;
+          left: 121px;
+          top: -37px;
+          transform: rotate(-30deg);
+        }
+      }
+
+      @media (max-width: 320px) {
+        .title-yt {
+          text-align: center;
+          display: block;
+
+          h2 {
+            font-weight: bold;
+            font-size: 34px;
+
+            span.thin {
+              font-weight: 300;
+              color: white;
+            }
+          }
+        }
+
+        .img-yt {
+          text-align: center;
+          margin-top: 130px;
+
+          img.img-logo-yt {
+            width: 90%;
+          }
+        }
+
+        .trapezoid-red {
+          position: relative;
+          margin: 0 auto;
+          top: 19px;
+          left: 0;
+          width: 0;
+          height: 30px;
+          border-top: 8px solid transparent;
+          border-right: 106px solid #FF0202;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          a.subscribe {
+            position: relative;
+            left: 7px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            outline: none;
+          }
+        }
+
+        img.arrow {
+          width: 63px;
+          position: relative;
+          left: 121px;
+          top: -37px;
+          transform: rotate(-30deg);
         }
       }
     }
