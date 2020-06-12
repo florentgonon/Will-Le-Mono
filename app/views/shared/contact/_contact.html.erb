@@ -88,8 +88,11 @@
     </div>
 
     <div class="row all-schedules">
-      <div class="col-lg-6 office-schedules">
-        <h3 class="title-schedules"><%= image_tag "time-blue.png", class: "icone-clock", alt: "Icône horloge" %>SECRÉTARIAT</h3>
+      <div class="col-lg-12 office-schedules">
+        <div class="icon-clock">
+          <%= image_tag "time-blue.png", class: "icone-clock", alt: "Icône horloge" %>
+        </div>
+        <h3 class="title-schedules">SECRÉTARIAT</h3>
         <table class="office-schedule">
           <thead>
             <th class="days">
@@ -116,8 +119,8 @@
           </thead>
         </table>
       </div>
-      <div class="col-lg-6 course-schedules">
-        <h3 class="title-schedules"><%= image_tag "time-orange.png", class: "icone-clock", alt: "Icône horloge" %>COURS THÉORIQUES AVEC MONITEUR</h3>
+      <!-- <div class="col-lg-6 course-schedules">
+        <h3 class="title-schedules"><%#= image_tag "time-orange.png", class: "icone-clock", alt: "Icône horloge" %>COURS THÉORIQUES AVEC MONITEUR</h3>
         <table class="office-schedule">
           <thead>
             <th class="days">
@@ -134,7 +137,7 @@
             </th>
           </thead>
         </table>
-      </div>
+      </div> -->
     </div>
 
     <div class="container-map">

@@ -630,14 +630,49 @@
         padding-top: 15px;
         width: 70%;
 
-        h2 {
-          color: white;
-          text-align: left;
-          margin-bottom: 0;
-          font-weight: bold;
-          font-size: 20px;
-          font-family: 'Roboto Condensed';
-        }
+        // .trapezoid-orange {
+        //   width: 0;
+        //   height: 77px;
+        //   border-top: 18px solid transparent;
+        //   border-right: 234px solid #ec6b1b;
+        //   border-left: 0px solid transparent;
+        //   border-bottom: 0px solid transparent;
+        //   display: inline;
+
+          h2 {
+            color: white;
+            // text-align: left;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Roboto Condensed';
+            z-index: 10;
+            margin-bottom: 16px;
+            // position: absolute;
+          }
+        // }
+
+        // .trapezoid-blue {
+        //   width: 0;
+        //   height: 77px;
+        //   border-top: 18px solid transparent;
+        //   border-right: 234px solid #54bcb6;
+        //   border-left: 0px solid transparent;
+        //   border-bottom: 0px solid transparent;
+        //   display: inline;
+
+          h2 {
+            color: white;
+            // text-align: left;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Roboto Condensed';
+            z-index: 10;
+            margin-bottom: 16px;
+            // position: absolute;
+          }
+        // }
 
         p {
           color: white;

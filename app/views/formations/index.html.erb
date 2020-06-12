@@ -53,30 +53,41 @@
       <% @formations.order('number ASC').each_with_index do |formation, index| %>
         <div class="col-lg-4 col-md-6">
           <div class="card">
-            <div class="img-formation">
-
-              <% if formation.number == 5 %>
-                <%= image_tag 'fleche_pack-complet.png', class: "arrow"%>
-                <%= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
-              <% else %>
-                <%= cl_image_tag(formation.photo, class: "formation-img") %>
-              <% end %>
-
-              <!-- LOGIC MODAL YT -->
-              <%# if formation.id == 5 %>
-                <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
-                  <%#= image_tag 'play-pack-complet.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
-                <%# end %>
-              <%# else %>
-                <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
-                  <%#= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play" %>
-                <%# end %>
-              <%# end %>
-
-            </div>
 
             <div class="description-formation">
-              <h2><%= formation.title %></h2>
+
+              <% if formation.number.odd? %>
+                <!-- <div class="trapezoid-orange"> -->
+                  <h2><%= formation.title %></h2>
+                <!-- </div> -->
+              <% else %>
+                <!-- <div class="trapezoid-blue"> -->
+                  <h2><%= formation.title %></h2>
+                <!-- </div> -->
+              <% end %>
+
+
+              <div class="img-formation">
+
+                  <% if formation.number == 5 %>
+                    <%= image_tag 'fleche_pack-complet.png', class: "arrow"%>
+                    <%= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
+                  <% else %>
+                    <%= cl_image_tag(formation.photo, class: "formation-img") %>
+                  <% end %>
+
+                  <!-- LOGIC MODAL YT -->
+                  <%# if formation.id == 5 %>
+                    <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                      <%#= image_tag 'play-pack-complet.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
+                    <%# end %>
+                  <%# else %>
+                    <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                      <%#= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play" %>
+                    <%# end %>
+                  <%# end %>
+
+                </div>
               <%#= formation.id %>
               <p><%= simple_format(formation.description) %></p>
             </div>
