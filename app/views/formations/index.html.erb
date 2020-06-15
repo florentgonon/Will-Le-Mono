@@ -58,23 +58,23 @@
 
               <% if formation.number.odd? %>
                 <!-- <div class="trapezoid-orange"> -->
-                  <h2><%= formation.title %></h2>
+                  <h2 class="orange"><p><%= formation.title %></p></h2>
                 <!-- </div> -->
               <% else %>
                 <!-- <div class="trapezoid-blue"> -->
-                  <h2><%= formation.title %></h2>
+                  <h2 class="blue"><p><%= formation.title %></p></h2>
                 <!-- </div> -->
               <% end %>
 
 
               <div class="img-formation">
 
-                  <% if formation.number == 5 %>
-                    <%= image_tag 'fleche_pack-complet.png', class: "arrow"%>
-                    <%= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
-                  <% else %>
+                  <%# if formation.number == 5 %>
+                    <%#= image_tag 'fleche_pack-complet.png', class: "arrow"%>
+                    <%#= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
+                  <%# else %>
                     <%= cl_image_tag(formation.photo, class: "formation-img") %>
-                  <% end %>
+                  <%# end %>
 
                   <!-- LOGIC MODAL YT -->
                   <%# if formation.id == 5 %>
