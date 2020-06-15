@@ -630,49 +630,39 @@
         padding-top: 15px;
         width: 70%;
 
-        // .trapezoid-orange {
-        //   width: 0;
-        //   height: 77px;
-        //   border-top: 18px solid transparent;
-        //   border-right: 234px solid #ec6b1b;
-        //   border-left: 0px solid transparent;
-        //   border-bottom: 0px solid transparent;
-        //   display: inline;
+          h2.orange {
+            background-color: #ec6b1b;
+            padding: 15px 20px;
+            margin-bottom: 17px;
+            transform: skewY(-2deg);
 
-          h2 {
-            color: white;
-            // text-align: left;
-            margin-bottom: 0;
-            font-weight: bold;
-            font-size: 30px;
-            font-family: 'Roboto Condensed';
-            z-index: 10;
-            margin-bottom: 16px;
-            // position: absolute;
+            p {
+              font-family: "roboto condensed";
+              font-size: 30px;
+              font-weight: bold;
+              transform: skewY(2deg);
+              text-align: center;
+              margin: 0;
+              line-height: 35px;
+            }
           }
-        // }
 
-        // .trapezoid-blue {
-        //   width: 0;
-        //   height: 77px;
-        //   border-top: 18px solid transparent;
-        //   border-right: 234px solid #54bcb6;
-        //   border-left: 0px solid transparent;
-        //   border-bottom: 0px solid transparent;
-        //   display: inline;
+          h2.blue {
+            background-color: #54bcb6;
+            padding: 15px 20px;
+            margin-bottom: 17px;
+            transform: skewY(2deg);
 
-          h2 {
-            color: white;
-            // text-align: left;
-            margin-bottom: 0;
-            font-weight: bold;
-            font-size: 30px;
-            font-family: 'Roboto Condensed';
-            z-index: 10;
-            margin-bottom: 16px;
-            // position: absolute;
+            p {
+              font-family: "roboto condensed";
+              font-size: 30px;
+              font-weight: bold;
+              transform: skewY(-2deg);
+              text-align: center;
+              margin: 0;
+              line-height: 35px;
+            }
           }
-        // }
 
         p {
           color: white;
