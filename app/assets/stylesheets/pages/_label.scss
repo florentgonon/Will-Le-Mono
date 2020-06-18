@@ -1,0 +1,226 @@
+#label {
+  background-color: #0A0E12;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  padding-top: 210px;
+
+  .container-label {
+    max-width: 85vw;
+    margin: 0 auto;
+    // padding-bottom: 100px;
+
+    .trapezoids {
+      padding-bottom: 100px;
+
+      @media (min-width: 769px) {
+        .trapezoid-blue {
+          width: 0;
+          height: 70px;
+          border-top: 18px solid transparent;
+          border-right: 167px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 21px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .trapezoid-blue {
+          width: 0;
+          height: 60px;
+          border-top: 18px solid transparent;
+          border-right: 138px solid #54BCB6;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 17px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (min-width: 769px) {
+        .trapezoid-orange {
+          position: relative;
+          top: -20px;
+          left: 70px;
+          width: 0;
+          height: 52px;
+          border-top: 14px solid transparent;
+          border-right: 193px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 15px;
+            white-space: nowrap;
+            font-size: 40px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .trapezoid-orange {
+          position: relative;
+          top: -16px;
+          left: 46px;
+          width: 0;
+          height: 48px;
+          border-top: 14px solid transparent;
+          border-right: 148px solid #EC6B1B;
+          border-left: 0px solid transparent;
+          border-bottom: 0px solid transparent;
+
+          h1 {
+            position: relative;
+            top: -6px;
+            left: 5px;
+            white-space: nowrap;
+            font-size: 34px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .introduction {
+      h2 {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 23px;
+      }
+
+      h3 {
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+
+        span.bold {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .criterias {
+      h2 {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin: 70px 0 23px 0;
+
+        span.blue {
+          color: #54bcb6;
+        }
+      }
+
+      h3 {
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      p.bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      p.italic {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        font-style: italic;
+      }
+
+      ul {
+        li {
+          text-align: justify;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .img-evaluation {
+          margin-top: 50px;
+
+          img.evaluation-1 {
+            width: 100%;
+          }
+
+          img.evaluation-2 {
+            width: 100%;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .img-evaluation {
+          margin-top: 50px;
+
+          img.evaluation-1 {
+            width: 100%;
+            margin-bottom: 50px;
+          }
+
+          img.evaluation-2 {
+            width: 100%;
+          }
+        }
+      }
+
+      h3.second {
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      ul.hyphen {
+        list-style-type: '- ';
+      }
+
+      h3.third {
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}

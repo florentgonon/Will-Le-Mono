@@ -20,4 +20,7 @@ class PagesController < ApplicationController
 
   def mentions_legales
   end
+
+  def label
+  end
 end
