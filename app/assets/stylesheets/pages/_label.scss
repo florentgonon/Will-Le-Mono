@@ -8,6 +8,7 @@
   .container-label {
     max-width: 85vw;
     margin: 0 auto;
+    padding-bottom: 50px;
     // padding-bottom: 100px;
 
     .trapezoids {
@@ -149,6 +150,12 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 22px;
+
+        span.underline {
+          color: #ec6b1b;
+          font-weight: bold;
+          text-decoration: underline;
+        }
       }
 
       p.bold {
@@ -181,10 +188,12 @@
 
           img.evaluation-1 {
             width: 100%;
+            border-radius: 8px;
           }
 
           img.evaluation-2 {
             width: 100%;
+            border-radius: 8px;
           }
         }
       }
@@ -196,10 +205,12 @@
           img.evaluation-1 {
             width: 100%;
             margin-bottom: 50px;
+            border-radius: 8px;
           }
 
           img.evaluation-2 {
             width: 100%;
+            border-radius: 8px;
           }
         }
       }
@@ -249,13 +260,113 @@
         text-align: center;
         margin: 50px 0 50px 0;
 
-        img.bilan {
-          width: 50%;
-          text-align: center;
+        @media (min-width: 769px) {
+          img.bilan {
+            width: 50%;
+            text-align: center;
+            border-radius: 8px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          img.bilan {
+            width: 90%;
+            text-align: center;
+            border-radius: 8px;
+          }
         }
       }
 
       h3.fifth {
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      p.italic-bold {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      ul.number {
+        list-style-type: decimal;
+
+        li {
+          span.underline {
+            color: #ec6b1b;
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      h3.sixth {
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      h3.seventh {
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      @media (min-width: 769px) {
+        .img-aac {
+          margin: 50px 0 50px 0;
+
+          .img {
+            text-align: center;
+
+            img.aac {
+              width: 70%;
+            }
+
+            img.livret {
+              width: 48%;
+              border-radius: 8px;
+            }
+
+            img.mode-emploi {
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .img-aac {
+          margin: 50px 0 50px 0;
+
+          .img {
+            text-align: center;
+
+            img.aac {
+              width: 60%;
+              margin-bottom: 50px;
+            }
+
+            img.livret {
+              width: 60%;
+              margin-bottom: 50px;
+              border-radius: 8px;
+            }
+
+            img.mode-emploi {
+              width: 60%;
+              margin-bottom: 50px;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+
+      h3.heigth {
         margin-top: 50px;
         font-size: 23px;
         font-weight: bold;
