@@ -19,6 +19,8 @@ gem 'sitemap_generator', '~> 5.1'
 
 gem 'geocoder'
 
+gem 'friendly_id', '~> 5.2.4'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'

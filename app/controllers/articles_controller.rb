@@ -10,12 +10,13 @@ class ArticlesController < ApplicationController
 
   def show
     @articles = Article.all
+    # @article = Article.friendly.find(params[:id])
     # @articles_sorted_by_date = @articles.order('date DESC')
   end
 
   private
 
   def find_article
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
   end
 end
