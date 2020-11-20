@@ -21,4 +21,4 @@ setTimeout(function() {
 
 setTimeout(function() {
   $('.mail-home').modal();
-}, 6000);
+}, 9000);
