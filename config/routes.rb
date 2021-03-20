@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   get 'pages/mentions_legales'
   get 'pages/label'
 
+  get 'formations/auto'
+  get 'formations/moto'
+
   resources :articles, only: [:index, :show]
-  resources :formations, only: [:index]
+  # resources :formations, only: [:index]
   resources :users, only: [:new, :create]
 
   namespace :admin do
