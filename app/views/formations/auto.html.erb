@@ -1,0 +1,252 @@
+<%= render 'shared/navbar' %>
+<%#= render './shared/btn-capture-mail' %>
+<%#= render 'shared/formations-popup-captation-mail' %>
+<%#= render 'shared/btn&popup-captation-mail' %>
+<section id="formations-auto">
+  <div class="container-formations">
+
+    <!-- <div id="my-modal-frame-yt" class="modal">
+      <div class="modal-close"><%#= image_tag("close.png", class: "close-yt") %></div>
+      <div class="my-modal-content">
+        <iframe id="frame" src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- BONNE Modal YT -->
+    <!-- <div class="modal fade yt" id="yt-player" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="my-modal-content">
+          <iframe id="frame" src="" data-src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div class="trapezoids-title">
+      <div class="trapezoid-blue">
+        <h1>AUTO</h1>
+        <%= image_tag 'fleche_gauche.png', class: "arrow"%>
+      </div>
+    </div>
+
+    <h2 class="title-question">Pour toute inscription, bénéficie d'un accès illimité à des centaines de vidéos COACHING Permis...</h2>
+
+    <div class="container-video-presentation">
+      <iframe id="frame-presentation" src="https://www.youtube.com/embed/J-Hpg9hwoSM" data-src="" class="hide" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- <h3 class="neon blink">OFFRES SPÉCIALES CONFINEMENT 💪</h3> -->
+
+    <!-- <div class="second-title">
+      <h2 class="phrase-accroche"><span class="blue">ÉLÈVE D'UNE AUTO-ÉCOLE TRADITIONNELLE, D'UNE AUTO-ÉCOLE EN LIGNE, OU CANDIDAT(E) LIBRE ?</span><br> CES FORMATIONS SONT FAITES POUR TOI !</h2>
+    </div> -->
+
+    <% if admin_signed_in? %>
+      <div class="container-btn-new">
+        <button class="btn-new"><%= link_to "AJOUTER UNE FORMATION ", new_admin_formation_path %> <i class="fi-cwsuxl-plus-solid"></i></button>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <%#= paginate @articles_page %>
+      <% @formations.order('number ASC').each_with_index do |formation, index| %>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="description-formation">
+
+              <% if formation.number.odd? %>
+                <!-- <div class="trapezoid-orange"> -->
+                  <h2 class="orange"><p><%= formation.title %></p></h2>
+                <!-- </div> -->
+              <% else %>
+                <!-- <div class="trapezoid-blue"> -->
+                  <h2 class="blue"><p><%= formation.title %></p></h2>
+                <!-- </div> -->
+              <% end %>
+
+
+              <div class="img-formation">
+
+                  <%# if formation.number == 5 %>
+                    <%#= image_tag 'fleche_pack-complet.png', class: "arrow"%>
+                    <%#= cl_image_tag(formation.photo, class: "formation-img", id: big_formation(formation.title)) %>
+                  <%# else %>
+                    <%= cl_image_tag(formation.photo, class: "formation-img") %>
+                  <%# end %>
+
+                  <!-- LOGIC MODAL YT -->
+                  <%# if formation.id == 5 %>
+                    <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                      <%#= image_tag 'play-pack-complet.png', :data => { :src => formation.url_yt }, class: "formation-play", id: big_formation?(formation.id)%>
+                    <%# end %>
+                  <%# else %>
+                    <%#= link_to "#", id: index, :data => { :src => formation.url_yt, :toggle => "modal", :target => "#yt-player" }, class: "yt-link-button" do %>
+                      <%#= image_tag 'play.png', :data => { :src => formation.url_yt }, class: "formation-play" %>
+                    <%# end %>
+                  <%# end %>
+
+                </div>
+              <%#= formation.id %>
+              <p><%= simple_format(formation.description) %></p>
+            </div>
+
+            <% if formation.sales_price.present? %>
+              <p class="price"><span class="barre"><%= formation.sales_price %></span><i class="fi-xwlrxl-chevron-wide"></i><%= formation.price %></p>
+            <% else %>
+              <p class="price"><%= formation.price %></p>
+            <% end %>
+
+            <div class="trapezoid-btn-coaching">
+              <%= link_to "JE VEUX ÊTRE COACHÉ", pages_contact_path, class: "url_learnybox" %>
+            </div>
+            <% if admin_signed_in? %>
+              <div class="container-btns-update-delete">
+                <div class="row">
+                  <div class="container-btn-update col-lg-6">
+                    <%= link_to edit_admin_formation_path(formation) do %>
+                      <button class="btn-update"><i class="fi-cwsuxl-update"></i></button>
+                    <% end %>
+                  </div>
+                  <div class="container-btn-delete col-lg-6">
+                    <%= link_to admin_formation_path(formation, redirect_to: "Auto"), method: :delete, data: {confirm: "Es tu sûre de vouloir supprimer cette formation Will ?"} do %>
+                      <button class="btn-delete"><i class="fi-cwsuxl-trash-wide"></i></button>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+
+    <div class="container-caroussel">
+
+      <h2><span class="blue">ILS NOUS ONT FAIT CONFIANCE...</span><br>ET DES CENTAINES D'AUTRES AUSSI...</h2><br><br>
+
+      <div class="row mx-auto my-auto">
+        <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner w-100" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review1.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review2.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review3.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review4.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review5.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review6.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review7.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review8.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review9.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-lg-4 col-md-6">
+                <div class="review">
+                  <div class="img-review-caroussel">
+                    <%= image_tag 'review10.png', class: "review"%>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <%= image_tag 'fleche_gauche.png', class: "carousel-control"%>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <%= image_tag 'fleche_droite.png', class: "carousel-control"%>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container-pagination">
+      <%#= paginate @formations_page %>
+    </div> -->
+
+  </div>
+  <%= render 'shared/footer' %>
+</section>

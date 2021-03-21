@@ -6,7 +6,8 @@
   </div>
   <div class="navbar-tab">
     <ul class="list-nav">
-      <li class="navlink margin-right"><%= link_to "Formations", formations_path, class: "navbar-brand", class: is_active?("formations") %></li>
+      <li class="navlink margin-right"><%= link_to "Auto", formations_auto_path, class: "navbar-brand", class: is_active?("auto") %></li>
+      <li class="navlink margin-right"><%= link_to "Deux Roues", formations_moto_path, class: "navbar-brand", class: is_active?("moto") %></li>
       <li class="navlink margin-right"><%= link_to "Le Blog", articles_path, class: "navbar-brand", class: is_active?("articles") %></li>
       <li class="navlink margin-right"><%= link_to "À propos", pages_about_path, class: "navbar-brand", class: is_active?("about") %></li>
       <li class="navlink"><%= link_to "Contact", pages_contact_path, class: "navbar-brand", class: is_active?("contact") %></li>
@@ -54,7 +55,8 @@
         <hr class="top">
 
             <%= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item", class: is_active?("home") %>
-            <%= link_to "Formations", formations_path, class: "nav-link list-group-item menu-item", class: is_active?("formations") %>
+            <%= link_to "Auto", formations_auto_path, class: "nav-link list-group-item menu-item", class: is_active?("auto") %>
+            <%= link_to "Deux Roues", formations_moto_path, class: "nav-link list-group-item menu-item", class: is_active?("moto") %>
             <%= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
             <%= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item", class: is_active?("about") %>
             <%= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item", class: is_active?("contact") %>
