@@ -21,6 +21,11 @@
 
     <%= simple_form_for [:admin, @formation] do |f| %>
       <div class="form-inputs">
+        <%= f.input :style,
+                    :collection => ["Auto", "Deux Roues"],
+                    :label => "TYPE DE FORMATION",
+                    :label_html => { :class => 'span-blue-label' },
+                    input_html: { :class => 'form-input', :placeholder => "Titre" } %>
         <%= f.input :title,
                     :label => "TITRE",
                     :label_html => { :class => 'span-blue-label' },

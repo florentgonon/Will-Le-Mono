@@ -6,9 +6,10 @@ class Admin::FormationsController < ApplicationController
   end
 
   def create
+
     @formation = Formation.new(formation_params)
     if @formation.save
-      redirect_to formations_path
+      redirect_to params[:style] == "Auto" ? formations_auto_path : formations_moto_path
     else
       render :new
     end
@@ -19,12 +20,13 @@ class Admin::FormationsController < ApplicationController
 
   def update
     @formation.update(formation_params)
-    redirect_to formations_path
+    redirect_to params[:style] == "Auto" ? formations_auto_path : formations_moto_path
   end
 
   def destroy
+    binding.pry
     @formation.destroy
-    redirect_to formations_path
+    redirect_to params[:redirect_to] == "Auto" ? formations_auto_path : formations_moto_path
   end
 
   private
@@ -34,6 +36,6 @@ class Admin::FormationsController < ApplicationController
   end
 
   def formation_params
-    params.require(:formation).permit(:title, :description, :url_yt, :url_learnybox, :photo, :sales_price, :price, :number)
+    params.require(:formation).permit(:title, :description, :url_yt, :url_learnybox, :photo, :sales_price, :price, :number, :style)
   end
 end

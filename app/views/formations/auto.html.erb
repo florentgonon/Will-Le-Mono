@@ -110,7 +110,7 @@
                     <% end %>
                   </div>
                   <div class="container-btn-delete col-lg-6">
-                    <%= link_to admin_formation_path(formation), method: :delete, data: {confirm: "Es tu sûre de vouloir supprimer cette formation Will ?"} do %>
+                    <%= link_to admin_formation_path(formation, redirect_to: "Auto"), method: :delete, data: {confirm: "Es tu sûre de vouloir supprimer cette formation Will ?"} do %>
                       <button class="btn-delete"><i class="fi-cwsuxl-trash-wide"></i></button>
                     <% end %>
                   </div>
