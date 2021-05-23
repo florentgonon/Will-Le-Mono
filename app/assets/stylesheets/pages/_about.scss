@@ -6,7 +6,7 @@
   padding-top: 210px;
 
   .container-about {
-    .container-section1-2 {
+    .container-section-1 {
       background-image: image_url('image-fond.jpg');
       background-size: cover;
       background-position: center;
@@ -18,7 +18,7 @@
         margin: 0 auto;
 
         .left-side1 {
-          .trapezoids {
+          .trapezoids-1 {
             padding-bottom: 30px;
 
             @media (min-width: 769px) {
@@ -377,6 +377,432 @@
               font-size: 30px;
               font-weight: bold;
               margin-top: 60px;
+            }
+          }
+        }
+      }
+    }
+
+    .container-section-2 {
+      background-image: image_url('image-fond.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: none;
+      padding: 50px 0 50px 0;
+
+      #section-5 {
+        max-width: 85vw;
+        margin: 0 auto;
+
+        .will-le-mono {
+          padding-bottom: 60px;
+
+          .left-side1 {
+            .trapezoids-2 {
+              padding-bottom: 30px;
+
+              @media (min-width: 769px) {
+                .trapezoid-blue {
+                  width: 0;
+                  height: 70px;
+                  border-top: 18px solid transparent;
+                  border-right: 276px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 40px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              @media (max-width: 768px) {
+                .trapezoid-blue {
+                  width: 0;
+                  height: 60px;
+                  border-top: 18px solid transparent;
+                  border-right: 251px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              @media (max-width: 540px) {
+                .trapezoid-blue {
+                  width: 0;
+                  height: 60px;
+                  border-top: 18px solid transparent;
+                  border-right: 251px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              @media (min-width: 769px) {
+                .trapezoid-orange {
+                  position: relative;
+                  top: -20px;
+                  left: 70px;
+                  width: 0;
+                  height: 52px;
+                  border-top: 14px solid transparent;
+                  border-right: 171px solid #EC6B1B;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h2 {
+                    position: relative;
+                    top: -6px;
+                    left: 5px;
+                    white-space: nowrap;
+                    font-size: 40px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              @media (max-width: 768px) {
+                .trapezoid-orange {
+                  position: relative;
+                  top: -20px;
+                  left: 70px;
+                  width: 0;
+                  height: 48px;
+                  border-top: 14px solid transparent;
+                  border-right: 154px solid #EC6B1B;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h2 {
+                    position: relative;
+                    top: -6px;
+                    left: 5px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              @media (max-width: 540px) {
+                .trapezoid-orange {
+                  position: relative;
+                  top: -16px;
+                  left: 70px;
+                  width: 0;
+                  height: 48px;
+                  border-top: 14px solid transparent;
+                  border-right: 154px solid #EC6B1B;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h2 {
+                    position: relative;
+                    top: -6px;
+                    left: 5px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+
+            .image-team {
+              text-align: center;
+
+              img.team-will-le-mono {
+                width: 60%;
+              }
+            }
+          }
+
+          .right-side1 {
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+
+              span.blue {
+                color: #54BCB6;
+              }
+            }
+
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+
+              .bold {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+
+      #section-6 {
+        max-width: 85vw;
+        margin: 0 auto;
+
+        .aurelie {
+          padding-bottom: 60px;
+
+          .left-side2 {
+            padding : 0 15px 60px 15px;
+
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+
+              span.blue {
+                color: #54BCB6;
+              }
+            }
+
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+
+              .bold {
+                font-weight: bold;
+              }
+            }
+          }
+
+
+          @media (min-width: 1025px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img.team-aurelie {
+                  margin-top: 83px;
+                  width: 70%;
+                }
+              }
+            }
+          }
+
+          @media (max-width: 1024px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                // justify-content: center;
+
+                img.team-aurelie {
+                  // margin-top: 83px;
+                  width: 60%;
+                }
+              }
+            }
+          }
+
+          @media (max-width: 768px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img.team-aurelie {
+                  // padding-top: 55px;
+                  width: 60%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #section-7 {
+        max-width: 85vw;
+        margin: 0 auto;
+
+        .romain {
+          padding-bottom: 60px;
+          .left-side1 {
+            .image-team {
+              text-align: center;
+
+              img.team-romain {
+                width: 60%;
+              }
+            }
+          }
+
+          .right-side1 {
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+
+              span.blue {
+                color: #54BCB6;
+              }
+            }
+
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+
+              .bold {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      #section-8 {
+        max-width: 85vw;
+        margin: 0 auto;
+
+        .laetitia {
+          padding-bottom: 60px;
+
+          .left-side2 {
+            padding : 0 15px 60px 15px;
+
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+
+              span.blue {
+                color: #54BCB6;
+              }
+            }
+
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+
+              .bold {
+                font-weight: bold;
+              }
+            }
+          }
+
+
+          @media (min-width: 1025px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img.team-laetitia {
+                  margin-top: 83px;
+                  width: 70%;
+                }
+              }
+            }
+          }
+
+          @media (max-width: 1024px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                // justify-content: center;
+
+                img.team-laetitia {
+                  // margin-top: 83px;
+                  width: 60%;
+                }
+              }
+            }
+          }
+
+          @media (max-width: 768px) {
+            .right-side2 {
+              .image-team {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img.team-laetitia {
+                  // padding-top: 55px;
+                  width: 60%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #section-9 {
+        max-width: 85vw;
+        margin: 0 auto;
+
+        .martine {
+          .left-side1 {
+            .image-team {
+              text-align: center;
+
+              img.team-martine {
+                width: 60%;
+              }
+            }
+          }
+
+          .right-side1 {
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+
+              span.blue {
+                color: #54BCB6;
+              }
+            }
+
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
+
+              .bold {
+                font-weight: bold;
+              }
             }
           }
         }
