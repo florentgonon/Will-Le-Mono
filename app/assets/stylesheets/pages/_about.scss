@@ -7,7 +7,7 @@
 
   .container-about {
     .container-section-1 {
-      background-image: image_url('image-fond.jpg');
+      //background-image: image_url('image-fond.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: none;
@@ -384,8 +384,11 @@
     }
 
     .container-section-2 {
-      background-color: #0A0E12;
       padding: 50px 0 50px 0;
+      //background-image: image_url('image-fond.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: none;
 
       #section-5 {
         max-width: 85vw;
@@ -395,10 +398,10 @@
           padding-bottom: 60px;
 
           .left-side1 {
-            .trapezoids-2 {
-              padding-bottom: 30px;
+            @media (min-width: 769px) {
+              .trapezoids-2 {
+                padding-bottom: 30px;
 
-              @media (min-width: 769px) {
                 .trapezoid-blue {
                   width: 0;
                   height: 70px;
@@ -416,49 +419,7 @@
                     font-weight: bold;
                   }
                 }
-              }
 
-              @media (max-width: 768px) {
-                .trapezoid-blue {
-                  width: 0;
-                  height: 60px;
-                  border-top: 18px solid transparent;
-                  border-right: 251px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-              }
-
-              @media (max-width: 540px) {
-                .trapezoid-blue {
-                  width: 0;
-                  height: 60px;
-                  border-top: 18px solid transparent;
-                  border-right: 251px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-              }
-
-              @media (min-width: 769px) {
                 .trapezoid-orange {
                   position: relative;
                   top: -20px;
@@ -480,16 +441,45 @@
                   }
                 }
               }
+              .image-team {
+                text-align: center;
 
-              @media (max-width: 768px) {
+                img.team-will-le-mono {
+                  width: 60%;
+                }
+              }
+            }
+
+            @media (max-width: 768px) {
+              .trapezoids-2 {
+                padding-bottom: 30px;
+
+                .trapezoid-blue {
+                  width: 0;
+                  height: 60px;
+                  border-top: 18px solid transparent;
+                  border-right: 251px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+
                 .trapezoid-orange {
                   position: relative;
                   top: -20px;
                   left: 70px;
                   width: 0;
-                  height: 48px;
+                  height: 52px;
                   border-top: 14px solid transparent;
-                  border-right: 154px solid #EC6B1B;
+                  border-right: 171px solid #EC6B1B;
                   border-left: 0px solid transparent;
                   border-bottom: 0px solid transparent;
 
@@ -503,36 +493,115 @@
                   }
                 }
               }
+              .image-team {
+                text-align: center;
 
-              @media (max-width: 540px) {
-                .trapezoid-orange {
-                  position: relative;
-                  top: -16px;
-                  left: 70px;
-                  width: 0;
-                  height: 48px;
-                  border-top: 14px solid transparent;
-                  border-right: 154px solid #EC6B1B;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h2 {
-                    position: relative;
-                    top: -6px;
-                    left: 5px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
+                img.team-will-le-mono {
+                  width: 70%;
                 }
               }
             }
 
-            .image-team {
-              text-align: center;
+            @media (max-width: 540px) {
+              .trapezoids-2 {
+                padding-bottom: 30px;
 
-              img.team-will-le-mono {
-                width: 50%;
+                .trapezoid-blue {
+                  width: 0;
+                  height: 60px;
+                  border-top: 18px solid transparent;
+                  border-right: 251px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+                .trapezoid-orange {
+                  position: relative;
+                  top: -20px;
+                  left: 70px;
+                  width: 0;
+                  height: 52px;
+                  border-top: 14px solid transparent;
+                  border-right: 171px solid #EC6B1B;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h2 {
+                    position: relative;
+                    top: -2px;
+                    left: 12px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+              }
+              .image-team {
+                text-align: center;
+
+                img.team-will-le-mono {
+                  width: 80%;
+                }
+              }
+            }
+
+            @media (max-width: 340px) {
+              .trapezoids-2 {
+                padding-bottom: 30px;
+
+                .trapezoid-blue {
+                  width: 0;
+                  height: 60px;
+                  border-top: 18px solid transparent;
+                  border-right: 251px solid #54BCB6;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h1 {
+                    position: relative;
+                    top: -8px;
+                    left: 21px;
+                    white-space: nowrap;
+                    font-size: 36px;
+                    font-weight: bold;
+                  }
+                }
+
+                .trapezoid-orange {
+                  position: relative;
+                  top: -20px;
+                  left: 70px;
+                  width: 0;
+                  height: 52px;
+                  border-top: 14px solid transparent;
+                  border-right: 171px solid #EC6B1B;
+                  border-left: 0px solid transparent;
+                  border-bottom: 0px solid transparent;
+
+                  h2 {
+                    position: relative;
+                    top: -6px;
+                    left: 5px;
+                    white-space: nowrap;
+                    font-size: 40px;
+                    font-weight: bold;
+                  }
+                }
+              }
+              .image-team {
+                text-align: center;
+
+                img.team-will-le-mono {
+                  width: 80%;
+                }
               }
             }
           }
@@ -604,30 +673,14 @@
           }
         }
 
-
-        @media (min-width: 1025px) {
-          .right-side2 {
-            .image-team {
-              height: 100%;
-              justify-content: center;
-              text-align: center;
-
-              img.team-aurelie {
-                margin-top: 83px;
-                width: 60%;
-              }
-            }
-          }
-        }
-
-        @media (max-width: 1024px) {
+        @media (min-width: 1024px) {
           .right-side2 {
             .image-team {
               height: 100%;
               text-align: center;
 
               img.team-aurelie {
-                width: 60%;
+                width: 70%;
               }
             }
           }
@@ -641,7 +694,21 @@
               text-align: center;
 
               img.team-aurelie {
-                width: 50%;
+                width: 70%;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 540px) {
+          .right-side2 {
+            .image-team {
+              height: 100%;
+              justify-content: center;
+              text-align: center;
+
+              img.team-aurelie {
+                width: 80%;
               }
             }
           }
@@ -655,11 +722,27 @@
         .romain {
           padding-bottom: 60px;
           .left-side1 {
+
+
             .image-team {
               text-align: center;
 
-              img.team-romain {
-                width: 50%;
+              @media (min-width: 769px) {
+                img.team-romain {
+                  width: 60%;
+                }
+              }
+
+              @media (max-width: 768px) {
+                img.team-romain {
+                  width: 70%;
+                }
+              }
+
+              @media (max-width: 540px) {
+                img.team-romain {
+                  width: 80%;
+                }
               }
             }
           }
@@ -740,7 +823,7 @@
 
               img.team-laetitia {
                 margin-top: 83px;
-                width: 60%;
+                width: 70%;
               }
             }
           }
@@ -753,7 +836,7 @@
               text-align: center;
 
               img.team-laetitia {
-                width: 60%;
+                width: 70%;
               }
             }
           }
@@ -767,7 +850,21 @@
               text-align: center;
 
               img.team-laetitia {
-                width: 50%;
+                width: 70%;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 540px) {
+          .right-side2 {
+            .image-team {
+              height: 100%;
+              justify-content: center;
+              text-align: center;
+
+              img.team-laetitia {
+                width: 80%;
               }
             }
           }
@@ -783,8 +880,22 @@
             .image-team {
               text-align: center;
 
-              img.team-martine {
-                width: 50%;
+              @media (min-width: 769px) {
+                img.team-martine {
+                  width: 60%;
+                }
+              }
+
+              @media (max-width: 768px) {
+                img.team-martine {
+                  width: 70%;
+                }
+              }
+
+              @media (max-width: 540px) {
+                img.team-martine {
+                  width: 80%;
+                }
               }
             }
           }
@@ -810,6 +921,211 @@
               }
             }
           }
+        }
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .container-caroussel {
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        padding: 50px 0 100px 0;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 300px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-right: -72px;
+        }
+
+        .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-left: -72px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .container-caroussel {
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        padding: 50px 0 100px 0;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 270px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-right: -54px;
+        }
+
+        .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 6vw;
+          margin-left: -54px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container-caroussel {
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        padding: 50px 0 100px 0;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 298px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 8vw;
+          margin-right: -50px;
+        }
+
+        .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 8vw;
+          margin-left: -50px;
+        }
+      }
+    }
+
+    @media (max-width: 540px) {
+      .container-caroussel {
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        padding: 50px 0 100px 0;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 235px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-right: -10px;
+        }
+
+        .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-left: -10px;
+        }
+      }
+    }
+
+    @media (max-width: 320px) {
+      .container-caroussel {
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        padding: 50px 0 100px 0;
+
+        h2 {
+          font-size: 34px;
+          font-weight: bold;
+          text-align: left;
+          // margin-bottom: 30px;
+
+          span.blue {
+            color: #54BCB6;
+          }
+        }
+
+        .review {
+          img.review {
+            width: 205px;
+            border-radius: 2%;
+          }
+        }
+
+        .carousel-control-next {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-right: -10px;
+        }
+
+        .carousel-control-prev {
+          background-color: transparent;
+          opacity: 1;
+          width: 12vw;
+          margin-left: -10px;
         }
       }
     }
