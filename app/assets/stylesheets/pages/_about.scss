@@ -259,7 +259,6 @@
               justify-content: center;
 
               img.will-about {
-                margin-top: 83px;
                 width: 80%;
               }
             }
@@ -394,55 +393,197 @@
         max-width: 85vw;
         margin: 0 auto;
 
+        @media (min-width: 769px) {
+          .trapezoids-2 {
+            padding-bottom: 30px;
+
+            .trapezoid-blue {
+              width: 0;
+              height: 70px;
+              border-top: 18px solid transparent;
+              border-right: 276px solid #54BCB6;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h1 {
+                position: relative;
+                top: -8px;
+                left: 21px;
+                white-space: nowrap;
+                font-size: 40px;
+                font-weight: bold;
+              }
+            }
+
+            .trapezoid-orange {
+              position: relative;
+              top: -20px;
+              left: 70px;
+              width: 0;
+              height: 52px;
+              border-top: 14px solid transparent;
+              border-right: 171px solid #EC6B1B;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h2 {
+                position: relative;
+                top: -6px;
+                left: 5px;
+                white-space: nowrap;
+                font-size: 40px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 768px) {
+          .trapezoids-2 {
+            padding-bottom: 30px;
+
+            .trapezoid-blue {
+              width: 0;
+              height: 60px;
+              border-top: 18px solid transparent;
+              border-right: 251px solid #54BCB6;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h1 {
+                position: relative;
+                top: -8px;
+                left: 21px;
+                white-space: nowrap;
+                font-size: 36px;
+                font-weight: bold;
+              }
+            }
+
+            .trapezoid-orange {
+              position: relative;
+              top: -20px;
+              left: 70px;
+              width: 0;
+              height: 52px;
+              border-top: 14px solid transparent;
+              border-right: 171px solid #EC6B1B;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h2 {
+                position: relative;
+                top: -6px;
+                left: 5px;
+                white-space: nowrap;
+                font-size: 36px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 540px) {
+          .trapezoids-2 {
+            padding-bottom: 30px;
+
+            .trapezoid-blue {
+              width: 0;
+              height: 60px;
+              border-top: 18px solid transparent;
+              border-right: 251px solid #54BCB6;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h1 {
+                position: relative;
+                top: -8px;
+                left: 21px;
+                white-space: nowrap;
+                font-size: 36px;
+                font-weight: bold;
+              }
+            }
+            .trapezoid-orange {
+              position: relative;
+              top: -20px;
+              left: 70px;
+              width: 0;
+              height: 52px;
+              border-top: 14px solid transparent;
+              border-right: 171px solid #EC6B1B;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h2 {
+                position: relative;
+                top: -2px;
+                left: 12px;
+                white-space: nowrap;
+                font-size: 36px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 340px) {
+          .trapezoids-2 {
+            padding-bottom: 30px;
+
+            .trapezoid-blue {
+              width: 0;
+              height: 60px;
+              border-top: 18px solid transparent;
+              border-right: 251px solid #54BCB6;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h1 {
+                position: relative;
+                top: -8px;
+                left: 21px;
+                white-space: nowrap;
+                font-size: 36px;
+                font-weight: bold;
+              }
+            }
+
+            .trapezoid-orange {
+              position: relative;
+              top: -20px;
+              left: 70px;
+              width: 0;
+              height: 52px;
+              border-top: 14px solid transparent;
+              border-right: 171px solid #EC6B1B;
+              border-left: 0px solid transparent;
+              border-bottom: 0px solid transparent;
+
+              h2 {
+                position: relative;
+                top: -6px;
+                left: 5px;
+                white-space: nowrap;
+                font-size: 40px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
         .will-le-mono {
           padding-bottom: 60px;
+          display: flex;
+          align-items: center;
 
           .left-side1 {
             @media (min-width: 769px) {
-              .trapezoids-2 {
-                padding-bottom: 30px;
-
-                .trapezoid-blue {
-                  width: 0;
-                  height: 70px;
-                  border-top: 18px solid transparent;
-                  border-right: 276px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 40px;
-                    font-weight: bold;
-                  }
-                }
-
-                .trapezoid-orange {
-                  position: relative;
-                  top: -20px;
-                  left: 70px;
-                  width: 0;
-                  height: 52px;
-                  border-top: 14px solid transparent;
-                  border-right: 171px solid #EC6B1B;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h2 {
-                    position: relative;
-                    top: -6px;
-                    left: 5px;
-                    white-space: nowrap;
-                    font-size: 40px;
-                    font-weight: bold;
-                  }
-                }
-              }
               .image-team {
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img.team-will-le-mono {
                   width: 60%;
@@ -451,50 +592,11 @@
             }
 
             @media (max-width: 768px) {
-              .trapezoids-2 {
-                padding-bottom: 30px;
-
-                .trapezoid-blue {
-                  width: 0;
-                  height: 60px;
-                  border-top: 18px solid transparent;
-                  border-right: 251px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-
-                .trapezoid-orange {
-                  position: relative;
-                  top: -20px;
-                  left: 70px;
-                  width: 0;
-                  height: 52px;
-                  border-top: 14px solid transparent;
-                  border-right: 171px solid #EC6B1B;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h2 {
-                    position: relative;
-                    top: -6px;
-                    left: 5px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-              }
               .image-team {
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img.team-will-le-mono {
                   width: 70%;
@@ -503,49 +605,11 @@
             }
 
             @media (max-width: 540px) {
-              .trapezoids-2 {
-                padding-bottom: 30px;
-
-                .trapezoid-blue {
-                  width: 0;
-                  height: 60px;
-                  border-top: 18px solid transparent;
-                  border-right: 251px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-                .trapezoid-orange {
-                  position: relative;
-                  top: -20px;
-                  left: 70px;
-                  width: 0;
-                  height: 52px;
-                  border-top: 14px solid transparent;
-                  border-right: 171px solid #EC6B1B;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h2 {
-                    position: relative;
-                    top: -2px;
-                    left: 12px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-              }
               .image-team {
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img.team-will-le-mono {
                   width: 80%;
@@ -554,50 +618,11 @@
             }
 
             @media (max-width: 340px) {
-              .trapezoids-2 {
-                padding-bottom: 30px;
-
-                .trapezoid-blue {
-                  width: 0;
-                  height: 60px;
-                  border-top: 18px solid transparent;
-                  border-right: 251px solid #54BCB6;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h1 {
-                    position: relative;
-                    top: -8px;
-                    left: 21px;
-                    white-space: nowrap;
-                    font-size: 36px;
-                    font-weight: bold;
-                  }
-                }
-
-                .trapezoid-orange {
-                  position: relative;
-                  top: -20px;
-                  left: 70px;
-                  width: 0;
-                  height: 52px;
-                  border-top: 14px solid transparent;
-                  border-right: 171px solid #EC6B1B;
-                  border-left: 0px solid transparent;
-                  border-bottom: 0px solid transparent;
-
-                  h2 {
-                    position: relative;
-                    top: -6px;
-                    left: 5px;
-                    white-space: nowrap;
-                    font-size: 40px;
-                    font-weight: bold;
-                  }
-                }
-              }
               .image-team {
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 img.team-will-le-mono {
                   width: 80%;
@@ -638,6 +663,8 @@
         @media (min-width: 1024px) {
           .aurelie {
             padding-bottom: 60px;
+            display: flex;
+            align-items: center;
           }
         }
 
@@ -645,13 +672,12 @@
           .aurelie {
             padding-bottom: 60px;
             display: flex;
+            align-items: center;
             flex-direction: column-reverse;
           }
         }
 
         .left-side2 {
-          padding : 0 15px 60px 15px;
-
           h3 {
             font-size: 34px;
             font-weight: bold;
@@ -676,11 +702,12 @@
         @media (min-width: 1024px) {
           .right-side2 {
             .image-team {
-              height: 100%;
-              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               img.team-aurelie {
-                width: 70%;
+                width: 60%;
               }
             }
           }
@@ -689,9 +716,9 @@
         @media (max-width: 768px) {
           .right-side2 {
             .image-team {
-              height: 100%;
+              display: flex;
               justify-content: center;
-              text-align: center;
+              align-items: center;
 
               img.team-aurelie {
                 width: 70%;
@@ -703,9 +730,9 @@
         @media (max-width: 540px) {
           .right-side2 {
             .image-team {
-              height: 100%;
+              display: flex;
               justify-content: center;
-              text-align: center;
+              align-items: center;
 
               img.team-aurelie {
                 width: 80%;
@@ -721,11 +748,14 @@
 
         .romain {
           padding-bottom: 60px;
+          display: flex;
+          align-items: center;
+
           .left-side1 {
-
-
             .image-team {
-              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               @media (min-width: 769px) {
                 img.team-romain {
@@ -778,6 +808,8 @@
         @media (min-width: 1024px) {
           .laetitia {
             padding-bottom: 60px;
+            display: flex;
+            align-items: center;
           }
         }
 
@@ -785,13 +817,12 @@
           .laetitia {
             padding-bottom: 60px;
             display: flex;
+            align-items: center;
             flex-direction: column-reverse;
           }
         }
 
         .left-side2 {
-          padding : 0 15px 60px 15px;
-
           h3 {
             font-size: 34px;
             font-weight: bold;
@@ -817,13 +848,12 @@
         @media (min-width: 1025px) {
           .right-side2 {
             .image-team {
-              height: 100%;
+              display: flex;
               justify-content: center;
-              text-align: center;
+              align-items: center;
 
               img.team-laetitia {
-                margin-top: 83px;
-                width: 70%;
+                width: 60%;
               }
             }
           }
@@ -832,8 +862,9 @@
         @media (max-width: 1024px) {
           .right-side2 {
             .image-team {
-              height: 100%;
-              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               img.team-laetitia {
                 width: 70%;
@@ -845,9 +876,9 @@
         @media (max-width: 768px) {
           .right-side2 {
             .image-team {
-              height: 100%;
+              display: flex;
               justify-content: center;
-              text-align: center;
+              align-items: center;
 
               img.team-laetitia {
                 width: 70%;
@@ -859,9 +890,9 @@
         @media (max-width: 540px) {
           .right-side2 {
             .image-team {
-              height: 100%;
+              display: flex;
               justify-content: center;
-              text-align: center;
+              align-items: center;
 
               img.team-laetitia {
                 width: 80%;
@@ -876,9 +907,15 @@
         margin: 0 auto;
 
         .martine {
+          display: flex;
+          align-items: center;
+
           .left-side1 {
             .image-team {
               text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               @media (min-width: 769px) {
                 img.team-martine {
