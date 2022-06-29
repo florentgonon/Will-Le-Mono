@@ -24,7 +24,6 @@ class Admin::FormationsController < ApplicationController
   end
 
   def destroy
-    binding.pry
     @formation.destroy
     redirect_to params[:redirect_to] == "Auto" ? formations_auto_path : formations_moto_path
   end
