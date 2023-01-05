@@ -7,10 +7,11 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "mapbox-gl": "^1.10.1",
-    "node-sass": "^4.14",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.57.1",
     "webpack-dev-server": "^3.10.3"
   },
   "engines": {
