@@ -6,7 +6,6 @@ class Admin::FormationsController < ApplicationController
   end
 
   def create
-
     @formation = Formation.new(formation_params)
     if @formation.save
       redirect_to params[:style] == "Auto" ? formations_auto_path : formations_moto_path
