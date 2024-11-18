@@ -655,87 +655,59 @@
         }
       }
 
-
       #section-6 {
         max-width: 85vw;
         margin: 0 auto;
 
-        @media (min-width: 1024px) {
-          .aurelie {
-            padding-bottom: 60px;
-            display: flex;
-            align-items: center;
-          }
-        }
+        .aurelie {
+          display: flex;
+          align-items: center;
 
-        @media (max-width: 1023px) {
-          .aurelie {
-            padding-bottom: 60px;
-            display: flex;
-            align-items: center;
-            flex-direction: column-reverse;
-          }
-        }
+          .right-side2 {
+            .image-team {
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
-        .left-side2 {
-          h3 {
-            font-size: 34px;
-            font-weight: bold;
+              @media (min-width: 769px) {
+                img.team-aurelie {
+                  width: 60%;
+                }
+              }
 
-            span.blue {
-              color: #54BCB6;
+              @media (max-width: 768px) {
+                img.team-aurelie {
+                  width: 70%;
+                }
+              }
+
+              @media (max-width: 540px) {
+                img.team-aurelie {
+                  width: 80%;
+                }
+              }
             }
           }
 
-          p {
-            text-align: justify;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 22px;
-
-            .bold {
+          .left-side2 {
+            h3 {
+              font-size: 34px;
               font-weight: bold;
-            }
-          }
-        }
 
-        @media (min-width: 1024px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-aurelie {
-                width: 60%;
+              span.blue {
+                color: #54BCB6;
               }
             }
-          }
-        }
 
-        @media (max-width: 768px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
+            p {
+              text-align: justify;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 22px;
 
-              img.team-aurelie {
-                width: 70%;
-              }
-            }
-          }
-        }
-
-        @media (max-width: 540px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-aurelie {
-                width: 80%;
+              .bold {
+                font-weight: bold;
               }
             }
           }
@@ -800,109 +772,8 @@
           }
         }
       }
-
+   
       #section-8 {
-        max-width: 85vw;
-        margin: 0 auto;
-
-        @media (min-width: 1024px) {
-          .laetitia {
-            padding-bottom: 60px;
-            display: flex;
-            align-items: center;
-          }
-        }
-
-        @media (max-width: 1023px) {
-          .laetitia {
-            padding-bottom: 60px;
-            display: flex;
-            align-items: center;
-            flex-direction: column-reverse;
-          }
-        }
-
-        .left-side2 {
-          h3 {
-            font-size: 34px;
-            font-weight: bold;
-
-            span.blue {
-              color: #54BCB6;
-            }
-          }
-
-          p {
-            text-align: justify;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 22px;
-
-            .bold {
-              font-weight: bold;
-            }
-          }
-        }
-
-
-        @media (min-width: 1025px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-laetitia {
-                width: 60%;
-              }
-            }
-          }
-        }
-
-        @media (max-width: 1024px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-laetitia {
-                width: 70%;
-              }
-            }
-          }
-        }
-
-        @media (max-width: 768px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-laetitia {
-                width: 70%;
-              }
-            }
-          }
-        }
-
-        @media (max-width: 540px) {
-          .right-side2 {
-            .image-team {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img.team-laetitia {
-                width: 80%;
-              }
-            }
-          }
-        }
-      }
-
-      #section-9 {
         max-width: 85vw;
         margin: 0 auto;
 
@@ -910,7 +781,7 @@
           display: flex;
           align-items: center;
 
-          .left-side1 {
+          .right-side2 {
             .image-team {
               text-align: center;
               display: flex;
@@ -937,7 +808,7 @@
             }
           }
 
-          .right-side1 {
+          .left-side2 {
             h3 {
               font-size: 34px;
               font-weight: bold;

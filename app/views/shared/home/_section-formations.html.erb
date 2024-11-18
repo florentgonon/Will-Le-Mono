@@ -13,20 +13,6 @@
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <div class="img-formation">
-                  <%= cl_image_tag(@formations[0]&.photo, class: "formation-img")%>
-                </div>
-                <div class="description-formation">
-                  <h3><%= @formations[0]&.title %></h3>
-                  <p><%= simple_format(@formations[0]&.description&.first(100)) %>...</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="col-lg-4 col-md-6">
-              <div class="card">
-                <div class="img-formation">
                   <%= cl_image_tag(@formations[1]&.photo, class: "formation-img")%>
                 </div>
                 <div class="description-formation">
@@ -161,15 +147,9 @@
     </div>
 
     <div class="row">
-      <div class="trapezoids-link col-lg-6 col-md-6 col-sm-6">
+      <div class="trapezoids-link col-12">
         <div class="trapezoid-blue">
           <%= link_to "JE DÉCOUVRE TOUTES LES FORMATIONS AUTO", formations_auto_path, class: "formation-path" %>
-        </div>
-      </div>
-
-      <div class="trapezoids-link col-lg-6 col-md-6 col-sm-6">
-        <div class="trapezoid-orange">
-          <%= link_to "JE DÉCOUVRE TOUTES LES FORMATIONS MOTO", formations_moto_path, class: "formation-path" %>
         </div>
       </div>
     </div>

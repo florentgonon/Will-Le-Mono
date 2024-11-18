@@ -8,8 +8,8 @@
     <div class="navbar-tab">
       <ul class="list-nav">
         <li class="navlink margin-right"><%= link_to "Auto", formations_auto_path, class: "navbar-brand", class: is_active?("formations") %></li>
-        <li class="navlink margin-right"><%= link_to "Deux Roues", formations_moto_path, class: "navbar-brand", class: is_active?("formations") %></li>
-        <!--<li class="navlink margin-right"><%#%>= link_to "Le Blog", articles_path, class: "navbar-brand", class: is_active?("articles") %></li>-->
+        <!--<li class="navlink margin-right"><%#= link_to "Deux Roues", formations_moto_path, class: "navbar-brand", class: is_active?("formations") %></li>-->
+        <li class="navlink margin-right"><%= link_to "Le Blog", articles_path, class: "navbar-brand", class: is_active?("articles") %></li>
         <li class="navlink margin-right"><%= link_to "À propos", pages_about_path, class: "navbar-brand", class: is_active?("about") %></li>
         <li class="navlink"><%= link_to "Contact", pages_contact_path, class: "navbar-brand", class: is_active?("contact") %></li>
         <li>
@@ -70,8 +70,8 @@
 
             <%= link_to "Accueil", root_path, class: "nav-link list-group-item menu-item", class: is_active?("home") %>
             <%= link_to "Auto", formations_auto_path, class: "nav-link list-group-item menu-item", class: is_active?("auto") %>
-            <%= link_to "Deux Roues", formations_moto_path, class: "nav-link list-group-item menu-item", class: is_active?("moto") %>
-            <%#= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
+            <%#= link_to "Deux Roues", formations_moto_path, class: "nav-link list-group-item menu-item", class: is_active?("moto") %>
+            <%= link_to "Le Blog", articles_path, class: "nav-link list-group-item menu-item", class: is_active?("articles") %>
             <%= link_to "À propos", pages_about_path, class: "nav-link list-group-item menu-item", class: is_active?("about") %>
             <%= link_to "Contact", pages_contact_path, class: "nav-link list-group-item menu-item", class: is_active?("contact") %>
 
@@ -81,7 +81,7 @@
 
         <li class="footer-menu list-inline ">
           <div class="d-flex justify-content-center">
-              <a href="https://www.facebook.com/Wkerautret/" target="_blank"><%= image_tag 'icone-facebook.png', class: "social-icon"%></a>
+              <a href="https://www.tiktok.com/@will_le_mono?_t=8qq99jmwnbN&_r=1" target="_blank"><%= image_tag 'icone-tiktok.png', class: "social-icon"%></a>
               <a href="https://www.youtube.com/channel/UC2c_l9vLefW82NbaUeqy6dA/featured" target="_blank"><%= image_tag 'icone-youtube.png', class: "social-icon"%></a>
               <a href="https://www.instagram.com/will_le_mono/" target="_blank"><%= image_tag 'icone-instagram.png', class: "social-icon"%></a>
           </div>
