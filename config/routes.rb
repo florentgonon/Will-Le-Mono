@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'pages/label'
 
   get 'formations/auto'
-  get 'formations/moto'
+  # get 'formations/moto'
 
   resources :articles, only: [:index, :show]
   # resources :formations, only: [:index]
